@@ -115,3 +115,41 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     footer .menuSection .menuList{ gap: 5px; }
 
 }
+
+
+/* .sec_top */
+.sec_top{ padding-top: 137px; }
+@media screen and (max-width: 1320px) { 
+    .sec_top{ padding-top: 111.13px; }
+}
+
+
+.main .visualSection{ background-image: url('../img/main/visualSection/background.png'); background-size: cover; background-position: right center;  display: flex; align-items: center; justify-content: center; position: relative; overflow:hidden; padding: 100px 0; min-height: calc(100vh - 137px); }
+.main .visualSection .rightBar{ position: absolute; right: 0; top: 0; height: 100%; width: 40px; background-color: #10975C; }
+.main .visualSection .inner{ position: relative; z-index: 2; }
+.main .visualSection .halfBox{ display: flex; gap: 48px; }
+
+.main .visualSection .halfBox .leftBox { flex-shrink: 0; }
+.main .visualSection .halfBox .leftBox .title{ margin-top: 20px; font-size: 52px; font-family: 'NanumSquare Neo', sans-serif; font-weight: 800; color: #7EB138; }
+.main .visualSection .halfBox .leftBox .title .green{ color: #10975C; }
+.main .visualSection .halfBox .leftBox .content{ margin-top: 20px; color: #777; line-height: 1.5em; }
+.main .visualSection .halfBox .leftBox .linkBtn{ 
+    margin-top: 48px; width: 100%; max-width: 290px; width: 100%; border-radius: 4px;  display:flex; gap: 10px; align-items: center; color: #fff; 
+    background-color: #10975C; padding: 20px; justify-content: center; box-shadow: 5px 7px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main .visualSection .halfBox .rightBox{ position: relative; }
+.main .visualSection .halfBox .rightBox .itemList{ display: flex; flex-wrap: wrap; width: calc(100% + 15px); }
+.main .visualSection .halfBox .rightBox .itemList > li{ padding: 15px; width: calc(100% / 3); }
+.main .visualSection .halfBox .rightBox .itemList .item{ text-align: center; padding: 40px 20px; height: 245px; background-color: #fff; border-radius: 10px; box-shadow: 7px 12px 11px 0px rgba(0, 0, 0, 0.15); display: flex;  flex-direction: column; align-items: center; justify-content: center; }
+.main .visualSection .halfBox .rightBox .itemList .item .icon{ background-size: 50%; background-repeat: no-repeat; background-position: center; width: 100px; height: 100px; background-color: #7EB138; border-radius: 10px; }
+.main .visualSection .halfBox .rightBox .itemList .item .icon.icon1{ background-image: url('../img/main/visualSection/icon1.png'); }
+
+
+
+
+
+
+
+
+
