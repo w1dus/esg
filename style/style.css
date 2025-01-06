@@ -36,3 +36,82 @@ select::-ms-expand{ display:none; }
     .paging_box{ font-size: 13px; }
 } /* mobile */
 
+/* header */ 
+header{ position: fixed; z-index: 9999; left: 0; top: 0; width: 100%;  background-color: #fff; border-bottom: 4px solid #10975C; }
+header .memberSection{ padding: 10px 0; border-bottom: 1px solid #E4E4E4; }  
+header .memberSection .inner{ display: flex; justify-content: flex-end; }
+header .memberSection .menuList{ display: flex; align-items: center; gap: 4px; }
+header .memberSection .menuList .item{ font-size: 12px; color: #fff; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 5px; min-width: 92px; border-radius: 4px; background-color: #7EB138; }
+
+header .mainSection{ padding: 20px 0; }
+header .mainSection .inner{ display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+header .mainSection .menuList{ display: flex; flex-wrap: wrap; align-items: center; gap: 30px; }
+header .mainSection .menuList > li{ display: flex; justify-content: center; position: relative; }
+header .mainSection .menuList .subMenuList{ opacity: 0; visibility: hidden; transition: opacity .2s, visiblity .2s; }
+header .mainSection .menuList .subMenuBtn, header .mainSection .menuList .linkBtn{  padding: 10px 0; display: flex; align-items: center; gap: 5px; justify-content: space-between; }
+header .mainSection .menuList .subMenuBtn:hover + .subMenuList{ opacity: 1; visibility: visible; }  
+/* header .mainSection .menuList .subMenuBtn:hover .arrow{ transform: rotate(180deg); } */
+header .mainSection .menuList .subMenuBtn .arrow{ display: block; }
+header .mainSection .menuList .subMenuList{ text-align: center; min-width: 190px; position: absolute; top: calc(100% - 10px); background-color: #fff; padding: 12px; border-radius: 10px; box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25); }
+header .mainSection .menuList .subMenuList:hover{ opacity: 1; visibility: visible;  }
+header .mainSection .menuList .subMenuList > li{ padding: 10px 0; }
+header .mainSection .menuList .subMenuList > li + li{ border-top: 1px solid #D9D9D9; }
+header .mainSection .menuList .subMenuList .linkBtn{ justify-content: center; padding: 0; }
+header .mainSection .menuBtn{ display:none; border: none; background-color: transparent; }
+
+@media screen and (max-width: 1320px) { 
+    header .mainSection{ padding: 10px 0; }
+    header .mainSection .menuList{ display: none; }
+    header .mainSection .menuBtn{ display: block; } 
+    header .mainSection .menuBtn .icon{ width: 30px; }
+    header .mainSection .logo{ width: 70px; }
+
+    header .memberSection .menuList .item{ min-width: unset; padding: 5px 10px; }
+}
+
+/* .menuCloseBg */
+.menuCloseBg{ cursor: pointer; background-color: rgba(0, 0, 0, 0.25); position: fixed; width:100%; height: 100%; z-index: 9999; opacity: 0; visibility: hidden; transition: opacity .5s, visibility .5s; }
+.menuCloseBg.show{ opacity: 1; visibility: visible; }
+
+/* .rightMenuSection */
+.rightMenuSection{ width: 90%; background-color: #fff; max-width: 400px; transition: right .5s; position: fixed; right: -400px; top: 0; z-index: 9999; height: 100%; overflow-y: scroll; padding: 20px 0; }
+.rightMenuSection.show{ right: 0; }
+.rightMenuSection .btnWrap{ display: flex; align-items: center; justify-content: flex-end;  }
+.rightMenuSection .btnWrap .closeBtn{ padding: 0 20px; background: transparent; border: none;  }
+.rightMenuSection .btnWrap .closeBtn .icon{ width: 20px; }
+.rightMenuSection .menuList .item{ font-size: 18px; padding: 10px 20px; display: block; }
+.rightMenuSection .menuList .subMenuBtn{ display: flex; align-items: center; justify-content: space-between; gap: 5px; }
+.rightMenuSection .menuList .linkBtn{ display: flex; align-items: center; gap: 10px; }
+.rightMenuSection .menuList .subMenuList{ display: none; }
+.rightMenuSection .menuList .subMenuList .item{ padding: 5px 20px; font-size: 16px; color: #7f7f7f; }
+.rightMenuSection .menuList .subMenuBtn .arrow{ display: block; transition:trnsform .5s; }
+.rightMenuSection .menuList .subMenuBtn.active .arrow{ transform: rotate(180deg); }
+
+/* footer */
+footer{ background-color: #222; color: #fff; }
+footer .menuSection .inner{ display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+footer .menuSection .menuList{ display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+footer .menuSection .menuList .bar{ width: 1px; height: 10px; background-color: #7f7f7f; }
+footer .menuSection .siteList{ display: flex; gap: 20px;  }
+footer .menuSection .siteList .grayBg{ font-weight: 300; display: block; padding: 20px 15px; background-color: #353535; color: rgba(255, 255, 255, 0.4); }
+
+footer .mainSection { padding: 16px 0 27px 0; border-top: 1px solid rgba(255,255,255,0.2); }
+footer .mainSection .halfBox{ display: flex; align-items: flex-start; gap: 50px;  }
+footer .mainSection .halfBox .infoText{ word-break: keep-all; color: #7a7a7a; font-size: 18px; line-height: 1.5em;  }
+footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2); font-size: 14px; }
+
+@media screen and (max-width: 1250px) { 
+    footer{ font-size: 14px; }
+    footer .menuSection .siteList .grayBg{ padding: 15px 10px; }
+    footer .mainSection .halfBox .infoText{ font-size: inherit; }
+}
+@media screen and (max-width: 650px) { 
+    footer .menuSection{ padding: 20px 0; }
+    footer .menuSection .menuList{ width: 100%; gap: 20px; }
+    footer .menuSection .siteList .grayBg{ padding: 10px; }
+    footer .mainSection .halfBox{ flex-wrap: wrap; gap: 10px; }
+    footer .mainSection .halfBox .logo{ width:180px; max-width: 100%; }
+    footer .mainSection .halfBox .infoText{ width: 100%; }
+    footer .menuSection .menuList{ gap: 5px; }
+
+}
