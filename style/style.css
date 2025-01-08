@@ -408,6 +408,10 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .subBanner{ border-bottom: 4px solid #10975C; display: flex; align-items: center; justify-content: center; height: 180px; background-color: #222; background-size: cover; background-repeat: no-repeat; background-position: center; }
 .sub.sub01 .subBanner{ background-image: url('../img/sub01_1/bannerBg.png'); }
 .sub.sub02 .subBanner{ background-image: url('../img/sub02_1/bannerBg.png'); }
+.sub.sub03 .subBanner{ background-image: url('../img/sub03_1/bannerBg.png'); }
+.sub.sub04 .subBanner{ background-image: url('../img/sub04_1/bannerBg.png'); }
+
+
 .sub .subBanner .title{ color: #fff; text-align: center; font-size: 24px; font-weight: 700; }
 
 @media screen and (max-width: 650px) {
@@ -519,11 +523,40 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 
 }
 
+/* .sub03_1 .article01 */
+.sub03_1 .article01 .pcBox{ margin-top: 40px; }
+.sub03_1 .article01 .pcBox img{ max-width: 100%; }
+.sub03_1 .article01 .moBox{ display: none; }
 
+.sub03_1 .article01 .moBox .item + .item{ margin-top: 40px; }
+.sub03_1 .article01 .moBox .item .greenTitle{ text-align: center; background-color: #10965C; border-radius: 100px; padding: 20px 10px; color: #fff; font-size: 20px; }
+.sub03_1 .article01 .moBox .item .stepList{ margin-top: 40px; display: flex; flex-wrap: wrap; width: calc(100% + 10px); margin-left: -5px; }
+.sub03_1 .article01 .moBox .item .stepList > li{ padding: 5px; width: calc(100% / 2); }
+.sub03_1 .article01 .moBox .item .stepList .box .numberBox{ border-radius: 10px; border: 2px solid #10965C; padding: 10px; display: flex; align-items: flex-start; gap: 10px; }
+.sub03_1 .article01 .moBox .item .stepList .box .numberBox .number{ padding-top: 1.5%; flex-shrink: 0; width: 35px; height: 35px; flex-shrink: 0; border-radius:50%; background-color: #10965C; color: #fff; display: flex; align-items: center; justify-content: center;  }
+.sub03_1 .article01 .moBox .item .stepList .box .numberBox .text{ font-weight: 700; flex-grow: 1; margin-top: 10px; }
+.sub03_1 .article01 .moBox .item .stepList .box .subDotList{ margin-top: 10px; line-height: 1.2em; }
+.sub03_1 .article01 .moBox .item .contentBox{ margin-top: 34px; color: #222; }
+.sub03_1 .article01 .moBox .item .bottomBarBox{ margin-top: 30px; color: #10965C; padding-bottom: 10px; font-size: 22px; font-weight: 700; border-bottom: 1px solid #10965C; }
+.sub03_1 .article01 .moBox .item .bottomBarBox + .subDotList{ margin-top: 16px; }
 
+@media screen and (max-width: 950px) {
+    .sub03_1 .article01 .pcBox{ display: none; }
+    .sub03_1 .article01 .moBox{ display: block; margin-top: 40px; }
+}
 
+@media screen and (max-width: 650px) {
+    .sub03_1 .article01 .moBox .item br{ display: none; }
+    .sub03_1 .article01 .moBox .gray{ color: #7f7f7f; }
+    .sub03_1 .article01 .moBox .m-t{ margin-top: 20px; }
+}
+@media screen and (max-width: 470px) {
+    .sub03_1 .article01 .moBox .item .greenTitle{ font-size: 18px; }
+    .sub03_1 .article01 .moBox .item .stepList > li{ width: 100%; }
+}
 
-
-
+/* .sub04_1 .article01 */ 
+.sub04_1 .article01 .imgBox{ margin-top: 38px; }
+.sub04_1 .article01 .subDotList{ color: #7f7f7f; margin-top: 20px; }
 
 
