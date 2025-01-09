@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="memberSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./login.html" class="item">
+                                <img src="./img/header/icon1.png" alt="로그인" class="icon" />
+                                <div class="text">로그인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup.html" class="item">
+                                <img src="./img/header/icon2.png" alt="회원가입" class="icon" />
+                                <div class="text">회원가입</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./notice.html" class="item">
+                                <img src="./img/header/icon3.png" alt="공지사항" class="icon" />
+                                <div class="text">공지사항</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <a href="./index.html"><img src="./img/header/logo.png" alt="한국표준협회 KSA" class="logo"/></a>
+                    <ul class="menuList">
+                        <li><a href="./sub01_1.html">Why KSA ESG ?</a></li>
+                        <li>
+                            <a href="./sub02_1.html" class="subMenuBtn">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub02_1.html">동반위 협력사 ESG 진단</a></li>
+                                <li><a href="./sub02_2.html">KSA 공급망 ESG 진단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub03_1.html">ESG 전략수집</a></li>
+                        <li>
+                            <a href="./sub04_1.html" class="subMenuBtn">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub04_1.html">ESG 정보공시 자문</a></li>
+                                <li><a href="./sub04_2.html">ESG 정보공시 제3자 검증</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub05_1.html">ESG 인증</a></li>
+                        <li>
+                            <a href="#" target="_blank" class="linkBtn">온실가스 검인증 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                        </li>
+                        <li>
+                            <a href="./sub07_1.html" class="subMenuBtn">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="#" target="_blank" class="linkBtn">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                                <li><a href="#" class="linkBtn" target="_blank">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub08_1.html">ESG 표준</a></li>
+                        <li>
+                            <a href="./sub09_1.html" class="subMenuBtn">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub09_1.html">대회 개요</a></li>
+                                <li><a href="./sub09_2.html">보고서 DB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menuBtn">
+                        <img src="./img/header/sideMenuBtn.png" alt="햄버거메뉴" class="icon"/>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightMenuSection">
+            <div class="btnWrap">
+                <button type="button" class="closeBtn">
+                    <img src="./img/header/menuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <ul class="menuList">
+                <li><a href="./sub01_1.html" class="item">Why KSA ESG ?</a></li>
+                <li>
+                    <a href="./sub02_1.html" class="subMenuBtn item">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub02_1.html" class="item">동반위 협력사 ESG 진단</a></li>
+                        <li><a href="./sub02_2.html" class="item">KSA 공급망 ESG 진단</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03_1.html" class="item">ESG 전략수집</a></li>
+                <li>
+                    <a href="./sub04_1.htm" class="subMenuBtn item">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub04_1.html" class="item">ESG 정보공시 자문</a></li>
+                        <li><a href="./sub04_2.html" class="item">ESG 정보공시 제3자 검증</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" class="item">온실가스 검인증</a></li>
+                <li>
+                    <a href="./sub06_1.html" class="item" class="linkBtn">ESG 정보공시 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                </li>
+                <li>
+                    <a href="./sub07_1.html" class="subMenuBtn item">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="#" class="linkBtn item" target="_blank">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                        <li><a href="#" class="linkBtn item">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub08_1.html" class="item">ESG 표준</a></li>
+                <li>
+                    <a href="./sub09_1.html" class="subMenuBtn item">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub09_1.html" class="item">대회 개요</a></li>
+                        <li><a href="./sub09_2.html" class="item">보고서 DB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <main class="sub sec_top sub05 sub05_1">
+            <section class="subBanner">
+                <div class="inner">
+                    <div class="title">ESG 인증</div>
+                </div>
+            </section>
+            <section class="subContentSection">
+                <article class="article01">
+                    <div class="inner">
+                        <div class="subTitleDiv">
+                            <div class="bar"></div>
+                            <div class="title">ESG 관련인증</div>
+                        </div>
+
+                        <div class="greenBg">
+                            <img src="./img/sub05_1/img1.png" alt="ESG 관련 인증" class="img" />
+                        </div>
+
+                        <ul class="halfBox">
+                            <li>
+                                <div class="item">
+                                    <div class="box box1 tableHeader">
+                                        ESG 평가 항목 ( 출처 : 한국 ESG기준원 )
+                                    </div>
+                                    <div class="box box2 tableHeader">
+                                        KSA 인증
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="type1">
+                                <div class="item">
+                                    <div class="box box1 bgBox">
+                                        <img src="./img/sub05_1/e_icon.png" alt="E 환경" class="icon" />
+                                        <ul class="subDotList">
+                                            <li>리더십과 거버넌스</li>
+                                            <li>위험관리</li>
+                                            <li>운영 및 성과</li>
+                                            <li>이해관계자 소통</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box box2 contentBox">
+                                        <ul class="subDotList ">
+                                            <li>
+                                                <div class="greenText">ISO 14001</div>
+                                                <div class="content">
+                                                    환경경영에 대한 국제적 기준을 준용하여 기업의  환경성 제고 및 글로벌 경쟁력 확보 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="greenText">ISO 50001(에너지경영시스템)</div>
+                                                <div class="content">
+                                                    기업의 에너지 효율 향상을 위한 체계적인 시스템  구축으로 에너지 성과 개선 및 온실가스 배출 <br/> 
+                                                    절감으로 기후변화 완화에 기여
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="type2">
+                                <div class="item">
+                                    <div class="box box1 bgBox">
+                                        <img src="./img/sub05_1/s_icon.png" alt="s 사회" class="icon" />
+                                        <ul class="subDotList">
+                                            <li>리더십과 거버넌스</li>
+                                            <li>노동관행</li>
+                                            <li>직장 내 안전보건</li>
+                                            <li>인권</li>
+                                            <li>공정운영관행</li>
+                                            <li>지속가능한 소비</li>
+                                            <li>정보보호 및 개인정보보호</li>
+                                            <li>지역사회 참여 및 개발</li>
+                                            <li>이해관계자 소통</li>
+                                        </ul>
+                                    </div>
+                                    <div class="box box2 contentBox">
+                                        <ul class="subDotList halfList">
+                                            <li class="half">
+                                                <div class="greenText">ISO 45001(안전보건경영시스템)</div>
+                                                <div class="content">
+                                                    사업장에서 발생할 수 있는 각종  위험을 사전 예측 및
+                                                    예방하여 보다  안전한 근무환경 구축
+                                                </div>
+                                            </li>
+                                            <li class="half">
+                                                <div class="greenText">ISO 45001(안전보건경영시스템)</div>
+                                                <div class="content">
+                                                    중단적(disruptive) 사고가 발생했을 때 조직이 이에 대한 
+                                                    방어, 발생가능성의  감축, 대비, 대응 및 복구를 하도록 돕고 
+                                                    훨씬 더 복원력이 있는 사회에 공헌
+                                                </div>
+                                            </li>
+                                            <li class="half">
+                                                <div class="greenText">ISO/IEC 27001(정보보호경영시스템)</div>
+                                                <div class="content">
+                                                    정보보호에 대한 각종 리스크를 예방하여  이해관계자
+                                                    에게 신뢰성을 제공
+                                                </div>
+                                            </li>
+                                            <li class="half">
+                                                <div class="greenText">ISO 20121(이벤트지속성경영시스템)</div>
+                                                <div class="content">
+                                                    MICE 산업 관련 업계에 경제, 환경,  사회적인 영향에 적절히 
+                                                    대응하고 통제할  수 있는 체계적인 이벤트 경영기법 제공
+                                                </div>
+                                            </li>
+                                            <li class="half">
+                                                <div class="greenText">인권경영우수기업인증</div>
+                                                <div class="content">
+                                                    국가인권위원회 ‘공공기관 인권  경영매뉴얼’의 
+                                                    요구사항을 충족하고  공공기관의 인권경영 정책을 
+                                                    준용하여  인권경영 성과 제고
+                                                </div>
+                                            </li>
+                                            <li class="half">
+                                                <div class="greenText">ISO/IEC 27001(정보보호경영시스템)</div>
+                                                <div class="content">
+                                                    ISO 30405, ‘공정채용 가이드북’,  ‘채용절차 공정화에 관한 
+                                                    법률’ 등 다양한  요구사항을 준용하여 선진화된 채용  
+                                                    프로세스 구축
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="type2">
+                                <div class="item">
+                                    <div class="box box1 bgBox bg2">
+                                        <img src="./img/sub05_1/g_icon.png" alt="g 지배구조" class="icon" />
+                                        <div class="leftListHalf">
+                                            <div class="listWrap">
+                                                <div class="liteTitle">(일반기업)</div>
+                                                <ul class="subDotList">
+                                                    <li>이사회 리더십</li>
+                                                    <li>주주권 보호</li>
+                                                    <li>감사</li>
+                                                    <li>이해관계자 소통</li>
+                                                </ul>
+                                            </div>
+                                            <div class="listWrap">
+                                                <div class="liteTitle">(금융사)</div>
+                                                <ul class="subDotList">
+                                                    <li>이사회</li>
+                                                    <li>주주권 보호</li>
+                                                    <li>최고경영자</li>
+                                                    <li>보수</li>
+                                                    <li>위험관리</li>
+                                                    <li>감사기구 및</li>
+                                                    <li>내부통제</li>
+                                                    <li>이해관계자 소통</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box box2 contentBox">
+                                        <ul class="subDotList ">
+                                            <li>
+                                                <div class="greenText color2">ISO 37001(부패방지경영시스템)</div>
+                                                <div class="content">
+                                                    다양한 윤리적 이슈와 반부패 법규 등 부패  리스크에 대해 체계적인 대응책을 마련하여  청렴경영 선도
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="greenText color2"> ISO 37301[준법(규범준수)경영시스템]</div>
+                                                <div class="content">
+                                                    법률, 규정, 규범, 행동 윤리강령 등과 관련된  의무를 수행하여 기업의 준법 인식 제고
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            
+
+
+            <section class="mainApplySection">
+                <div class="inner">
+                    <div class="mainTitleBox">
+                        <div class="bar"></div>
+                        <div class="koTitle">문의하기</div>
+                    </div>
+                    <ul class="itemList">
+                        <li>
+                            <a href="tel:02-6240-4870">
+                                <div class="item">
+                                    <div class="text">동반위 협력사<br>ESG 지원</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4870</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4741">
+                                <div class="item">
+                                    <div class="text">ESG 전략 · 정보공시<br>자문 제 3자 검증</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4741</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4741">
+                                <div class="item">
+                                    <div class="text">온실가스<br>검인증</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4469</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4700">
+                                <div class="item">
+                                    <div class="text">ESG 표준</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4700</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4741">
+                                <div class="item">
+                                    <div class="text">KSA 공급망<br>ESG 진단</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4741</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4670">
+                                <div class="item">
+                                    <div class="text">ESG 인증</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4670</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4670">
+                                <div class="item">
+                                    <div class="text">ESG 교육</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-5630</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:02-6240-4741">
+                                <div class="item">
+                                    <div class="text">대한민국 지속<br>가능성 대회</div>
+                                    <div class="numberBox">
+                                        <img src="./img/main/applySection/tel_icon.png" alt="전화아이콘" class="icon">
+                                        <div class="text">02-6240-4741</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- 개인정보 처리방침 -->
+        <section class="f_popup_bg">
+            <div class="popup_box">
+                <div class="btn_wrap">
+                    <p class="btn">
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <div class="content_wrap">
+                    <p class="title"> 개인정보처리방침 </p>
+                    <p class="content"> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="menuSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li><a href="#">로그인</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#" class="privacy_view">개인정보 처리방침</a></li>
+                    </ul>
+
+                    <ul class="siteList">
+                        <li><a href="#" class="grayBg" target="_blank">한국 표준협회 공식 홈페이지</a></li>
+                        <li><a href="#" class="grayBg" target="_blank">KSA EDU</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <div class="halfBox">
+                        <img src="./img/footer/logo.png" alt="KSA 한국표준협회 ESG 경영추진단" class="logo" />
+                        <div class="infoText">
+                            한국표준협회 ESG경영추진단 본부 06160 서울시 강남구 테헤란로 69길 5 (삼성동, DT센터)<br/>
+                            대표전화 : 1670-6009
+                        </div>
+                    </div>
+                    <div class="copy_right">© KOREAN STANDARDS ASSOCIATION. All rights reserved.</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

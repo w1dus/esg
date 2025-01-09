@@ -410,6 +410,8 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub.sub02 .subBanner{ background-image: url('../img/sub02_1/bannerBg.png'); }
 .sub.sub03 .subBanner{ background-image: url('../img/sub03_1/bannerBg.png'); }
 .sub.sub04 .subBanner{ background-image: url('../img/sub04_1/bannerBg.png'); }
+.sub.sub05 .subBanner{ background-image: url('../img/sub05_1/bannerBg.png'); }
+.sub.sub06 .subBanner{ background-image: url('../img/sub06_1/bannerBg.png'); }
 
 
 .sub .subBanner .title{ color: #fff; text-align: center; font-size: 24px; font-weight: 700; }
@@ -428,6 +430,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 /* .sub .subTitleDiv */
 .sub .subTitleDiv .bar{ width: 60px; height: 6px; background-color: #10975C; }
 .sub .subTitleDiv .title{ font-size: 32px; font-weight: 700; margin-top: 10px; }
+.sub .subTitleDiv .title .green{ color: #10975C; }
 .sub .subTitleDiv .content{ margin-top: 20px; line-height: 1.5em; color: #7F7F7F; word-break: keep-all; }
 
 @media screen and (max-width: 1250px) {
@@ -559,4 +562,164 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub04_1 .article01 .imgBox{ margin-top: 38px; }
 .sub04_1 .article01 .subDotList{ color: #7f7f7f; margin-top: 20px; }
 
+/* .sub04_2 .article01 */ 
+.sub04_2 .article01 .halfBox{ word-break: keep-all; margin-top: 54px; display: flex;  flex-wrap: wrap; width: calc(100% + 20px); margin-left: -10px; }
+.sub04_2 .article01 .halfBox > li{ padding: 10px; width: calc(100% / 4); }
+.sub04_2 .article01 .halfBox > li:nth-child(2){ width: 50%; }
+/* .sub04_2 .article01 .halfBox > li:nth-child(2) .item{ background-color: ; } */
+
+
+.sub04_2 .article01 .halfBox .item .greenBoxTitle{ font-size: 20px; padding: 10px; border-radius: 1000px; background-color: #10965C; color: #fff; text-align: center; word-break: keep-all;  }
+.sub04_2 .article01 .halfBox .item .img1{ max-width: 100%; display: block; margin: 18px auto 0 auto; }
+.sub04_2 .article01 .halfBox .item .borderTextBox{ font-size: 20px; text-align: center; margin-top: 30px; border: 2px solid #10965C; padding: 10px; border-radius: 1000px; }
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox{ background: #fff; text-align: center; display: flex; align-items: center; gap: 10px; }
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .number{ border-radius: 1000px; padding: 10px 20px; color: #fff; background: #10965C;  }
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .text{ font-weight: 700; flex-grow: 1; color: #10965C; font-size: 20px; padding-right: 110px; }
+
+.sub04_2 .article01 .halfBox > li:nth-child(2) .contentWrap{ margin-top: 20px; padding: 5px 20px 20px 20px; border-radius: 10px; background: #E8F5EF;  }
+
+
+.sub04_2 .article01 .halfBox .item .subDotList{ margin-top: 10px; line-height: 1.25em; }
+.sub04_2 .article01 .halfBox .item .subDotList.gray{ color: #7F7F7F; font-size: 16px; }
+
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox2{ padding: 12px 15px; display: flex; gap: 10px; align-items: center; }
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox2 .number2{ padding-top: 1.2%; flex-shrink: 0; width: 36px; height: 36px; color: #fff; background: #10965C; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.sub04_2 .article01 .halfBox .item .borderTextBox.numberBox2 .text{ flex-grow: 1; padding-right: 30px; }
+
+.sub04_2 .article01 .halfBox > li:nth-child(3) .numberBox2 + .numberBox2{ margin-top: 220px; }
+.sub04_2 .article01 .centerText{ text-align: center; margin-top: 76px; line-height: 1.5em; font-size: 24px; font-weight: 700; }
+.sub04_2 .article01 .img2{ display:block; margin: 0 auto; margin-top: 36px; max-width: 100%; }
+.sub04_2 .article01 .subDotList.bottom{ margin-top: 10px; color: #7f7f7f; }
+.sub04_2 .article01 .btnWrap{ margin-top: 44px; display: flex; align-items: center; justify-content: center; }
+.sub04_2 .article01 .btnWrap .moreBtn{ width: 100%; max-width: 540px; background: #17593D; padding: 25px 10px; color: #fff; text-align: center;  }
+
+
+@media screen and (max-width: 1105px) {
+    .sub04_2 .article01 .halfBox > li:nth-child(3) .numberBox2 + .numberBox2{ margin-top: 200px; }
+}
+@media screen and (max-width: 1250px) {
+    .sub04_2 .article01 .halfBox .item .borderTextBox{ font-size: 18px; }
+}
+@media screen and (max-width: 1000px) {
+    .sub04_2 .article01 .halfBox > li{ width: 100%; }
+    .sub04_2 .article01 .halfBox > li:nth-child(2){ width: 100%; }
+    .sub04_2 .article01 .halfBox .item .subDotList{ display: flex; flex-direction: column; align-items: center; }
+    .sub04_2 .article01 .halfBox > li:nth-child(3) .numberBox2 + .numberBox2{ margin-top: 20px; }
+    .sub04_2 .article01 .centerText{ font-size:18px; margin-top: 40px; }
+    .sub04_2 .article01 .centerText br{ display: none; }
+}
+
+@media screen and (max-width: 650px) {
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .number{ font-size: 14px; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .text{ padding-right:80px; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .text br{ display: none; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .text{ font-size: 18px; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox2 .number2{ font-size: 14px; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox2 .number{ font-size: 14px; }
+    .sub04_2 .article01 .btnWrap .moreBtn{ padding: 15px 10px; }
+    .sub04_2 .article01 .centerText{ font-size: 14px; }
+
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox{ padding: 5px; }
+    .sub04_2 .article01 .halfBox .item .borderTextBox.numberBox .text{ font-size: 16px; }
+
+}
+
+/* .sub05_1 .article01 */
+.sub05_1 .article01{ word-break: keep-all; overflow: hidden; }
+.sub05_1 .article01 .greenBg{ margin-top: 40px; padding: 40px; border-radius: 10px; background-color: #E8F5EF;  }
+.sub05_1 .article01 .greenBg .img{ max-width: 100%; }
+
+.sub05_1 .article01 .halfBox{ margin-top: 40px; display: flex; flex-wrap:wrap; }
+.sub05_1 .article01 .halfBox > li{ width: 100%; }
+.sub05_1 .article01 .halfBox > li + li{ margin-top: 42px; }
+.sub05_1 .article01 .halfBox .item{ display: flex; flex-wrap: wrap; justify-content: space-between; }
+.sub05_1 .article01 .halfBox .box1{ width: calc(40% - 10px); }
+.sub05_1 .article01 .halfBox .box2{ width: calc(60% - 10px); }
+.sub05_1 .article01 .halfBox .tableHeader{ font-size: 20px; padding: 18px 20px; text-align: center; color: #fff; border-radius:1000px; background-color: #10965C;  }
+.sub05_1 .article01 .halfBox .bgBox{ background-color: #10965C; color: #fff; border-radius:10px; display: flex; align-items: center; gap: 13px; padding:15px 26px; }
+.sub05_1 .article01 .halfBox .bgBox.bg2{ background-color: #17593D; }
+.sub05_1 .article01 .halfBox .bgBox .subDotList{ color: #fff; font-size: 16px; margin-top: 5px; }
+.sub05_1 .article01 .halfBox .bgBox .icon{ flex-shrink: 0; }
+.sub05_1 .article01 .halfBox .contentBox .subDotList{ flex-wrap: wrap; margin-top: 10px; font-size: 16px; display: flex; flex-direction: column; gap: 26px; }
+.sub05_1 .article01 .halfBox .contentBox .subDotList.halfList{ flex-direction: row; }
+.sub05_1 .article01 .halfBox .contentBox .subDotList > li.half{ width: calc((100% / 2) - 13px); }
+.sub05_1 .article01 .halfBox .contentBox .subDotList .greenText{ font-size: 20px; color: #10965C; font-size: 20px; }
+.sub05_1 .article01 .halfBox .contentBox .subDotList .content{ margin-top: 5px; color: #7F7F7F; }
+
+.sub05_1 .article01 .halfBox .bgBox .leftListHalf{ display: flex; gap: 10px; }
+.sub05_1 .article01 .halfBox .bgBox .leftListHalf .listWrap{ flex-grow: 1; }
+
+.sub05_1 .article01 .halfBox .contentBox .subDotList .greenText.color2{ color: #17593D; }
+
+.sub05_1 .article01 .halfBox > li.type2{ padding-top: 40px;  border-top: 1px solid #D9D9D9;}
+
+
+@media screen and (max-width: 1250px) {
+    .sub05_1 .article01 .halfBox .tableHeader{ font-size: 16px; }
+}
+@media screen and (max-width: 1030px) { 
+    .sub05_1 .article01 .halfBox > li.type1{ padding-top: 40px;  border-top: 1px solid #D9D9D9;}
+    .sub05_1 .article01 .halfBox .item{ flex-direction: column; gap: 10px; }
+    .sub05_1 .article01 .halfBox .tableHeader{ width: 100%; }
+
+    .sub05_1 .article01 .halfBox .box1{ width: 100%; }
+    .sub05_1 .article01 .halfBox .box2{ width: 100%; }
+}
+@media screen and (max-width: 950px) {
+    .sub05_1 .article01 .greenBg{ padding: 20px; }
+    .sub05_1 .article01 .halfBox .contentBox .subDotList > li.half{ width: 100%; }
+    .sub05_1 .article01 .halfBox .bgBox .leftListHalf{ flex-direction: column; }
+    .sub05_1 .article01 .halfBox .bgBox .subDotList{ display: flex; flex-wrap: wrap; gap: 5px; margin-right: 5px; }
+}
+@media screen and (max-width: 650px) {
+    .sub05_1 .article01 .greenBg{ padding: 10px; margin-top: 20px; }
+    .sub05_1 .article01 .halfBox .box1{ padding: 10px; gap: 15px; font-size: 14px; }
+    .sub05_1 .article01 .halfBox .box2{ padding: 10px; }
+    .sub05_1 .article01 .halfBox .bgBox .icon{ width: 80px; height: 80px; }
+    .sub05_1 .article01 .halfBox > li.type1, .sub05_1 .article01 .halfBox > li.type2{ margin-top: 20px; }
+    .sub05_1 .article01 .halfBox .tableHeader{ font-size: 14px; }
+    .sub05_1 .article01 .halfBox .bgBox .subDotList{ font-size: 14px; }
+    .sub05_1 .article01 .halfBox .contentBox .subDotList{ gap: 10px; }
+    .sub05_1 .article01 .halfBox .contentBox .subDotList .greenText{ font-size: 16px; }
+    .sub05_1 .article01 .halfBox .contentBox .subDotList .content{ font-size: 14px; }
+}
+
+/* .sub06_1 .article01 */
+.sub06_1 .article01 .content1{ margin-top: 24px; line-height: 1.5em; font-size: 18px; }
+.sub06_1 .article01 .tableWrap{ margin-top: 46px; }
+.sub06_1 .article01 .tableWrap .greenText{ color: #10965C; } 
+.sub06_1 .article01 .tableWrap .tableBox{ margin-top: 5px; }
+.sub06_1 .article01 .tableWrap .tableBox .row{ display: flex; }
+.sub06_1 .article01 .tableWrap .tableBox .box{ padding: 15px;  }
+.sub06_1 .article01 .tableWrap .tableBox .box1{ width: 15%; flex-shrink: 0; }
+.sub06_1 .article01 .tableWrap .tableBox .box2{ width: calc(85% / 3); } 
+.sub06_1 .article01 .tableWrap .tableBox .box3{ width: calc(85% / 3); } 
+.sub06_1 .article01 .tableWrap .tableBox .box4{ width: calc(85% / 3); } 
+.sub06_1 .article01 .tableWrap .tableBox .head .box{ background-color: #10965C; color: #fff; } 
+.sub06_1 .article01 .tableWrap .tableBox .head .box + .box{ border-left: 1px solid #fff; }
+.sub06_1 .article01 .tableWrap .tableBox .center{ text-align: center; }
+.sub06_1 .article01 .tableWrap .tableBox .body { border-bottom: 1px solid #10965C; }
+.sub06_1 .article01 .tableWrap .tableBox .body .row{ border-bottom: 1px solid #E4E4E4; }
+.sub06_1 .article01 .tableWrap .tableBox .body .contentDiv{ display: flex; flex-grow: 1; flex-direction: column; }
+.sub06_1 .article01 .tableWrap .tableBox .body .box1{ color: #10965C; width: 15%; display: flex; align-items: center; justify-content: center; }
+.sub06_1 .article01 .tableWrap .tableBox .body .box2{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
+.sub06_1 .article01 .tableWrap .tableBox .body .box3{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
+.sub06_1 .article01 .tableWrap .tableBox .body .box4{ width: calc(100% / 3); }
+.sub06_1 .article01 .tableWrap .bg2{ background-color: rgba(16, 150, 92, 0.1); border-right: 1px solid #10965C;  }
+
+@media screen and (max-width: 1250px) {
+    .sub06_1 .article01 .content1{ font-size: 16px; }
+}
+@media screen and (max-width: 800px) {
+    .sub06_1 .article01 .tableWrap .tableBox{ font-size: 14px; }
+}
+@media screen and (max-width: 650px) {
+    .sub06_1 .article01 .tableWrap .tableBox{ font-size: 3vw; }
+    .sub06_1 .article01 .tableWrap .tableBox .box{ padding: 2vw; }
+    .sub06_1 .article01 .tableWrap .tableBox .box1{ width: 16vw; }
+    .sub06_1 .article01 .tableWrap .tableBox .body .box1{ width: 16vw; }
+    .sub06_1 .article01 .tableWrap .tableBox .box2{ width: calc((100% - 16vw) / 3); }
+    .sub06_1 .article01 .tableWrap .tableBox .box3{ width: calc((100% - 16vw) / 3); }
+    .sub06_1 .article01 .tableWrap .tableBox .box4{ width: calc((100% - 16vw) / 3); }
+}
 
