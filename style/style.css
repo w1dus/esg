@@ -684,42 +684,63 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub05_1 .article01 .halfBox .contentBox .subDotList .content{ font-size: 14px; }
 }
 
-/* .sub06_1 .article01 */
-.sub06_1 .article01 .content1{ margin-top: 24px; line-height: 1.5em; font-size: 18px; }
-.sub06_1 .article01 .tableWrap{ margin-top: 46px; }
-.sub06_1 .article01 .tableWrap .greenText{ color: #10965C; } 
-.sub06_1 .article01 .tableWrap .tableBox{ margin-top: 5px; }
-.sub06_1 .article01 .tableWrap .tableBox .row{ display: flex; }
-.sub06_1 .article01 .tableWrap .tableBox .box{ padding: 15px;  }
-.sub06_1 .article01 .tableWrap .tableBox .box1{ width: 15%; flex-shrink: 0; }
-.sub06_1 .article01 .tableWrap .tableBox .box2{ width: calc(85% / 3); } 
-.sub06_1 .article01 .tableWrap .tableBox .box3{ width: calc(85% / 3); } 
-.sub06_1 .article01 .tableWrap .tableBox .box4{ width: calc(85% / 3); } 
-.sub06_1 .article01 .tableWrap .tableBox .head .box{ background-color: #10965C; color: #fff; } 
-.sub06_1 .article01 .tableWrap .tableBox .head .box + .box{ border-left: 1px solid #fff; }
-.sub06_1 .article01 .tableWrap .tableBox .center{ text-align: center; }
-.sub06_1 .article01 .tableWrap .tableBox .body { border-bottom: 1px solid #10965C; }
-.sub06_1 .article01 .tableWrap .tableBox .body .row{ border-bottom: 1px solid #E4E4E4; }
-.sub06_1 .article01 .tableWrap .tableBox .body .contentDiv{ display: flex; flex-grow: 1; flex-direction: column; }
-.sub06_1 .article01 .tableWrap .tableBox .body .box1{ color: #10965C; width: 15%; display: flex; align-items: center; justify-content: center; }
-.sub06_1 .article01 .tableWrap .tableBox .body .box2{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
-.sub06_1 .article01 .tableWrap .tableBox .body .box3{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
-.sub06_1 .article01 .tableWrap .tableBox .body .box4{ width: calc(100% / 3); }
-.sub06_1 .article01 .tableWrap .bg2{ background-color: rgba(16, 150, 92, 0.1); border-right: 1px solid #10965C;  }
+/* .sub08_1 .article01 */
+.sub08_1 .article01 .content1{ margin-top: 24px; line-height: 1.5em; font-size: 18px; }
+.sub08_1 .article01 .tableWrap{ margin-top: 46px; }
+.sub08_1 .article01 .tableWrap .greenText{ color: #10965C; } 
+.sub08_1 .article01 .tableWrap .tableBox{ margin-top: 5px; }
+.sub08_1 .article01 .tableWrap .tableBox .row{ display: flex; }
+.sub08_1 .article01 .tableWrap .tableBox .box{ padding: 15px; word-break: keep-all; }
+.sub08_1 .article01 .tableWrap .tableBox .box1{ width: 15%; flex-shrink: 0; }
+.sub08_1 .article01 .tableWrap .tableBox .box2{ width: calc(85% / 3); } 
+.sub08_1 .article01 .tableWrap .tableBox .box3{ width: calc(85% / 3); } 
+.sub08_1 .article01 .tableWrap .tableBox .box4{ width: calc(85% / 3); } 
+.sub08_1 .article01 .tableWrap .tableBox .head .box{ background-color: #10965C; color: #fff; } 
+.sub08_1 .article01 .tableWrap .tableBox .head .box + .box{ border-left: 1px solid #fff; }
+.sub08_1 .article01 .tableWrap .tableBox .center{ text-align: center; }
+.sub08_1 .article01 .tableWrap .tableBox .body { border-bottom: 1px solid #10965C; }
+.sub08_1 .article01 .tableWrap .tableBox .body .row{ border-bottom: 1px solid #E4E4E4; }
+.sub08_1 .article01 .tableWrap .tableBox .body .contentDiv{ display: flex; flex-grow: 1; flex-direction: column; }
+.sub08_1 .article01 .tableWrap .tableBox .body .box1{ color: #10965C; width: 15%; display: flex; align-items: center; justify-content: center; }
+.sub08_1 .article01 .tableWrap .tableBox .body .box2{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
+.sub08_1 .article01 .tableWrap .tableBox .body .box3{ width: calc(100% / 3); border-right: 1px solid #E4E4E4; }
+.sub08_1 .article01 .tableWrap .tableBox .body .box4{ width: calc(100% / 3); }
+.sub08_1 .article01 .tableWrap .bg2{ background-color: rgba(16, 150, 92, 0.1); border-right: 1px solid #10965C;  }
 
 @media screen and (max-width: 1250px) {
-    .sub06_1 .article01 .content1{ font-size: 16px; }
+    .sub08_1 .article01 .content1{ font-size: 16px; }
 }
 @media screen and (max-width: 800px) {
-    .sub06_1 .article01 .tableWrap .tableBox{ font-size: 14px; }
+    .sub08_1 .article01 .tableWrap .tableBox{ font-size: 14px; }
 }
 @media screen and (max-width: 650px) {
-    .sub06_1 .article01 .tableWrap .tableBox{ font-size: 3vw; }
-    .sub06_1 .article01 .tableWrap .tableBox .box{ padding: 2vw; }
-    .sub06_1 .article01 .tableWrap .tableBox .box1{ width: 16vw; }
-    .sub06_1 .article01 .tableWrap .tableBox .body .box1{ width: 16vw; }
-    .sub06_1 .article01 .tableWrap .tableBox .box2{ width: calc((100% - 16vw) / 3); }
-    .sub06_1 .article01 .tableWrap .tableBox .box3{ width: calc((100% - 16vw) / 3); }
-    .sub06_1 .article01 .tableWrap .tableBox .box4{ width: calc((100% - 16vw) / 3); }
+    .sub08_1 .article01 .tableWrap .tableBox{ font-size: 3vw; }
+    .sub08_1 .article01 .tableWrap .tableBox .box{ padding: 2vw; }
+    .sub08_1 .article01 .tableWrap .tableBox .box1{ width: 16vw; }
+    .sub08_1 .article01 .tableWrap .tableBox .body .box1{ width: 16vw; }
+    .sub08_1 .article01 .tableWrap .tableBox .box2{ width: calc((100% - 16vw) / 3); }
+    .sub08_1 .article01 .tableWrap .tableBox .box3{ width: calc((100% - 16vw) / 3); }
+    .sub08_1 .article01 .tableWrap .tableBox .box4{ width: calc((100% - 16vw) / 3); }
 }
+
+/* .sub08_1 .article01 */
+.sub08_1 .article01 .halfBox{ display: flex; flex-wrap: wrap; margin-top: 76px; width: calc(100% + 20px); margin-left: -10px; }
+.sub08_1 .article01 .halfBox .box{ padding: 10px;  }
+.sub08_1 .article01 .halfBox > li{ width: 50%; }
+.sub08_1 .article01 .halfBox .box .content{ font-size: 18px; line-height: 1.5em; }
+.sub08_1 .article01 .halfBox .box .subTitleDiv .titleWrap{ display: flex; align-items: flex-end; gap: 10px; justify-content: space-between; }
+.sub08_1 .article01 .halfBox .box .subTitleDiv .titleWrap .subTitle{ color: #222; }
+.sub08_1 .article01 .halfBox .downloadBtn{ background-image: url('../img/boardImg/folder.png'); background-repeat: no-repeat; background-position: left 15px center; margin-top: 10px; width: 100%; padding: 15px; padding-left: 60px;  background-color: #fff; border: 1px solid #e6e6e6; border-radius: 8px; display: block; }
+.sub08_1 .article01 .halfBox .downloadBtn .info{ color: #999; font-size: 14px; line-height: 1em; }
+
+@media screen and (max-width: 900px) {
+    .sub08_1 .article01 .halfBox > li{ width: 100%; }
+}
+@media screen and (max-width: 650px) {
+    .sub08_1 .article01 .halfBox .box .subTitleDiv .titleWrap .subTitle{ font-size: 14px; }
+
+}
+
+
+
 
