@@ -807,6 +807,49 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 
+/* 피그마 플로우 부분 */
+
+/* 로그인페이지 */
+.subLoginSection{ padding: 120px 0; display: flex; align-items: center; justify-content: center; background-color: #10965C; background-image: url('../img/login/background.png'); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.subLoginSection .inner{ max-width: 100%; width: auto; }
+.subLoginSection .whiteBox{ width: 600px; max-width: 100%; background-color: #fff; padding: 40px; border-radius: 20px; }
+.subLoginSection .whiteBox .logo{ display: block; margin: 0 auto; max-width: 100%; }
+.subLoginSection .whiteBox .companyName{ text-align: center; margin-top: 10px; font-size: 22px; font-weight: 700; }
+.subLoginSection .whiteBox .content{ word-break: keep-all; margin-top: 10px; text-align: center; color: #7F7F7F; line-height: 1.25em;  }
+.subLoginSection .whiteBox .content .green{ color: #10965C; }
+.subLoginSection .whiteBox .loginFormList{ margin: 28px auto 0 auto; max-width: 428px; width: 100%; }
+.subLoginSection .whiteBox .loginFormList > li + li{ margin-top: 14px; }
+.subLoginSection .whiteBox .loginFormList .ipt{ background-position: left 15px center; background-repeat: no-repeat; border-radius: 100px; background-color: #F8F8F8; padding: 15px; padding-left: 55px; border: 1px solid #F8F8F8; }
+.subLoginSection .whiteBox .loginFormList .ipt::placeholder{ color:#AFAFAF; }
+.subLoginSection .whiteBox .loginFormList .ipt:focus{ border:1px solid #f8f8f8 !important; box-shadow: unset !important;  }
+.subLoginSection .whiteBox .loginFormList .ipt.email{ background-image: url('../img/login/email.png') !important; }
+.subLoginSection .whiteBox .loginFormList .ipt.password{ background-image: url('../img/login/password.png') !important; }
+.subLoginSection .whiteBox .loginBtn{ border: none; margin: 14px auto 0 auto; display: block; padding: 15px 20px; color: #fff; font-weight: 700; border-radius: 20px; width: 100%; max-width: 446px; background-color: #10965C; }
+.subLoginSection .whiteBox .loginMenuBox{ margin-top: 14px; display: flex; gap: 20px; justify-content: center; color: #7F7F7F; }
+
+@media screen and (max-width: 650px) {
+    .subLoginSection{ padding: 100px 0; }
+    .subLoginSection .whiteBox .companyName{  font-size: 18px;}
+    .subLoginSection .whiteBox .content{ font-size: 14px; }
+    .subLoginSection .whiteBox .loginMenuBox{ font-size: 14px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
