@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="memberSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./login.html" class="item">
+                                <img src="./img/header/icon1.png" alt="로그인" class="icon" />
+                                <div class="text">로그인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup_category.html" class="item">
+                                <img src="./img/header/icon2.png" alt="회원가입" class="icon" />
+                                <div class="text">회원가입</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./notice.html" class="item">
+                                <img src="./img/header/icon3.png" alt="공지사항" class="icon" />
+                                <div class="text">공지사항</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <a href="./index.html"><img src="./img/header/logo.png" alt="한국표준협회 KSA" class="logo"/></a>
+                    <ul class="menuList">
+                        <li><a href="./sub01_1.html">Why KSA ESG ?</a></li>
+                        <li>
+                            <a href="./sub02_1.html" class="subMenuBtn">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub02_1.html">동반위 협력사 ESG 진단</a></li>
+                                <li><a href="./sub02_2.html">KSA 공급망 ESG 진단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub03_1.html">ESG 전략수집</a></li>
+                        <li>
+                            <a href="./sub04_1.html" class="subMenuBtn">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub04_1.html">ESG 정보공시 자문</a></li>
+                                <li><a href="./sub04_2.html">ESG 정보공시 제3자 검증</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub05_1.html">ESG 인증</a></li>
+                        <li>
+                            <a href="#" target="_blank" class="linkBtn">온실가스 검인증 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                        </li>
+                        <li>
+                            <a href="./sub07_1.html" class="subMenuBtn">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="#" target="_blank" class="linkBtn">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                                <li><a href="#" class="linkBtn" target="_blank">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub08_1.html">ESG 표준</a></li>
+                        <li>
+                            <a href="./sub09_1.html" class="subMenuBtn">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub09_1.html">대회 개요</a></li>
+                                <li><a href="./sub09_2.html">보고서 DB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menuBtn">
+                        <img src="./img/header/sideMenuBtn.png" alt="햄버거메뉴" class="icon"/>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightMenuSection">
+            <div class="btnWrap">
+                <button type="button" class="closeBtn">
+                    <img src="./img/header/menuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <ul class="menuList">
+                <li><a href="./sub01_1.html" class="item">Why KSA ESG ?</a></li>
+                <li>
+                    <a href="./sub02_1.html" class="subMenuBtn item">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub02_1.html" class="item">동반위 협력사 ESG 진단</a></li>
+                        <li><a href="./sub02_2.html" class="item">KSA 공급망 ESG 진단</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03_1.html" class="item">ESG 전략수집</a></li>
+                <li>
+                    <a href="./sub04_1.htm" class="subMenuBtn item">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub04_1.html" class="item">ESG 정보공시 자문</a></li>
+                        <li><a href="./sub04_2.html" class="item">ESG 정보공시 제3자 검증</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" class="item">온실가스 검인증</a></li>
+                <li>
+                    <a href="./sub06_1.html" class="item" class="linkBtn">ESG 정보공시 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                </li>
+                <li>
+                    <a href="./sub07_1.html" class="subMenuBtn item">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="#" class="linkBtn item" target="_blank">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                        <li><a href="#" class="linkBtn item">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub08_1.html" class="item">ESG 표준</a></li>
+                <li>
+                    <a href="./sub09_1.html" class="subMenuBtn item">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub09_1.html" class="item">대회 개요</a></li>
+                        <li><a href="./sub09_2.html" class="item">보고서 DB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <main class="sub sec_top signup">
+            <section class="signupCategorySection">
+                <div class="inner">
+                    <div class="whiteBox">
+                        <div class="btnBox">
+                            <a href="./company_mypage.html" class="backBtn">
+                                <img src="./img/signupCategory/back_icon.png" alt="뒤로가기"> 뒤로가기
+                            </a>
+                        </div>
+                        <div class="bottomBarTitle">
+                            <div class="text">
+                                KSA 한국표준협회 <span class="blue">기업대표계정 정보수정</span>
+                            </div>
+                        </div>
+                       <ul class="formList">
+                           <li class="half">
+                                <div class="label">이메일(아이디) </span></div>
+                                <div class="iptBox btnIpt">
+                                    <!-- <input type="text" class="ipt" placeholder="이메일을 입력해주세요."/>
+                                        <button type="button" class="grayBtn">중복확인</button> -->
+                                    jobofbrothers@naver.com
+                                </div>
+                           </li>
+                           <li class="half">
+                                <div class="label">사업자 등록번호 (법인등록번호) <span class="red">*</span></div>
+                                <div class="iptBox btnIpt">
+                                    <!-- <input type="text" class="ipt" placeholder="000-00-00000 형식으로 입력해주세요."/>
+                                    <button type="button" class="grayBtn">중복확인</button> -->
+                                    852-14-02099
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">비밀번호 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="password" class="ipt" placeholder="비밀번호를 입력해주세요."/>
+                                    <div class="red">
+                                        ※ 영문 및 숫자 조합 8자리 이상 입력
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">비밀번호 확인<span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="password" class="ipt" placeholder="비밀번호를 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">기업명 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">설립일자 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">대표이사 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">업종 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">주 생산품 / 서비스 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">기업규모 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">매출액 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">소재지 <span class="red">*</span></div>
+                                <div class="iptBox btnIpt">
+                                    <input type="text" class="ipt" placeholder="000-00-00000 형식으로 입력해주세요."/>
+                                    <!-- 
+                                        입력하는 사람마다 다르게 나올것같아서 주소가 중복검사가 되는지 모르겠어요... 디자인 나온대로 하긴했는데
+                                        개발 하시기전에 본부장님에게 꼭 여쭤봐주세요!!! 
+                                    -->
+                                    <button type="button" class="grayBtn">중복확인</button>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">수출액 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="half">
+                                <div class="label">임직원 수 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                            <li class="full">
+                                <div class="label">기업 로고 등록 <span class="red">*</span></div>
+                                <div class="iptBox">
+                                    <input type="file" class="ipt" placeholder="내용을 입력해주세요."/>
+                                </div>
+                            </li>
+                       </ul>
+
+                       <div class="formBar"></div>
+                        <ul class="formList">
+                            <li class="">
+                                <div class="label">기업 담당자 추가</div>
+                                <div class="iptBox">
+                                    <!--최대 5명 추가 가능, 현재 페이지에 버튼 활성화 버튼 및 간단한 스크립트문 넣어뒀어요! -->
+                                    <button type="button" class="addMemberBtn">추가하기 +</button>
+                                    <button type="button" disabled class="addMemberBtn">추가하기 +</button>
+                                    <div class="memberList">
+                                        <div class="member">
+                                            <div class="text">홍길동 1</div>
+                                            <button type="button" class="deleteBtn"><img src="./img/signup/member_close_btn.png" class="close" alt="x"/></button>
+                                        </div>
+                                        <div class="member">
+                                            <div class="text">홍길동 2</div>
+                                            <button type="button" class="deleteBtn"><img src="./img/signup/member_close_btn.png" class="close" alt="x"/></button>
+                                        </div>
+                                        <div class="member">
+                                            <div class="text">홍길동 3</div>
+                                            <button type="button" class="deleteBtn"><img src="./img/signup/member_close_btn.png" class="close" alt="x"/></button>
+                                        </div>
+                                        <div class="member">
+                                            <div class="text">홍길동 4</div>
+                                            <button type="button" class="deleteBtn"><img src="./img/signup/member_close_btn.png" class="close" alt="x"/></button>
+                                        </div>
+                                        <div class="member">
+                                            <div class="text">홍길동 5</div>
+                                            <button type="button" class="deleteBtn"><img src="./img/signup/member_close_btn.png" class="close" alt="x"/></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="signupBtn">수정하기</button>
+                        <div class="deleteMemberDiv"><a href="#" class="memberDeleteText">회원 탈퇴하기</a></div>
+                    </div>
+                </div>
+
+
+                <!-- 기업 담당자 추가 (회원가입 개념) -->
+                <section class="memberAddPopupSection">
+                    <article class="popupContent">
+                        <div class="closeBtnDiv">
+                            <button type="button" class="closeBtn">
+                                <img src="./img/common/white-close-btn.png" alt="X" class="icon" />
+                            </button>
+                        </div>
+                        <div class="whiteBox">
+                        
+                            <div class="btnBox">
+                                <button type="button" class="backBtn">
+                                    <img src="./img/signupCategory/back_icon.png" alt="뒤로가기"> 뒤로가기
+                                </button>
+                            </div>
+                            <div class="bottomBarTitle">
+                                <div class="text">
+                                    KSA 한국표준협회 <span class="blue">기업회원 담당자 정보수정</span>
+                                </div>
+                            </div>
+                            <ul class="formList">
+                                <li class="half">
+                                    <div class="label">이메일(아이디) <span class="red">*</span></div>
+                                    <div class="iptBox btnIpt">
+                                        <input type="text" class="ipt" placeholder="이메일을 입력해주세요."/>
+                                            <button type="button" class="grayBtn">중복확인</button>
+                                    </div>
+                                </li>
+                                <li class="half empty"></li>
+                                <li class="half">
+                                    <div class="label">비밀번호 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="password" class="ipt" placeholder="비밀번호를 입력해주세요."/>
+                                        <div class="red">
+                                            ※ 영문 및 숫자 조합 8자리 이상 입력
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="label">비밀번호 확인<span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="password" class="ipt" placeholder="비밀번호를 입력해주세요."/>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="label">성명 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="label">연락처 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="label">소속부서 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="label">직위 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="내용을 입력해주세요."/>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="signupBtn">수정하기</button>
+                            <div class="deleteMemberDiv"><a href="#" class="memberDeleteText">회원 탈퇴하기</a></div>
+                        </div>
+                    </article>
+                </section>
+
+                <!--회원탈퇴 팝업-->
+                <section class="deleteMemberPopupSection">
+                    <article class="popupContent">
+                        <div class="closeBtnDiv">
+                            <button type="button" class="closeBtn">
+                                <img src="./img/common/white-close-btn.png" alt="X" class="icon" />
+                            </button>
+                        </div>
+                        <div class="whiteBox">
+                        
+                            <div class="btnBox">
+                                <button type="button" class="backBtn">
+                                    <img src="./img/signupCategory/back_icon.png" alt="뒤로가기"> 뒤로가기
+                                </button>
+                            </div>
+                            <div class="bottomBarTitle">
+                                <div class="text">
+                                    KSA 한국표준협회 <span class="blue">회원탈퇴</span>
+                                </div>
+                            </div>
+                            <div class="contentBox">
+                                <div class="content">회원탈퇴시 계정 정보 및 모든 정보가 삭제되며, 추후 재가입하더라도 복구 할 수 없습니다.</div>
+                                <ul class="dotList">
+                                    <li>관련 법령에 따라 아래의 종류에 해당하는 기록이 있는 경우, 회원 정보 및 관련 기록을 정해진 기간 동안 보관합니다.</li>
+                                    <li>보관기간 내에는 동일한 아이디 및 이메일로 재가입이 불가능 하며, 이후 보관 기간이 종료되었을 시 회원 정보 및 관련 기록은 지체 없이 파기 됩니다.</li>
+                                </ul>
+                                <div class="tableBox">
+                                    <div class="boxWrap">
+                                        <div class="box box1 title">보관정보 종류</div>
+                                        <div class="box box2 title">보관기간</div>
+                                    </div>
+                                    <div class="boxWrap">
+                                        <div class="box box1 content">소비자의 불만 또는 분쟁처리에 관한 기록</div>
+                                        <div class="box box2 content">3년</div>
+                                    </div>
+                                    <div class="boxWrap">
+                                        <div class="box box1 content">신용정보의 수집/처리 및 이용 등에 관한 기혹</div>
+                                        <div class="box box2 content">3년</div>
+                                    </div>
+                                    <div class="boxWrap">
+                                        <div class="box box1 content">대금결제 및 재화 등의 공급에 관한 기록</div>
+                                        <div class="box box2 content">5년</div>
+                                    </div>
+                                    <div class="boxWrap">
+                                        <div class="box box1 content">계약 또는 청약 철회 등에 관한 기록</div>
+                                        <div class="box box2 content">5년</div>
+                                    </div>
+                                    <div class="boxWrap">
+                                        <div class="box box1 content">표시 / 광고에 관한 기록</div>
+                                        <div class="box box2 content">6개월</div>
+                                    </div>
+                                </div>
+                               
+                                <div class="labelDiv">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <div class="text">회원탈퇴 관련 사항을 모두 인지하였습니다.</div>
+                                    </label>
+                                </div>
+                                    
+                                
+                            </div>
+                            <button type="button" class="signupBtn">회원탈퇴</button>
+                        </div>
+                    </article>
+                </section>
+
+               
+            </section>
+        </main>
+
+        <!--회원 추가 -->
+        <script>
+
+            //팝업열기 
+            $('.sub.signup .signupCategorySection .addMemberBtn').click(function(){
+                $('.sub.signup .memberAddPopupSection').addClass('show')
+            })
+
+            //팝업닫기 
+            $('.signupCategorySection .whiteBox .btnBox').click(function(){
+                $('.sub.signup .memberAddPopupSection').removeClass('show')
+            })
+            $('.sub.signup .memberAddPopupSection .closeBtnDiv .closeBtn').click(function(){
+                $('.sub.signup .memberAddPopupSection').removeClass('show')
+            })
+
+        </script>
+        <!-- 회원탈퇴 script문  -->
+        <script>
+            //팝업열기
+            $('.sub.signup .signupCategorySection .deleteMemberDiv .memberDeleteText').click(function(e){
+                e.preventDefault()
+                $('.deleteMemberPopupSection').addClass('show');
+            })
+
+            //팝업닫기 
+            $('.deleteMemberPopupSection .whiteBox .btnBox').click(function(){
+                $('.sub.signup .memberAddPopupSection').removeClass('show')
+            })
+            $('.sub.signup .deleteMemberPopupSection .closeBtnDiv .closeBtn').click(function(){
+                $('.sub.signup .deleteMemberPopupSection').removeClass('show')
+            })
+        </script>
+
+        <!-- 개인정보 처리방침 -->
+        <section class="f_popup_bg">
+            <div class="popup_box">
+                <div class="btn_wrap">
+                    <p class="btn">
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <div class="content_wrap">
+                    <p class="title"> 개인정보처리방침 </p>
+                    <p class="content"> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="menuSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li><a href="#">로그인</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#" class="privacy_view">개인정보 처리방침</a></li>
+                    </ul>
+
+                    <ul class="siteList">
+                        <li><a href="#" class="grayBg" target="_blank">한국 표준협회 공식 홈페이지</a></li>
+                        <li><a href="#" class="grayBg" target="_blank">KSA EDU</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <div class="halfBox">
+                        <img src="./img/footer/logo.png" alt="KSA 한국표준협회 ESG 경영추진단" class="logo" />
+                        <div class="infoText">
+                            한국표준협회 ESG경영추진단 본부 06160 서울시 강남구 테헤란로 69길 5 (삼성동, DT센터)<br/>
+                            대표전화 : 1670-6009
+                        </div>
+                    </div>
+                    <div class="copy_right">© KOREAN STANDARDS ASSOCIATION. All rights reserved.</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
