@@ -816,6 +816,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .subLoginSection .whiteBox .logo{ display: block; margin: 0 auto; max-width: 100%; }
 .subLoginSection .whiteBox .companyName{ text-align: center; margin-top: 10px; font-size: 22px; font-weight: 700; }
 .subLoginSection .whiteBox .content{ word-break: keep-all; margin-top: 10px; text-align: center; color: #7F7F7F; line-height: 1.25em;  }
+.subLoginSection .whiteBox .content b{ font-weight: 700; }
 .subLoginSection .whiteBox .content .green{ color: #10965C; }
 .subLoginSection .whiteBox .loginFormList{ margin: 28px auto 0 auto; max-width: 428px; width: 100%; }
 .subLoginSection .whiteBox .loginFormList > li + li{ margin-top: 14px; }
@@ -824,34 +825,184 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .subLoginSection .whiteBox .loginFormList .ipt:focus{ border:1px solid #f8f8f8 !important; box-shadow: unset !important;  }
 .subLoginSection .whiteBox .loginFormList .ipt.email{ background-image: url('../img/login/email.png') !important; }
 .subLoginSection .whiteBox .loginFormList .ipt.password{ background-image: url('../img/login/password.png') !important; }
-.subLoginSection .whiteBox .loginBtn{ border: none; margin: 14px auto 0 auto; display: block; padding: 15px 20px; color: #fff; font-weight: 700; border-radius: 20px; width: 100%; max-width: 446px; background-color: #10965C; }
+.subLoginSection .whiteBox .loginBtn{ text-align: center; border: none; margin: 14px auto 0 auto; display: block; padding: 15px 20px; color: #fff; font-weight: 700; border-radius: 10px; width: 100%; max-width: 446px; background-color: #10965C; }
 .subLoginSection .whiteBox .loginMenuBox{ margin-top: 14px; display: flex; gap: 20px; justify-content: center; color: #7F7F7F; }
 
 @media screen and (max-width: 650px) {
-    .subLoginSection{ padding: 100px 0; }
+    .subLoginSection{ padding: 50px 0; }
     .subLoginSection .whiteBox .companyName{  font-size: 18px;}
     .subLoginSection .whiteBox .content{ font-size: 14px; }
     .subLoginSection .whiteBox .loginMenuBox{ font-size: 14px; }
 }
 
 
+/* 회원가입 카테고리 */
+.signupCategorySection{ position: relative; overflow: hidden; padding: 100px 0; display: flex; align-items: center; justify-content: center; background-color: #004B55; }
+.signupCategorySection .whiteBox{ background-color: #FFF; border-radius: 20px; padding: 50px; }
+.signupCategorySection .whiteBox .btnBox{ display: flex; align-items: flex-start;  }
+.signupCategorySection .whiteBox .btnBox .backBtn{ background: transparent; border: none; display: flex; align-items: center; gap: 5px; color: #7F7F7F; }
+.signupCategorySection .whiteBox .bottomBarTitle{ display: flex; padding-bottom: 12px; border-bottom: 2px solid #D9D9D9; margin-top: 20px; }
+.signupCategorySection .whiteBox .bottomBarTitle .text{ font-weight: 700; font-size: 20px; }
+.signupCategorySection .whiteBox .bottomBarTitle .text .blue{ color: #004B55; }
+.signupCategorySection .whiteBox .halfBox{ display: flex; flex-wrap: wrap; margin-top: 15px; width: calc(100% + 30px); margin-left: -15px; }
+.signupCategorySection .whiteBox .halfBox > li{ padding: 15px; width: calc(100% / 2); }
+.signupCategorySection .whiteBox .halfBox .item .imgBox{ background-color: #efefef; height: 370px; border-radius: 10px; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.img1{ background-image: url('../img/signupCategory/img1.png'); }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.img2{ background-image: url('../img/signupCategory/img2.png'); }
+.signupCategorySection .whiteBox .halfBox .item .titleBox{ margin-top: 12px; display: flex; align-items: center; justify-content: space-between; padding: 20px 30px; border-radius: 10px; border: 1px solid #e4e4e4;  }
+.signupCategorySection .whiteBox .halfBox .item .titleBox .text1{ font-weight: 700; font-size: 18px; }
+.signupCategorySection .whiteBox .halfBox .item .nextBtn{ display: flex; align-items: center; gap: 8px; flex-shrink: 0; padding: 15px 20px; color: #fff; font-weight: 400; background-color: #004B55; border-radius: 10px; }
+
+@media screen and (max-width: 1250px) {
+    .signupCategorySection .whiteBox .halfBox .item .imgBox{ height: 31vw; }
+    .signupCategorySection .whiteBox .halfBox .item .titleBox{ padding: 15px; }
+}
+@media screen and (max-width: 900px) {
+    .signupCategorySection .whiteBox .halfBox > li{ width: 100%; }
+    .signupCategorySection .whiteBox .halfBox .item .imgBox{ height: 56vw; }
+}
+@media screen and (max-width: 650px) {
+    .signupCategorySection{ padding: 50px 0; }
+    .signupCategorySection .whiteBox{ padding: 15px; }
+    .signupCategorySection .whiteBox .btnBox .backBtn{ font-size: 14px; }
+    .signupCategorySection .whiteBox .bottomBarTitle .text{ font-size: 18px; }
+    .signupCategorySection .whiteBox .halfBox .item .titleBox{ padding: 10px 15px; font-size: 14px; }
+    .signupCategorySection .whiteBox .halfBox .item .titleBox .text1{ font-size: 16px; }
+    .signupCategorySection .whiteBox .halfBox .item .nextBtn{ padding: 10px; border-radius: 5px; }
+    .signupCategorySection .whiteBox .halfBox .item .nextBtn .arrow{ width: 20px; }
+
+}
+
+/* 회원가입 약관동의 */
+.singupAgreeSection{ padding: 100px 0; background-color: #FAFAFA; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.singupAgreeSection .whiteBox{ margin: 0 auto; width: 100%; max-width: 580px; background-color: #fff; padding: 50px 10px; }
+.singupAgreeSection .whiteBox .contentWrap{ margin: 0 auto; max-width: 380px; }
+.singupAgreeSection .whiteBox .contentWrap .logo{ display: block; margin: 0 auto; max-width: 100%; }
+.singupAgreeSection .whiteBox .contentWrap .title{ margin-top: 15px; text-align: center; font-weight: 700; font-size: 20px; }
+.singupAgreeSection .whiteBox .contentWrap .content{ margin-top: 10px; text-align: center; color: #7f7f7f; word-break: keep-all; }
+.singupAgreeSection .whiteBox .contentWrap .content .green{ color: #3E67EE; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox input[type="checkbox"]{ display: none; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox input[type="checkbox"] + .text{ cursor: pointer; color: #7F7F7F; font-size: 14px; margin-top: 20px; position: relative; padding:10px 0; padding-left: 30px; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox.allCheck input[type="checkbox"] + .text{ background-color: #222; color: #fff; font-size: 16px; padding: 20px 10px; padding-left: 50px; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox.allCheck input[type="checkbox"] + .text::before{ top: 18px; left: 20px; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox input[type="checkbox"] + .text::before{ content:''; position: absolute; left: 0; top: 8px; display: block; width: 20px; height: 20px; border: 1px solid #e4e4e4; background: #fff; }
+.singupAgreeSection .whiteBox .contentWrap .signupCheckBox input[type="checkbox"]:checked + .text::before{ background-image: url('../img/singupAgreeSection/gray_check_icon.png'); background-size: 70%; background-repeat: no-repeat; background-position: center; }
+.singupAgreeSection .whiteBox .contentWrap .scrollBox{ margin-top: 16px; padding: 20px; border: 1px solid #D9D9D9; color: #7F7F7F; font-size: 14px; height: 120px; overflow-y: scroll; }
+.singupAgreeSection .whiteBox .contentWrap .nextBtn{ margin-top: 20px; padding: 15px; background-color: #222; color: #fff; border-radius: 10px; display: block; width: 100%; border: 1px solid #222; }
+
+@media screen and (max-width: 650px) {
+    .singupAgreeSection{ padding: 50px 0; }
+    .singupAgreeSection .whiteBox .contentWrap .title{ font-size: 18px; }
+    .singupAgreeSection .whiteBox .contentWrap .content{ font-size: 14px; }
+    .singupAgreeSection .whiteBox .contentWrap .signupCheckBox.allCheck input[type="checkbox"] + .text{ font-size: 14px; }
+
+}
+
+/* 회원가입 , 기업회원 2단계  */
+.sub.signup .signupCategorySection .formList{ margin: 0 auto ; max-width: 780px; margin-top: 20px; }
+.sub.signup .signupCategorySection .formBar{ width: 100%; height: 1px; margin: 20px auto 0 auto; max-width: 780px; background: #D9D9D9;  }
+.sub.signup .signupCategorySection .addMemberBtn{ width: 100%; display: block; padding: 14px 10px; font-weight: 700; background-color: #222; color: #fff; text-align: center; border: 0; border: 1px solid #222; }
+.sub.signup .signupCategorySection .addMemberBtn:disabled{ background: #7f7f7f; border-color: #7f7f7f; }
+.sub.signup .signupCategorySection .memberList{ margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+.sub.signup .signupCategorySection .memberList .member{ 
+    display: flex; align-items: center; justify-content: space-between; gap: 10px; border-radius: 4px; border: 1px solid #222; 
+    padding: 14px 22px; min-width: 146px;
+}
+.sub.signup .signupCategorySection .memberList .member .text{ font-size: 14px; font-weight: 700; color: #004B55; }
+.sub.signup .signupCategorySection .memberList .member .deleteBtn{ border: none; background: transparent; }
+.sub.signup .signupCategorySection .signupBtn{ display: block; margin: 0 auto; margin-top: 20px; max-width: 380px; width: 100%; background-color: #004B55; color: #fff; font-weight: 700; padding: 20px 10px; border-radius: 10px; border: none; }
+
+@media screen and (max-width: 650px) {
+    .sub.signup .signupCategorySection .memberList .member{ min-width: unset; padding: 10px; }
+    .sub.signup .signupCategorySection .signupBtn{ padding: 15px 10px; max-width: unset; }
+}
+
+/* 회원가입 , 기업회원 2단계 , 기업 담당자 추가 팝업  */
+.sub.signup .memberAddPopupSection{ transition: opacity .5s, visibility .5s; opacity: 0; visibility: hidden; padding: 10px; display: flex; align-items: center; justify-content: center; position: fixed; left: 0; top: 0; z-index: 9999999; background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; }
+.sub.signup .memberAddPopupSection.show{ opacity: 1; visibility: visible; }
+.sub.signup .memberAddPopupSection .closeBtnDiv{ display: flex; align-items: center; justify-content: flex-end; }
+.sub.signup .memberAddPopupSection .closeBtnDiv .closeBtn{ padding: 10px 0; background: transparent; border: none; }
+.sub.signup .memberAddPopupSection .whiteBox{ min-height: 70vh; overflow-y: scroll; }
+.sub.signup .memberAddPopupSection .formList{ width: 100%; }
+
+/* 회원가입 3단계 */
+.signupResultSection{ background-color: #004B55; padding: 150px 0; display: flex; align-items: center; justify-content: center; }
+.signupResultSection .inner{ width: 100%; max-width: 600px; }
+.signupResultSection .whiteBox{ padding: 50px 20px; background-color: #fff; border-radius: 20px; box-shadow: 6px 26px 24px 0px rgba(0, 0, 0, 0.20); }
+.signupResultSection .whiteBox .logo{ max-width: 100%; display: block; margin: 0 auto; }
+.signupResultSection .whiteBox .title{ margin-top: 15px; font-weight: 700; font-size: 22px; text-align: center; }
+.signupResultSection .whiteBox .title .green{ color: #004B55; }
+.signupResultSection .whiteBox .content{ margin-top: 15px; text-align: center; color: #7f7f7f; }
+.signupResultSection .whiteBox .content .green{ color: #004B55; }
+.signupResultSection .whiteBox .homeBtn{ margin: 0 auto; margin-top: 50px; display: block; width: 100%; max-width: 380px; padding: 20px 10px; border-radius: 10px; color: #fff; text-align: center; background-color: #004B55;  }
+
+@media screen and (max-width: 1250px) {
+    .signupResultSection{ padding: 100px 0; }
+    .signupResultSection .whiteBox .title{ font-size: 18px; }
+}
+@media screen and (max-width: 650px) {
+    .signupResultSection{ padding: 50px 0; }
+    .signupResultSection .whiteBox .title{ font-size: 16px; }
+    .signupResultSection .whiteBox .content{ font-size: 14px; }
+    .signupResultSection .whiteBox .homeBtn{ padding: 10px; max-width: unset; width: 80%; }
+}
+
+/* .mypage .mypageTable */
+.sub.mypage .mypageSection{ padding: 100px 0; background-color: #004B55; }
+.sub.mypage .mypageSection .whiteBox{ background-color: #fff; border-radius: 20px; padding: 35px 50px; }
+.sub.mypage .mypageSection .whiteBox .bottomBarTitle{ padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #D9D9D9; }
+.sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 20px;  }
+.sub.mypage .mypageSection .whiteBox .bottomBarTitle .title b{ font-weight: 700; }
+.sub.mypage .mypageSection .whiteBox .bottomBarTitle .modifyBtn{ font-size: 12px; padding: 10px 17px; color: #fff; background-color: #7f7f7f; border-radius: 4px; }
+.sub.mypage .mypageSection .whiteBox .tabBtnList{ margin-top: 50px; display: flex; border-bottom: 1px solid #D9D9D9; }
+.sub.mypage .mypageSection .whiteBox .tabBtnList > li{ width: calc(100% / 2); }
+.sub.mypage .mypageSection .whiteBox .tabBtnList .item{ display: flex; display: block; padding: 10px; text-align: center; font-size: 20px; color: #7F7F7F; }
+.sub.mypage .mypageSection .whiteBox .tabBtnList .item.active{ font-weight: 700; color: #004B55; border-bottom: 2px solid #004B55; }
+
+.sub .mypageTable{ margin-top: 50px; border-top: 1px solid #E4E4E4; }
+.sub .mypageTable > li{ border-bottom: 1px solid #e4e4e4; }
+.sub .mypageTable > li .item{ display: flex;  } 
+.sub .mypageTable > li .box .ellipsis{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub .mypageTable > li .box{ padding: 10px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub .mypageTable > li .box1{  width: 15%; text-align: left;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub .mypageTable > li .box2{ width: 35%; text-align: left; }
+.sub .mypageTable > li .box3{ width: 17.5%;  }
+.sub .mypageTable > li .box4{ width: 17.5%;  }
+.sub .mypageTable > li .box5{ width: 15%;  }
+.sub .mypageTable > li .titleBg{ text-align: center; background-color: #F5F5F5; }
+.sub .mypageTable > li .labelBtn{ font-size: 14px; display: inline-block; padding: 5px 10px; color: #fff; border-radius: 4px; background-color: #004B55; }
+
+@media screen and (max-width: 1250px) {
+    .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 18px; }
+    .sub.mypage .mypageSection .whiteBox .tabBtnList .item{ font-size: 18px; }
+}
+@media screen and (max-width: 950px) {
+    .sub.mypage .mypageSection .whiteBox{ padding: 20px; border-radius: 10px; }
+}
+@media screen and (max-width: 900px) {
+    .sub .mypageTable { overflow: hidden; }
+    .sub .mypageTable > li{ padding: 10px 0; overflow: hidden; }
+    .sub .mypageTable > li:nth-child(1){ display: none; }
+    .sub .mypageTable > li .item{ display: flex; flex-direction: column; overflow: hidden; }
+    .sub .mypageTable > li .box{ overflow: hidden; text-align: left; padding: 5px 0; display: flex; align-items: flex-start; gap: 5px; }
+    .sub .mypageTable > li .box1{ width: 100%; flex-shrink: 0; flex-grow: 1;}
+    .sub .mypageTable > li .box2{ width: 100%; }
+    .sub .mypageTable > li .box3{ width: 100%; }
+    .sub .mypageTable > li .box4{ width: 100%; }
+    .sub .mypageTable > li .box5{ width: 100%; }
+
+    .sub .mypageTable > li .box1::before{ content:'- 유형 : '; color:#7f7f7f; flex-shrink: 0; }
+    .sub .mypageTable > li .box2::before{ content:'- 진단 평가명 : '; color:#7f7f7f; flex-shrink: 0; }
+    .sub .mypageTable > li .box3::before{ content:'- 생성일 : '; color:#7f7f7f; flex-shrink: 0; }
+    .sub .mypageTable > li .box4::before{ content:'- 마감기간 : '; color:#7f7f7f; flex-shrink: 0; }
+    .sub .mypageTable > li .box5::before{ content:'- 비고 : '; color:#7f7f7f; flex-shrink: 0; }
+}
+@media screen and (max-width: 650px) {
+    .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 16px; }
+    .sub.mypage .mypageSection .whiteBox .tabBtnList .item{ font-size: 16px; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
