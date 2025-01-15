@@ -1057,7 +1057,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .mypageTopBtnDiv .backBtn{ color: #7f7f7f; display: flex; align-items: center; gap: 5px; }
 .sub .mypageTopBtnDiv .borderBtn{ color: #004B55; font-weight: 500; padding: 10px 20px; border: 2px solid #004B55; border-radius: 4px; }
 
-.sub .pageBgTitle{ margin: 20px 0; font-weight: 600; padding: 18px 35px; border-radius: 4px; background-color: #004B55; color: #fff; font-size: 18px; }
+.sub .pageBgTitle{ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); margin: 20px 0; font-weight: 600; padding: 18px 35px; border-radius: 4px; background-color: #004B55; color: #fff; font-size: 18px; }
 
 .sub .reportTableBox .boardList{ word-break: keep-all; width: 100%; border-collapse:collapse; text-align: center; }
 .sub .reportTableBox .boardList .bg1{ background-color: #F9FBFC; }
@@ -1065,6 +1065,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .reportTableBox .boardList tr th:first-child , .sub .reportTableBox .boardList tr td:first-child{ border-left: none; }
 .sub .reportTableBox .boardList tr th:last-child , .sub .reportTableBox .boardList tr td:last-child{ border-right: none; }
 .sub .reportTableBox .boardList th, .sub .reportTableBox .boardList td{ padding: 10px; border: 2px solid #E9EBEC; }
+.sub .reportTableBox .boardList .grayText{ color: #7f7f7f; }
 .sub .reportTableBox .boardList .small{ font-size: .9em; }
 .sub .reportTableBox .boardList .clickBtn{ font-size: 14px; background-color: #7F7F7F; padding:8px 10px; border-radius: 4px; background-color: #7f7f7f; color: #fff; }
 .sub .reportTableBox .boardList .clickBtn.greenBtn{ background-color: #004B55; }
@@ -1078,9 +1079,9 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .reportTableBox .boardList .box4{ width: 106px; }
 .sub .reportTableBox .boardList .box6{ width: 106px; }
 
-.sub .reportTableBox + .saveBtnDiv{ margin-top: 40px; display: flex; justify-content: center; align-items: center; }
-.sub .reportTableBox + .saveBtnDiv .submitBtn{ width: 100%; max-width: 380px; border-radius: 10px; color: #fff; background-color: #004B55; border: none; padding: 14px 10px; font-weight: 700; }
-
+.sub.mypageBoard .saveBtnDiv{ margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 10px; }
+.sub.mypageBoard .saveBtnDiv .submitBtn{ text-align: center; width: 100%; max-width: 380px; border-radius: 10px; color: #fff; background-color: #004B55; border: none; padding: 14px 10px; font-weight: 700; }
+.sub.mypageBoard .saveBtnDiv .submitBtn.grayBtn{ background:#7F7F7F ; }
 @media screen and (max-width: 1250px) {
     .sub .reportTableBox .boardList{ font-size: 14px; }
 }
@@ -1090,9 +1091,13 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub .reportTableBox .boardList{ width: 800px; }
 }
 @media screen and (max-width: 650px) {
-    .sub .reportTableBox + .saveBtnDiv .submitBtn{ max-width: unset; }
+    .sub .pageBgTitle{ padding: 15px; }
+    .sub.mypageBoard .mypageBoardArti{ padding: 50px 0; }
+    .sub.mypageBoard .saveBtnDiv .submitBtn{ max-width: unset; }
     .sub .mypageTopBtnDiv .borderBtn{ font-size: 14px; padding: 5px 10px; }
 }
+
+
 
 /* 팝업 */
 .mypagePopupSection{ opacity: 0; visibility: hidden; transition: opacity .5s, visibility .5s; padding:10px; background-color: rgba(0,0,0,0.5); position: fixed; left: 0; top: 0; z-index: 999999; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
@@ -1117,6 +1122,101 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 
+/* 사업지표 진단하기 상세페이지 */
+.sub.mypageBoard .boardArti{ padding: 0; }
+.sub.mypageBoard .boardArti .infoBoxList .infoBox .label{ font-size: 16px; text-align: left; justify-content: flex-start; }
+.sub.mypageBoard .boardArti .infoBoxList .infoBox .txtBox{ font-size: 16px; }
+.sub.mypageBoard .rightBtnBox{ padding: 20px 0; display: flex; align-items: center; justify-content: flex-end; }
+.sub.mypageBoard .rightBtnBox .btnItem{ padding: 10px 15px; border-radius: 4px; background-color: #7f7f7f; color: #fff; }
+
+@media screen and (max-width: 950px) {
+    .sub.mypageBoard .boardArti .infoBoxList .infoBox .label{ font-size: 14px; }
+    .sub.mypageBoard .boardArti .infoBoxList .infoBox .txtBox{ font-size: 14px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .rightBtnBox .btnItem{ font-size: 14px; }
+}
+
+.sub.mypageBoard .halfTitleBox{ display: flex; flex-wrap: wrap; gap: 10px; flex-wrap: wrap; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #ECECEC; }
+.sub.mypageBoard .halfTitleBox .title{ font-weight: 700; font-size: 16px; }
+.sub.mypageBoard .halfTitleBox .grayBtn{ display: inline-block; background-color: #7F7F7F; padding: 10px 25px; border-radius: 4px; color: #fff; }
+.sub.mypageBoard .borderContentBox{ margin-bottom: 20px; margin-top: 20px; padding: 15px; border: 1px solid #ECECEC; background-color: #fff; line-height: 1.5em; }
+
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .halfTitleBox .title{ width: 100%; }
+    .sub.mypageBoard .halfTitleBox .grayBtn{ padding: 10px 15px; font-size: 14px; }
+    .sub.mypageBoard .borderContentBox{ padding: 10px; font-size: 14px; }
+}
+
+.sub.mypageBoard .qnaArticle{ margin-top: 40px; }
+.sub.mypageBoard .qnaArticle .qDiv{ font-weight: 700; }
+.sub.mypageBoard .qnaArticle .checkboxList{ margin:10px 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"]{ display: none; }
+.sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"] + .text{ cursor: pointer; position: relative; padding-left: 30px; margin-right: 20px; }
+.sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"] + .text::before{ content:''; position: absolute; left: 0; top: 0; display: block; width: 20px; height: 20px; border: 1px solid #d9d9d9; }
+.sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"]:checked + .text::before{ background-image: url('../img/common/checkbox_icon.png'); border: 2px solid #004B55; background-size: 100%; background-repeat: no-repeat; background-position: center; }
+
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"] + .text::before{ width: 15px; height: 15px; }
+    .sub.mypageBoard .qnaArticle .checkboxList label input[type="checkbox"] + .text{ font-size: 14px; padding-left: 20px; }
+}
+
+.sub.mypageBoard .qnaArticle .radioBox{ gap: 40px; padding: 20px; background-color: #F9FBFC; margin: 20px 0; display: flex; align-items: center; justify-content: center; }
+.sub.mypageBoard .qnaArticle .radioBox label input[type="radio"]{ display: none; }
+.sub.mypageBoard .qnaArticle .radioBox label input[type="radio"] + .text{ text-align: center; display: flex; flex-direction: column; gap: 2px; }
+.sub.mypageBoard .qnaArticle .radioBox label input[type="radio"] + .text .circle{ cursor: pointer; position: relative; display: flex; align-items: center; justify-content: center; margin-top: 5px; width: 40px; height: 40px; border-radius: 50%; background-color: #fff; border: 1px solid #d9d9d9;  }
+.sub.mypageBoard .qnaArticle .radioBox label input[type="radio"] + .text .circle .center{ opacity: 0; width: 20px; height: 20px; border-radius: 50%; background-color: #004B55; }
+.sub.mypageBoard .qnaArticle .radioBox label input[type="radio"]:checked + .text .circle .center{ opacity: 1; }
+
+@media screen and (max-width: 900px) {
+    .sub.mypageBoard .qnaArticle .radioBox{ gap: 20px; }
+    .sub.mypageBoard .qnaArticle .radioBox label input[type="radio"] + .text .circle{ width: 20px; height: 20px; }
+    .sub.mypageBoard .qnaArticle .radioBox label input[type="radio"] + .text .circle .center{ width: 10px; height: 10px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .qnaArticle .radioBox{ flex-wrap: wrap; font-size: 14px; gap: 10px; }
+    .sub.mypageBoard .qnaArticle .radioBox:before{ content: ' 1 : 그렇지않다 / 5 : 그렇다'; width: 100%; display: block; text-align: center; }
+    .sub.mypageBoard .qnaArticle .radioBox .text{ display: none; }
+}
+
+.sub.mypageBoard .greenBigTitle{ margin-top:40px; font-weight: 700; font-size: 22px; color: #004B55; }
+.sub.mypageBoard .subQTitle{ margin:10px 0; font-size: 18px; }
+.sub.mypageBoard .infoBoxList + .infoBoxList{ margin-top: 20px; }
+
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .greenBigTitle{ font-size: 18px; }
+    .sub.mypageBoard .subQTitle{ font-size: 16px; }
+}
+
+.sub.mypageBoard .emptyDiv{ margin-top: 40px; }
+.sub.mypageBoard .reoprtImgDiv{ display: flex; border-top: 1px solid #E9EBEC; border-bottom: 1px solid #E9EBEC; }
+.sub.mypageBoard .reoprtImgDiv .box{ flex-grow: 1; }
+.sub.mypageBoard .reoprtImgDiv .box + .box{ border-left: 1px solid #E9EBEC; }
+.sub.mypageBoard .reoprtImgDiv .box .titleBox{ padding: 15px 10px; background-color: #F9FBFC; text-align: center; border-bottom: 1px solid #E9EBEC; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox{ line-height: 1.5em; padding: 15px 10px; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .imgContent{ height: 253px; background-color: #efefef; background-size: cover; background-repeat: no-repeat; background-position: center; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox img{ max-width: 100%; }
+.sub.mypageBoard .reoprtImgDiv + .reoprtImgDiv{ margin-top: 20px; }
+
+@media screen and (max-width: 950px) {
+    .sub.mypageBoard .reoprtImgDiv{ flex-direction: column; }
+    .sub.mypageBoard .reoprtImgDiv .box + .box{ border-top: 1px solid #E9EBEC; border-left: none; }
+}
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .reoprtImgDiv .box .titleBox{ padding: 10px; font-size: 14px; }
+    .sub.mypageBoard .reoprtImgDiv .box .imgBox{ font-size: 14px; }
+}
+
+.sub.mypageBoard .greenBgTitle{ display: inline-block; background-color: #004B55; color: #fff; padding: 15px 20px; }
+.sub.mypageBoard .reportTableBox{ margin-top: 10px; }
+
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .countDiv{ text-align: center; color: #7f7f7f ; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .countDiv .big{ font-size: 32px; font-weight: 700; color: #004B55; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .graphDiv .barDiv{ display: flex; gap: 10px; align-items: center; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .graphDiv .barDiv + .barDiv{ margin-top: 20px; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .graphDiv .barDiv .title{ flex-shrink: 0; color: #004B55; text-align: right; width: 80px; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .graphDiv .barDiv .title.green{ flex-shrink: 0; color: #A0CD63; }
+.sub.mypageBoard .reoprtImgDiv .box .imgBox .graphWrap .graphDiv .barDiv .title.yello{ flex-shrink: 0; color: #F6C243; }
 
 
 
