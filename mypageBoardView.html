@@ -152,24 +152,416 @@
                         <a href="#" class="borderBtn">완료 보고서 확인</a>
                     </div>
                     <div class="pageBgTitle">협력사 ESG 진단 / 동반위 협력사 ESG 진단</div>
-                    <div class="tableBox">
+                    <div class="reportTableBox">
                         <table class="boardList">
                             <tr>
-                                <th class="bg1" rowspan="9">대분류명</th>
+                                <th class="bg1" colspan="9">대분류명</th>
                             </tr>
                             <tr>
-                                <th class="bg1" colsapn="4">중분류명</th>
-                                <th class="bg1">소분류명</th>
-                                <th class="bg1">코드</th>
+                                <th class="bg1 box1">중분류</th>
+                                <th class="bg1 box2">소분류</th>
+                                <th class="bg1 box3">코드</th>
+                                <th class="bg1 box4">지표명징</th>
+                                <th class="bg1 box5 btnTh">지표설명</th>
+                                <th class="bg1 box6">답변유형/배점</th>
+                                <th class="bg1 box7">진단단계 설정 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box8">연계지표 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box9 btnTh">평가</th>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="4">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="6">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
                             </tr>
                         </table>
                     </div>
                     
+                    <div class="reportTableBox">
+                        <table class="boardList">
+                            <tr>
+                                <th class="bg1" colspan="9">대분류명</th>
+                            </tr>
+                            <tr>
+                                <th class="bg1 box1">중분류</th>
+                                <th class="bg1 box2">소분류</th>
+                                <th class="bg1 box3">코드</th>
+                                <th class="bg1 box4">지표명징</th>
+                                <th class="bg1 box5 btnTh">지표설명</th>
+                                <th class="bg1 box6">답변유형/배점</th>
+                                <th class="bg1 box7">진단단계 설정 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box8">연계지표 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box9 btnTh">평가</th>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="4">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="6">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="reportTableBox">
+                        <table class="boardList">
+                            <tr>
+                                <th class="bg1" colspan="9">대분류명</th>
+                            </tr>
+                            <tr>
+                                <th class="bg1 box1">중분류</th>
+                                <th class="bg1 box2">소분류</th>
+                                <th class="bg1 box3">코드</th>
+                                <th class="bg1 box4">지표명징</th>
+                                <th class="bg1 box5 btnTh">지표설명</th>
+                                <th class="bg1 box6">답변유형/배점</th>
+                                <th class="bg1 box7">진단단계 설정 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box8">연계지표 <span class="small">(설정/생략)</span></th>
+                                <th class="bg1 box9 btnTh">평가</th>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="4">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침 환경방침 환경방침 환경방침 환경방침 환경방침 환경방침 환경방침 환경방침 환경방침 환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="greenBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1" rowspan="6">중분류명</td>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                            <tr>
+                                <td class="bg1">소분류명</td>
+                                <td class="grayText">E1-01</td>
+                                <td class="grayText">환경방침</td>
+                                <td class=""><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                <td class="grayText">객관식/5점</td>
+                                <td class="grayText">1차</td>
+                                <td class="grayText">GRI 2-11</td>
+                                <td class=""><a href="#" class="blackBtn clickBtn">진단하기</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="saveBtnDiv">
+                        <button type="button" class="submitBtn ">저장하기</button>
+                    </div>
                 </div>
             </article>
         </main>
 
-       
+        <!--지표설명 팝업 -->
+        <section class="mypagePopupSection" id="characteristicPopup">
+            <article class="popupContentArti">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="x" class="icon"/></button>
+                </div>
+                <div class="whiteBox">
+                    <div class="bottomBarTitle">지표설명</div>
+                    <div class="content">
+                        한국표준협회에서는 ESG경영의 달성 및 평가에 널리 활용되는 국제표준과 국가표준(KS)을 엄선하였습니다. <br/>
+                        ESG의 광범위한 정의와 1,000여 개에 이르는 지표 및 상이한 평가기준으로 인해 기업이 ESG 도입에 어려움을 겪고 있습니다.  <br/>
+                        ESG 평가의 신뢰성을 높이고, ESG경영의 더 나은 이행을 위해 국제적인 합의로 제정된 ISO 및 IEC 관련 분야 국제표준과 <br/>
+                        한국표준협회에서는 ESG경영의 달성 및 평가에 널리 활용되는 국제표준과 국가표준(KS)을 엄선하였습니다. <br/>
+                        ESG의 광범위한 정의와 1,000여 개에 이르는 지표 및 상이한 평가기준으로 인해 기업이 ESG 도입에 어려움을 겪고 있습니다.  <br/>
+                        ESG 평가의 신뢰성을 높이고, ESG경영의 더 나은 이행을 위해 국제적인 합의로 제정된 ISO 및 IEC 관련 분야 국제표준과  
+                    </div>
+                    <div class="popupBtnDiv">
+                        <button type="button" class="blackBtn closeBtn">확인완료</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+
+            //팝업열기
+            $('.characteristicBtn').click(function(e){
+                e.preventDefault(); 
+                $('#characteristicPopup').addClass('show');
+            })
+
+            //팝업닫기
+            $('.mypagePopupSection .popupContentArti .btnDiv .closeBtn').click(function(){
+                $('#characteristicPopup').removeClass('show');
+            })
+            $('.mypagePopupSection .popupContentArti .whiteBox .popupBtnDiv .closeBtn').click(function(){
+                $('#characteristicPopup').removeClass('show');
+            })
+        </script>
+
+               
       
 
 
