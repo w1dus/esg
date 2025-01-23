@@ -1080,9 +1080,13 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .reportTableBox .boardList .box4{ width: 106px; }
 .sub .reportTableBox .boardList .box6{ width: 106px; }
 
-.sub.mypageBoard .saveBtnDiv{ margin-top: 40px; display: flex; justify-content: center; align-items: center; gap: 10px; }
-.sub.mypageBoard .saveBtnDiv .submitBtn{ text-align: center; width: 100%; max-width: 380px; border-radius: 10px; color: #fff; background-color: #004B55; border: none; padding: 14px 10px; font-weight: 700; }
+.sub.mypageBoard .saveBtnDiv{ margin-top: 40px; display: flex; justify-content: center; align-items: flex-start; gap: 10px; }
+.sub.mypageBoard .saveBtnDiv .submitBtn{ display: inline-block; text-align: center; width: 100%; max-width: 380px; border-radius: 10px; color: #fff; background-color: #004B55; border: none; padding: 14px 10px; font-weight: 700; }
 .sub.mypageBoard .saveBtnDiv .submitBtn.grayBtn{ background:#7F7F7F ; }
+.sub.mypageBoard .saveBtnDiv .submitBtn.blackBtn{ background-color: #222; }
+.sub.mypageBoard .saveBtnDiv .btnWrap{ width: 100%; max-width: 340px; }
+.sub.mypageBoard .saveBtnDiv .button_info{ margin-top: 10px; font-weight: 700; color: #004B55; text-align: center; word-break: keep-all; }
+
 @media screen and (max-width: 1250px) {
     .sub .reportTableBox .boardList{ font-size: 14px; }
 }
@@ -1181,6 +1185,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 .sub.mypageBoard .greenBigTitle{ margin-top:40px; font-weight: 700; font-size: 22px; color: #004B55; }
+.sub.mypageBoard .blackBigTitle{ margin-top:40px; font-weight: 700; font-size: 22px; }
 .sub.mypageBoard .subQTitle{ margin:10px 0; font-size: 18px; }
 .sub.mypageBoard .infoBoxList + .infoBoxList{ margin-top: 20px; }
 .sub.mypageBoard .subAConent{ margin-top: 20px; }
@@ -1188,6 +1193,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 
 @media screen and (max-width: 650px) {
     .sub.mypageBoard .greenBigTitle{ font-size: 18px; }
+    .sub.mypageBoard .blackBigTitle{ font-size: 18px; }
     .sub.mypageBoard .subQTitle{ font-size: 16px; }
     .sub.mypageBoard .subAConent{ font-size: 14px; }
 
@@ -1269,3 +1275,47 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 
 .sub.mypageBoard .reportDotList > li{ position: relative; padding-left: 20px; line-height: 1.4em; text-align: left; }
 .sub.mypageBoard .reportDotList > li::before{ content:'∙'; position: absolute; left: 0; top: 0; }
+
+/* 최고관리자 마이페이지 - 사업생성 / admin_create_compnay.html */
+.signupCategorySection .whiteBox .halfBox.minWidth{ margin: 0 auto; max-width: 800px; width: 100%; }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2{ flex-direction: column; gap: 10px; height: 220px; display: flex; align-items: center; justify-content: center; }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2 .adminTitle{ color: #fff; font-weight: 700;  }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2.admin1{ background-image: url('../img/admin_create_company/background1.png'); }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2.admin2{ background-image: url('../img/admin_create_company/background2.png'); }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2.admin3{ background-image: url('../img/admin_create_company/background3.png'); }
+.signupCategorySection .whiteBox .halfBox .item .imgBox.type2.admin4{ background-image: url('../img/admin_create_company/background4.png'); }
+.signupCategorySection .whiteBox .halfBox .item .titleBox{ background-color: #004B55; color: #fff; text-align: center; justify-content: center; }
+
+@media screen and (max-width: 650px) {
+    .signupCategorySection .whiteBox .halfBox.minWidth > li { padding: 10px 0; }
+}
+
+/* admin_create_company1.html */
+.sub.mypageBoard .balckBtn{ padding: 15px 10px; background-color: #222; color: #fff; border: 1px solid #222; width: 100%; max-width: 269px; }
+.sub.mypageBoard .comapnyListAddDel{ display: flex; flex-wrap: wrap; width: calc(100% + 10px); margin-left: -5px; padding-bottom: 30px; border-bottom: 1px solid #E4E4E4; }
+.sub.mypageBoard .comapnyListAddDel > li{ min-width: calc(100% / 5); padding: 5px; }
+.sub.mypageBoard .comapnyListAddDel .item{border-radius: 10px; padding: 20px; border: 1px solid #E9EBEC; display: flex; gap: 10px; justify-content: space-between; height: 100%; align-items: center; }
+.sub.mypageBoard .comapnyListAddDel .item .text{ flex-grow: 1;  }
+.sub.mypageBoard .comapnyListAddDel .item .btnBox{flex-shrink: 0; }
+.sub.mypageBoard .comapnyListAddDel .item .okDelBtn{ flex-shrink: 0; border: unset; padding: 5px 10px; color: #fff; border-radius: 4px; }
+.sub.mypageBoard .comapnyListAddDel .item .okDelBtn.okBtn{ background-color: #004B55; }
+.sub.mypageBoard .comapnyListAddDel .item .okDelBtn.delBtn{ background: #E74926; }
+.sub.mypageBoard .grayBar{ margin-top: 20px; height: 1px; background-color: #E9EBEC; }
+
+@media screen and (max-width: 1250px) {
+    .sub.mypageBoard .comapnyListAddDel > li{ min-width: calc(100% / 4); }
+    .sub.mypageBoard .comapnyListAddDel .item{ padding: 10px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard .balckBtn{ padding: 10px; font-size: 14px; max-width: 150px; }
+    .sub.mypageBoard .comapnyListAddDel > li{ min-width: calc(100% / 2); }
+    .sub.mypageBoard .comapnyListAddDel .item{ padding: 5px 10px; font-size: 14px; }
+
+}
+
+
+
+
+
+
+
