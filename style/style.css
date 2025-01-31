@@ -842,7 +842,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .signupCategorySection .whiteBox .btnBox{ display: flex; align-items: flex-start;  }
 .signupCategorySection .whiteBox .btnBox .backBtn{ background: transparent; border: none; display: flex; align-items: center; gap: 5px; color: #7F7F7F; }
 .signupCategorySection .whiteBox .bottomBarTitle{ display: flex; padding-bottom: 12px; border-bottom: 2px solid #D9D9D9; margin-top: 20px; }
-.signupCategorySection .whiteBox .bottomBarTitle.spaceBetween{ flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+.signupCategorySection .whiteBox .bottomBarTitle.spaceBetween{ flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: center; }
 .signupCategorySection .whiteBox .bottomBarTitle .text{ font-weight: 700; font-size: 20px; }
 .signupCategorySection .whiteBox .bottomBarTitle .text .blue{ color: #004B55; }
 .signupCategorySection .whiteBox .halfBox{ display: flex; flex-wrap: wrap; margin-top: 15px; width: calc(100% + 30px); margin-left: -15px; }
@@ -1479,3 +1479,69 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 
+/* 사업관리 리스트 */
+.sub.company1_tab2 .templateTopTitle{ margin-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+.sub.company1_tab2 .templateTopTitle .title{ font-size: 22px; font-weight: 700; color: #222; }
+.sub.company1_tab2 .templateTopTitle .search{ max-width: 213px; }
+
+@media screen and (max-width: 650px) {
+    .sub.company1_tab2 .templateTopTitle .title{ font-size: 18px; }
+    .sub.company1_tab2 .templateTopTitle .search{ font-size: 14px; max-width: unset; }
+}
+
+.sub.company1_tab2 .templateTableList{ margin-top: 20px; border-top: 2px solid rgba(233, 235, 236, 1); }
+.sub.company1_tab2 .templateTableList > li{ display: flex; border-bottom: 1px solid rgba(233, 235, 236, 1); }
+.sub.company1_tab2 .templateTableList > li .box{ padding: 10px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.sub.company1_tab2 .templateTableList > li .box.title{ background-color: #F9FBFC; border-bottom: 1px solid rgba(233, 235, 236, 1); }
+.sub.company1_tab2 .templateTableList .box + .box{ border-left: 1px solid rgba(233, 235, 236, 1); }
+.sub.company1_tab2 .templateTableList .box.box1{ width: 10%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box2{ width: 10%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box3{ width: 12.5%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box4{ width: 12.5%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box5{ width: 12.5%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box6{ width: 12.5%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box7{ flex-grow: 1;  }
+.sub.company1_tab2 .templateTableList .box.box8{ width: 10%; flex-shrink: 0; }
+.sub.company1_tab2 .templateTableList .box.box9{ width: 10%; flex-shrink: 0; }
+
+.sub.company1_tab2 .templateTableList .box.box7.content{ text-align: left; justify-content: flex-start; line-height: 1.4em; }
+.sub.company1_tab2 .templateTableList .tableBtn{ font-size: .9em; padding: 8px 15px; border-radius: 4px; background-color: #222; color: #fff;  }
+.sub.company1_tab2 .templateTableList .tableBtn.greenBtn{ background-color: #004B55; }
+.sub.company1_tab2 .templateTableList .green{ color: #004B55; }
+
+
+@media screen and (max-width: 1250px) {
+    .sub.company1_tab2 .templateTableList{ font-size: 15px; }
+}
+@media screen and (max-width: 1120px) {
+    .templateTableListWrap{ overflow-x: scroll; }
+    .sub.company1_tab2 .templateTableList{ min-width: 1100px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.company1_tab2 .templateTableList{ min-width: unset; }
+    .sub.company1_tab2 .templateTableList > li{ padding: 10px 0; flex-direction: column; }
+    .sub.company1_tab2 .templateTableList > li:first-child{ display: none; }
+    .sub.company1_tab2 .templateTableList .box + .box{ border-left: unset; }
+    .sub.company1_tab2 .templateTableList > li .box{ gap: 5px; padding: 5px 10px; justify-content: flex-start; text-align: left; }
+    .sub.company1_tab2 .templateTableList .box.box1{ width: 100%; }
+    .sub.company1_tab2 .templateTableList .box.box2{ width: 100%; }
+    .sub.company1_tab2 .templateTableList .box.box3{ width: 100%; }
+    .sub.company1_tab2 .templateTableList .box.box4{ width: 100%; }
+    .sub.company1_tab2 .templateTableList .box.box5{ width: 100%;}
+    .sub.company1_tab2 .templateTableList .box.box6{ width: 100%; }
+    .sub.company1_tab2 .templateTableList .box.box7{ width: 100%;  }
+    .sub.company1_tab2 .templateTableList .box.box8{ width: 100%;}
+    .sub.company1_tab2 .templateTableList .box.box9{ width: 100%; }
+
+    .sub.company1_tab2 .templateTableList .box.box1::before{ content:'- 사업관리 : '; flex-shrink: 0; color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box2::before{ content:'- No. : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box3::before{ content:'- 기업명 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box4::before{ content:'- 사업명 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box5::before{ content:'- 발주기업 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box6::before{ content:'- 사업기간 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box7::before{ content:'- 접근권한 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box8::before{ content:'- 현황 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .box.box9::before{ content:'- 상세 : '; flex-shrink: 0;color: #7f7f7f; }
+    .sub.company1_tab2 .templateTableList .tableBtn{ padding: 5px 10px; }
+
+}
