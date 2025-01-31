@@ -923,7 +923,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub.signup .memberAddPopupSection.show{ opacity: 1; visibility: visible; }
 .sub.signup .memberAddPopupSection .closeBtnDiv{ display: flex; align-items: center; justify-content: flex-end; }
 .sub.signup .memberAddPopupSection .closeBtnDiv .closeBtn{ padding: 10px 0; background: transparent; border: none; }
-.sub.signup .memberAddPopupSection .whiteBox{ max-height: 60vh; overflow-y: scroll; }
+.sub.signup .memberAddPopupSection .whiteBox{ background-color: #fff; max-height: 60vh; overflow-y: scroll; }
 .sub.signup .memberAddPopupSection .formList{ width: 100%; }
 
 /* 회원가입 3단계 */
@@ -1314,8 +1314,155 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 
+/* .scroll_custom */
+.scroll_custom::-webkit-scrollbar {  width: 8px;  /* 스크롤바의 너비 */ }
+.scroll_custom::-webkit-scrollbar-thumb { height: 30%; /* 스크롤바의 길이 */ background: #a5a5a5; /* 스크롤바의 색상 */ border-radius: 10px; }
+.scroll_custom::-webkit-scrollbar-track{ background: #efefef; border: none; }
 
 
+/* admin_create_compnay1.html */
+.loadPopupSection{ opacity: 0; visibility: hidden; transition: opacity .5s, visibility .5s; display: flex; align-items: center; justify-content: center; padding: 10px; position: fixed; z-index: 99999; background-color: rgba(0, 0, 0, 0.25); left: 0; top: 0; width: 100%; height: 100%; /* cursor: pointer;*/ }
+.loadPopupSection.show{ opacity: 1; visibility: visible; }
+.loadPopupSection .popupContent{ width: 100%; max-width: 800px; }
+.loadPopupSection .popupContent .btnDiv{ display: flex; align-items: center; justify-content: flex-end; }
+.loadPopupSection .popupContent .btnDiv .closeBtn{ background: transparent; border: none; }
+.loadPopupSection .popupContent .contentWrapDiv{ margin-top: 10px; cursor: auto; background-color: #fff; max-height: 75vh; overflow-y: scroll; border-radius: 10px; padding: 30px 20px; }
+.loadPopupSection .popupContent .popupTitle{ padding-bottom: 5px; border-bottom: 1px solid #E9EBEC; font-weight: 700; font-size: 18px; }
+.loadPopupSection .popupContent .searchDiv{ margin-top: 26px; }
+.loadPopupSection .popupContent .searchDiv .searchTitle .red{ color: #FF4D00; }
+.loadPopupSection .popupContent .searchDiv .searchBox{ margin-top: 10px; max-width: 450px; display: flex; justify-content: flex-start; gap: 4px; }
+.loadPopupSection .popupContent .searchDiv .searchBox .searchBtn{ background-color: #222; border-radius: 4px; color: #fff; flex-shrink: 0; padding: 15px; border: 1px solid #222; }
+.loadPopupSection .popupContent .searchDiv .searchBox .searchInput{ width: 200%; }
+.loadPopupSection .popupContent .searchShowTable{ margin-top: 20px; border-top: 2px solid #E9EBEC; }
+.loadPopupSection .popupContent .searchShowTable > li{ display: flex; border-bottom: 1px solid #E9EBEC; }
+.loadPopupSection .popupContent .searchShowTable .box{ display: flex; align-items: center; justify-content: center; padding: 10px; text-align: center; }
+.loadPopupSection .popupContent .searchShowTable .box.box1{ width: 20%; text-align: left; justify-content: flex-start; flex-shrink: 0; }
+.loadPopupSection .popupContent .searchShowTable .box.box2{ width: 25%; text-align: left; justify-content: flex-start; }
+.loadPopupSection .popupContent .searchShowTable .box.box3{ width: 20%; flex-shrink: 0; }
+.loadPopupSection .popupContent .searchShowTable .box.box4{ width: 20%; flex-shrink: 0; }
+.loadPopupSection .popupContent .searchShowTable .box.box5{ width: 15%; flex-shrink: 0; }
+.loadPopupSection .popupContent .searchShowTable .box.title{ justify-content: center; text-align: center; background-color: #F9FBFC; }
+.loadPopupSection .popupContent .searchShowTable .checkBtn{ background-color: #004B55; border: 1px solid #004B55; border-radius: 4px; padding:4px 10px; font-size: 0.925em; color: #fff; }
+.loadPopupSection .popupContent .searchShowTable .checkBtn.black{ background-color: #222; border-color: #222; }
+.loadPopupSection .popupContent .bottomBtnDiv{ margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 5px; }
+.loadPopupSection .popupContent .bottomBtnDiv .closeBtn{ padding: 10px 20px; background-color: #222; border-radius: 4px; color: #fff; font-size: 18px; border: 1px solid #222;  }
+.loadPopupSection .popupContent .bottomBtnDiv .closeBtn.whiteBtn{ background-color: #fff; color: #7f7f7f; border: 1px solid #D4D4D8; }
 
+
+@media screen and (max-width: 650px) {
+    .loadPopupSection{ font-size: 14px; }
+    .loadPopupSection .popupContent .searchShowTable > li:nth-child(1){ display: none; }
+    .loadPopupSection .popupContent .searchShowTable > li{ padding: 5px 0; flex-direction: column; }
+    .loadPopupSection .popupContent .searchShowTable .box{ padding: 2.5px 10px; text-align: left; justify-content: flex-start; }
+    .loadPopupSection .popupContent .searchShowTable .box.box1{ width: 100%; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box2{ width: 100%; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box3{ width: 100%; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box4{ width: 100%; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box5{ width: 100%; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box1::before{ content:'- 기업명 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box2::before{ content:'- 아이디 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box3::before{ content:'- 대표자이름 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box4::before{ content:'- 전화번호 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box5::before{ content:'- 구분 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchDiv .searchBox .ipt{ padding: 5px; }
+    .loadPopupSection .popupContent .searchDiv .searchBox .searchBtn{ padding: 8px 10px; }
+    .loadPopupSection .popupContent .bottomBtnDiv .closeBtn{ font-size: 16px; }
+}
+
+/* .pagingDiv */
+.pagingDiv{ display: flex; align-items: center; gap: 4px; }
+.pagingDiv .item{ font-size: 12px; padding-top: 1%; background: #fff; width: 25px; height: 25px; line-height: .8em; border: 1px solid #BDBDBD; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #666; }
+.pagingDiv .item .icon{ margin-top: -4px; }
+.pagingDiv .item.active{ background-color: #004B55; color: #fff; border: 1px solid #004B55; }
+
+/* .loadPopupSection .popupContent */
+.loadPopupSection#companyShowPopup .popupContent{ max-width: 600px; }
+.loadPopupSection .popupContent .formList.compnayInfo{ margin: 0 auto; margin-top: 20px; max-width: 450px; }
+.loadPopupSection .popupContent .formList.compnayInfo .label{ color: #7F7F7F; font-size: 0.875em; }
+@media screen and (max-width: 650px) {
+    .loadPopupSection .popupContent .formList.compnayInfo{ width: 100%; }
+}
+
+.loadPopupSection#templatePopup .popupContent{ max-width: 500px; }
+.loadPopupSection .popupContent .searchShowTable .box.box6{ width: calc(100% / 3); flex-shrink: 0; justify-content: center; }
+.loadPopupSection .popupContent .searchShowTable .box.box7{ width: calc(100% / 3); flex-shrink: 0; justify-content: center; }
+.loadPopupSection .popupContent .searchShowTable .box.box8{ width: calc(100% / 3); flex-shrink: 0; justify-content: center; }
+
+@media screen and (max-width: 650px) {
+    .loadPopupSection .popupContent .searchShowTable .box.box6{ width: 100%; justify-content: flex-start; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box7{ width: 100%; justify-content: flex-start; gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box8{ width: 100%; justify-content: flex-start; gap: 5px; }
+
+    .loadPopupSection .popupContent .searchShowTable .box.box6::before{ content:'- 템플릿명 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box7::before{ content:'- 사업명 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box8::before{ content:'- 이동 : '; flex-shrink: 0; }
+}
+
+.sub.signup.noBg .signupCategorySection{ padding: 0; }
+
+
+.loadPopupSection .popupContent .searchShowTable .box.box9{ width: calc(100% / 5); }
+.loadPopupSection .popupContent .searchShowTable .box.box10{ width: calc(100% / 5); }
+.loadPopupSection .popupContent .searchShowTable .box.box11{ width: calc(100% / 5); }
+.loadPopupSection .popupContent .searchShowTable .box.box12{ width: calc(100% / 5); }
+.loadPopupSection .popupContent .searchShowTable .box.box13{ width: calc(100% / 5); }
+
+@media screen and (max-width: 650px) {
+    .loadPopupSection .popupContent .searchShowTable .box.box9{ width: calc(100%); gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box10{ width: calc(100%); gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box11{ width: calc(100%); gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box12{ width: calc(100%); gap: 5px; }
+    .loadPopupSection .popupContent .searchShowTable .box.box13{ width: calc(100%); gap: 5px; }
+
+    .loadPopupSection .popupContent .searchShowTable .box.box9:before{ content:'- 종류 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box10:before{ content:'- 아이디 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box11:before{ content:'- 대표자이름 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box12:before{ content:'- 전화번호 : '; flex-shrink: 0; }
+    .loadPopupSection .popupContent .searchShowTable .box.box13:before{ content:'- 구분 : '; flex-shrink: 0; }
+}
+
+.sub .topSearchDiv{ display: flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+.sub .topSearchDiv .searchDiv{ width: 100%; max-width: 580px; }
+.sub .topSearchDiv .searchDiv .searchWrap{ margin-top: 10px; display: flex; gap: 5px; }
+.sub .topSearchDiv .searchDiv .searchWrap .searchBtn{ flex-shrink: 0; padding: 5px 20px; background-color: #222; border: none; color: #fff; }
+.sub .topSearchDiv .categoryCreateBtn{ background-color: #004B55; border-radius: 4px; color: #fff; border-radius: 4px; padding: 10px; border: none; padding: 10px 20px; font-size: 14px; }
+
+@media screen and (max-width: 650px) {
+    .sub .topSearchDiv{ font-size: 14px; }
+}
+
+.loadPopupSection#characteristicModifyPopup .popupContent{ max-width: 500px; }
+.loadPopupSection .popupContent .grayMap{ margin-top: 10px; color: #7f7f7f; }
+.loadPopupSection .popupContent .modifyList{ margin-top: 10px; }
+.loadPopupSection .popupContent .modifyList > li + li{ margin-top: 10px; }
+.loadPopupSection .popupContent .modifyList .item{ padding: 20px 10px; background-color: #F9FBFC; border-radius: 10px; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.loadPopupSection .popupContent .modifyList .item .title{ flex-grow: 1; font-weight: 700; color: #004B55; }
+.loadPopupSection .popupContent .modifyList .item .title.red{ color: #F17171; }  
+.loadPopupSection .popupContent .modifyList .item .createBtn{ border: none; color: #fff; padding: 10px 20px; border-radius: 4px; background-color: #004B55; }
+.loadPopupSection .popupContent .modifyList .item .createBtn.red{ background-color: #F17171; }
+
+.loadPopupSection#categoryCreatePopup textarea.ipt{ height: 100px; }
+
+.loadPopupSection#categoryDeletePopup .noticeBox{ padding: 50px 0; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.loadPopupSection#categoryDeletePopup .noticeBox .icon{ flex-shrink: 0; }
+
+.loadPopupSection .halfTitleBox{ display: flex; align-items: flex-end; justify-content: space-between; gap: 5px; padding-bottom: 10px; border-bottom: 1px solid #E9EBEC; }
+.loadPopupSection .halfTitleBox .popupTitle{ padding-bottom: unset; border: none; }
+
+.sub .reportTableBox .boardList .popupBtn{ background-color: transparent; border: none; }
+.loadPopupSection .popupContent .reportTableBox .categoryBtn{ cursor: pointer; }
+
+.loadPopupSection .popupContent .formList{ width: 100%; }
+
+.loadPopupSection#typePopup .popupContent{ max-width: 500px; }
+
+.loadPopupSection .mt2{ margin-top: 20px; }
+.loadPopupSection .formList > li .label{ color: #222; }
+.loadPopupSection .formList > li .label.radioBox{ display: flex; justify-content: space-between; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+.loadPopupSection .formList > li .label.radioBox .radioDiv{ cursor: pointer; }
+.loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"]{ display: none; }
+.loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"] + .text{ color: #7f7f7f; position: relative; padding-left: 25px;  }
+.loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"] + .text::before{ content:''; display: block; width: 20px; height: 20px; border-radius: 50%; border: 1px solid #D9D9D9; position: absolute; left: 0; }
+.loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"]:checked + .text::before{ background-image: url('../img/common/radio_check.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
 
 

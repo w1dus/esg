@@ -4,7 +4,20 @@ document.addEventListener("DOMContentLoaded", function(e){
     rightMenuHandler();
     mainPartnerSlide();
     privayPopup();
+    adminClosePopup()
 })
+
+const adminClosePopup = () => {
+    $('.loadPopupSection .popupContent .btnDiv').click(function(){
+        $(this).closest('.loadPopupSection').removeClass('show');
+        $(this).closest('.contentWrapDiv').scrollTop(0);
+    })
+
+    $('.loadPopupSection .popupContent .popupCloseBtn').click(function(){
+        $(this).closest('.loadPopupSection').removeClass('show');
+        $(this).closest('.contentWrapDiv').scrollTop(0);
+    })
+}
 
 const privayPopup = () => {
     /* privacy popup */
