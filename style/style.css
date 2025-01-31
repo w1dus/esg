@@ -842,6 +842,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .signupCategorySection .whiteBox .btnBox{ display: flex; align-items: flex-start;  }
 .signupCategorySection .whiteBox .btnBox .backBtn{ background: transparent; border: none; display: flex; align-items: center; gap: 5px; color: #7F7F7F; }
 .signupCategorySection .whiteBox .bottomBarTitle{ display: flex; padding-bottom: 12px; border-bottom: 2px solid #D9D9D9; margin-top: 20px; }
+.signupCategorySection .whiteBox .bottomBarTitle.spaceBetween{ flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 .signupCategorySection .whiteBox .bottomBarTitle .text{ font-weight: 700; font-size: 20px; }
 .signupCategorySection .whiteBox .bottomBarTitle .text .blue{ color: #004B55; }
 .signupCategorySection .whiteBox .halfBox{ display: flex; flex-wrap: wrap; margin-top: 15px; width: calc(100% + 30px); margin-left: -15px; }
@@ -1422,6 +1423,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 }
 
 .sub .topSearchDiv{ display: flex; align-items: flex-end; flex-wrap: wrap; gap: 10px; justify-content: space-between; }
+.sub .topSearchDiv.mt{ margin-top:10px; }
 .sub .topSearchDiv .searchDiv{ width: 100%; max-width: 580px; }
 .sub .topSearchDiv .searchDiv .searchWrap{ margin-top: 10px; display: flex; gap: 5px; }
 .sub .topSearchDiv .searchDiv .searchWrap .searchBtn{ flex-shrink: 0; padding: 5px 20px; background-color: #222; border: none; color: #fff; }
@@ -1464,5 +1466,16 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"] + .text{ color: #7f7f7f; position: relative; padding-left: 25px;  }
 .loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"] + .text::before{ content:''; display: block; width: 20px; height: 20px; border-radius: 50%; border: 1px solid #D9D9D9; position: absolute; left: 0; }
 .loadPopupSection .formList > li .label.radioBox .radioDiv input[type="radio"]:checked + .text::before{ background-image: url('../img/common/radio_check.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
+
+
+/* 최고관리자 마이페이지 */
+.signupCategorySection .whiteBox .bottomBarTitle .tabBtnList{ display: flex; flex-wrap: wrap; gap: 8px; }
+.signupCategorySection .whiteBox .bottomBarTitle .tabBtnList .item{ text-align: center; display: block; color: #fff; background-color: #7F7F7F; min-width: 124px; padding: 10px; border-radius: 4px; }
+.signupCategorySection .whiteBox .bottomBarTitle .tabBtnList .item.active{ background-color: #004B55; }
+
+@media screen and (max-width: 650px) {
+    .signupCategorySection .whiteBox .bottomBarTitle .tabBtnList{ gap: 5px; }
+    .signupCategorySection .whiteBox .bottomBarTitle .tabBtnList .item{ border-radius: 2px; min-width: unset; padding: 5px 10px; font-size: 14px; }
+}
 
 
