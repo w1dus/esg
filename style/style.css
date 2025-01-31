@@ -1543,5 +1543,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub.company1_tab2 .templateTableList .box.box8::before{ content:'- 현황 : '; flex-shrink: 0;color: #7f7f7f; }
     .sub.company1_tab2 .templateTableList .box.box9::before{ content:'- 상세 : '; flex-shrink: 0;color: #7f7f7f; }
     .sub.company1_tab2 .templateTableList .tableBtn{ padding: 5px 10px; }
-
 }
+
+.sub.company_tab6 .boardAdminArti{ margin: 20px auto 0 auto; max-width: 1000px; }
+.sub.company_tab6 .boardAdminArti .bottomBarTitle .title{ font-weight: 600; font-optical-sizing: 18px; }
