@@ -1547,3 +1547,95 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 
 .sub.company_tab6 .boardAdminArti{ margin: 20px auto 0 auto; max-width: 1000px; }
 .sub.company_tab6 .boardAdminArti .bottomBarTitle .title{ font-weight: 600; font-optical-sizing: 18px; }
+.sub.company_tab6 .boardAdminArti .boardAdminList > li{ padding: 20px 10px; border-bottom: 1px solid #E4E4E4; }
+.sub.company_tab6 .boardAdminArti .boardAdminList .item{ display: flex; align-items: center; justify-content: space-between; gap: 10px; } 
+.sub.company_tab6 .boardAdminArti .boardAdminList .item .okBtn{ font-size: 14px; padding: 10px 20px; border-radius: 4px; background-color: #004B55; color: #fff; flex-shrink: 0; }
+
+@media screen and (max-width: 650px) {
+    .sub.company_tab6 .boardAdminArti .boardAdminList .item{ font-size: 14px; }
+    .sub.company_tab6 .boardAdminArti .boardAdminList > li{ padding: 10px 5px; }
+    .sub.company_tab6 .boardAdminArti .boardAdminList .item .okBtn{ padding: 5px 10px; font-size: 13px; }
+}
+
+/* .sub.categoryModifySection */
+.sub.categoryModifySection{ position: relative; overflow: hidden; }
+.sub.categoryModifySection .categoryModiArti{ padding: 50px 0; }
+.sub.categoryModifySection .categoryModiArti .bottomTtitleBox{ border-bottom: 2px solid #D9D9D9; margin-top: 26px; padding-bottom: 5px; font-size: 20px; font-weight: 700; color: #004B55;  }
+.sub.categoryModifySection .categoryModiArti .tabList{  margin-top: 20px; display: flex; flex-wrap: wrap; text-align: center; }
+.sub.categoryModifySection .categoryModiArti .tabList > li{ flex-grow: 1; border-bottom: 1px solid #D9D9D9; }
+.sub.categoryModifySection .categoryModiArti .tabList .item{ font-size: 20px; color: #7F7F7F; display: block; padding: 10px; }
+.sub.categoryModifySection .categoryModiArti .tabList .item.active{ border-bottom: 4px solid #004B55; color: #004B55; font-weight: 700;  }
+.sub.categoryModifySection .topSearchDiv{ margin-top: 30px; max-width: 400px; }
+
+@media screen and (max-width: 1250px) {
+    .sub.categoryModifySection .categoryModiArti .bottomTtitleBox{ font-size: 18px; }
+    .sub.categoryModifySection .categoryModiArti .tabList .item{ font-size: 16px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.categoryModifySection .categoryModiArti .tabList .item{ font-size: 14px; }
+}
+
+.sub.categoryModifySection .threeMenuList{ margin-top: 20px; display: flex;  }
+.sub.categoryModifySection .threeMenuList.add{ margin-top: 0; border-bottom: 1px solid #E9EBEC; }
+.sub.categoryModifySection .threeMenuList + .threeMenuList > li{height: 500px; overflow-y: scroll; }
+.sub.categoryModifySection .threeMenuList .category_li{ background-color: #fff; width: calc(100% / 3); }
+.sub.categoryModifySection.tab4 .threeMenuList .category_li{ width: calc(100% / 2); }
+.sub.categoryModifySection .threeMenuList .topSearchDiv{ opacity: 0; visibility: hidden; }
+.sub.categoryModifySection .threeMenuList .topSearchDiv .searchBtn{ margin-right: 10px; }
+.sub.categoryModifySection .threeMenuList > li:last-child .topSearchDiv .searchBtn{ margin-right: 0; }
+.sub.categoryModifySection .threeMenuList .active .topSearchDiv{ opacity: 1; visibility: visible; }
+.sub.categoryModifySection .threeMenuList > li:nth-child(1) .boxWrap{ border-left: unset; }
+.sub.categoryModifySection .threeMenuList .boxWrap{ cursor: pointer; border-bottom: 1px solid #E9EBEC; padding: 10px; border-left: 1px solid #E9EBEC; }
+.sub.categoryModifySection .threeMenuList .boxWrap.title{  border-bottom: 2px solid #E9EBEC; border-top: 2px solid #E9EBEC; margin-top: 10px; background-color: #F9FBFC; text-align: center; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content{ display: flex; align-items: center; gap: 5px; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content:hover{ background-color: #F9FBFC; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content.click{ background-color: #F9FBFC; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content .addDelBtn{ cursor: pointer; border: none; color: #fff; flex-shrink: 0; padding: 8px 15px; font-size: 14px; border-radius: 4px; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content .addDelBtn.delBtn{ background-color: #E74926; }
+.sub.categoryModifySection .threeMenuList .boxWrap.content .addDelBtn.modifyBtn{ background-color: #004B55; }
+
+.sub.categoryModifySection .threeMenuList > li .boxWrap .ipt{ display: none;  }
+.sub.categoryModifySection .threeMenuList > li .boxWrap .text{ flex-grow: 1; }
+.sub.categoryModifySection .threeMenuList > li .boxWrap.modify .ipt{ display: block; }
+.sub.categoryModifySection .threeMenuList > li .boxWrap.modify .text{ display: none; }
+.sub.categoryModifySection .threeMenuList > li .boxWrap { color: transparent; } 
+.sub.categoryModifySection .threeMenuList > li .boxWrap .addDelBtn { opacity: 0; visibility: hidden; }
+.sub.categoryModifySection .threeMenuList > li .boxWrap .ipt{ opacity: 0; visibility: hidden; }
+
+.sub.categoryModifySection .threeMenuList > li.active .boxWrap { color: #222; }
+.sub.categoryModifySection .threeMenuList > li.active .boxWrap .addDelBtn { opacity: 1; visibility: visible; }
+.sub.categoryModifySection .threeMenuList > li.active .boxWrap .ipt{ opacity: 1; visibility: visible; }
+
+.sub.categoryModifySection .topSearchDiv .searchDiv .mobileBackDiv{ display: none; }
+
+@media screen and (max-width: 1250px) {
+    .sub.categoryModifySection .threeMenuList{ font-size: 14px; }
+}
+@media screen and (max-width: 1000px) {
+
+    .sub.categoryModifySection .topSearchDiv .searchDiv { max-width: unset; }
+    .sub.categoryModifySection .threeMenuList .active .topSearchDiv{ margin-top:0; }
+    .sub.categoryModifySection .topSearchDiv .searchDiv .mobileBackDiv{ display: flex; justify-content: flex-start; margin: 10px 0; }
+    .sub.categoryModifySection .topSearchDiv .searchDiv .mobileBackDiv .backBtn{ padding: 5px 10px; border-radius: 4px; color: #7f7f7f; border: 1px solid #7f7f7f; background-color: #fff; }
+
+    .sub.categoryModifySection .threeMenuList{ position: relative; }
+    .sub.categoryModifySection .threeMenuList .category_li{ width: 100%;  position: absolute; left: 0; top: 0; position: absolute; display: none; } 
+    .sub.categoryModifySection.tab4 .threeMenuList .category_li{ width: 100%; }
+    .sub.categoryModifySection .threeMenuList .category_li1{ position: static; display: block; }
+    .sub.categoryModifySection .threeMenuList .category_li.active{ display: block; }
+    .sub.categoryModifySection .threeMenuList > li .boxWrap{ border-left: unset; }
+
+}
+@media screen and (max-width: 650px) {
+    .sub.categoryModifySection .threeMenuList .boxWrap.content .addDelBtn{ font-size: 13px; padding: 5px 10px; }
+}
+
+
+
+
+
+
+
+
+
+
