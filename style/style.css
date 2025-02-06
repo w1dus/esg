@@ -1509,6 +1509,8 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub.company1_tab2 .templateTableList .tableBtn.greenBtn{ background-color: #004B55; }
 .sub.company1_tab2 .templateTableList .green{ color: #004B55; }
 
+.sub.company1_tab2 .templateTableList .box.box7 .accessMemberBtn{ background-color: transparent; border: none; }
+
 
 @media screen and (max-width: 1250px) {
     .sub.company1_tab2 .templateTableList{ font-size: 15px; }
@@ -1630,12 +1632,72 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub.categoryModifySection .threeMenuList .boxWrap.content .addDelBtn{ font-size: 13px; padding: 5px 10px; }
 }
 
+/* .sub.categoryModifySection.logoModify */
+.sub.categoryModifySection.logoModify .logoList{ display: flex; flex-wrap: wrap; width: calc(100% + 20px); margin-left: -10px; margin-top: 20px; }
+.sub.categoryModifySection.logoModify .logoList > li{ padding: 10px; width: calc(100% / 4); }
+.sub.categoryModifySection.logoModify .logoList .item{ box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow-y: hidden; }
+.sub.categoryModifySection.logoModify .logoList .item .imgBox{ border-radius: 10px 10px 0 0; background-color: #efefef; height: 255px; background-size: cover; background-repeat: no-repeat; background-position: center; border: 1px solid #e4e4e4; }
+.sub.categoryModifySection.logoModify .logoList .item .title{ margin: 10px; font-family: "Gmarket Sans"; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; }
+
+@media screen and (max-width: 1250px) {
+    .sub.categoryModifySection.logoModify .logoList .item .imgBox{ height: 16vw; }
+      
+}
+@media screen and (max-width: 950px) {
+    .sub.categoryModifySection.logoModify .logoList > li{ width: calc(100% / 3); }
+    .sub.categoryModifySection.logoModify .logoList .item .imgBox{ height: 23vw; }
+}
+@media screen and (max-width: 650px) {
+    .sub.categoryModifySection.logoModify .logoList{ width: 100%; margin: 1   0px auto 0 auto; }
+    .sub.categoryModifySection.logoModify .logoList > li{ width: calc(100% / 2); padding: 5px; }
+    .sub.categoryModifySection.logoModify .logoList .item{ border-radius: 5px; }
+    .sub.categoryModifySection.logoModify .logoList .item .imgBox{ border-radius: 5px 5px 0 0; height: 30vw; }
+    .sub.categoryModifySection.logoModify .logoList .item .title{ font-size: 14px; }
+}
+
+/* .loadPopupSection#accessMemberPopup */
+.loadPopupSection#accessMemberPopup .popupContent{ max-width: 487px; }
+.loadPopupSection#accessMemberPopup .popupContent .box1{ width: calc(100% / 3); text-align: center; justify-content: center; }
+.loadPopupSection#accessMemberPopup .popupContent .box2{ width: calc(100% / 3); text-align: center; justify-content: center; }
+.loadPopupSection#accessMemberPopup .popupContent .box3{ width: calc(100% / 3); text-align: center; justify-content: center; }
 
 
+.sub.winwinGrouth .controllerDiv{ margin-top: 20px; padding: 20px; background-color: #F9FBFC; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.sub.winwinGrouth .controllerDiv .title{ font-weight: 700; flex-shrink: 0; color: #004B55; }
+.sub.winwinGrouth .controllerDiv .btnList{ display: flex; flex-wrap: wrap; gap: 10px; }
+.sub.winwinGrouth .controllerDiv .btnList .item{ display: block; font-weight: 500; padding: 10px 20px; background-color: #fff; color: #004B55; border: 2px solid #004B55; border-radius: 4px; }
+.sub.winwinGrouth .controllerDiv .btnList .item.item2{ color: #004B55; border-color: #004B55; }
+.sub.winwinGrouth .controllerDiv .btnList .item.item3{ color: rgba(241, 113, 113, 1); border-color: rgba(241, 113, 113, 1); }
+.sub.winwinGrouth .controllerDiv .btnList .item.item4{ color: #fff; border-color: #004B55; background-color: #004B55; }
+
+@media screen and (max-width: 1250px) {
+    .sub.winwinGrouth .controllerDiv .btnList .item{ padding: 5px 10px; font-size: 14px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.winwinGrouth .controllerDiv { padding: 10px; }
+    .sub.winwinGrouth .controllerDiv .btnList{ width: 100%; }
+}
+
+.sub.managementView .questionDiv{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; }
+.sub.managementView .questionDiv .title{ font-weight: 700; }
+.sub.managementView .questionDiv .downloadBtn{ display: block; padding: 10px 30px; color:#fff; background-color: #7F7F7F; border-radius: 4px;  } 
+
+.sub.managementView .textareaViewDiv{ margin-top: 10px; padding: 20px; line-height: 1.5em; border: 1px solid #ECECEC; }
+.sub.managementView .fileDownloadBtn{
+     margin-top: 10px; display: block; padding: 20px; padding-left: 60px; border-radius: 8px; border: 1px solid #e6e6e6; 
+     background-image: url('../img/boardImg/folder.png'); background-repeat: no-repeat; background-position: left 20px center; 
+}
+.sub.managementView .fileDownloadBtn .fileDownInfo{ margin-top: 2px; font-size: 14px; color: #999; }
+
+.sub.managementView .greenTitle{ font-size: 18px; margin: 30px 0 10px 0; font-weight: 700; color: #004B55; font-weight: 700; }
 
 
-
-
-
-
-
+@media screen and (max-width: 1250px) {
+    .sub.managementView .questionDiv .downloadBtn{ padding: 5px 20px; }
+}
+@media screen and (max-width: 650px) {
+    .sub.managementView .questionDiv .downloadBtn{ padding: 5px 10px; font-size: 14px; }
+    .sub.managementView .textareaViewDiv{ font-size: 14px; padding: 10px; }
+    .sub.managementView .fileDownloadBtn{ padding: 10px; padding-left: 45px; font-size: 14px; background-position: left 10px center; }
+    .sub.managementView .fileDownloadBtn .fileDownInfo{ font-size: 13px; }
+}

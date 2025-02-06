@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="memberSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./login.html" class="item">
+                                <img src="./img/header/icon1.png" alt="로그인" class="icon" />
+                                <div class="text">로그인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup_category.html" class="item">
+                                <img src="./img/header/icon2.png" alt="회원가입" class="icon" />
+                                <div class="text">회원가입</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./notice.html" class="item">
+                                <img src="./img/header/icon3.png" alt="공지사항" class="icon" />
+                                <div class="text">공지사항</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <a href="./index.html"><img src="./img/header/logo.png" alt="한국표준협회 KSA" class="logo"/></a>
+                    <ul class="menuList">
+                        <li><a href="./sub01_1.html">Why KSA ESG ?</a></li>
+                        <li>
+                            <a href="./sub02_1.html" class="subMenuBtn">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub02_1.html">동반위 협력사 ESG 진단</a></li>
+                                <li><a href="./sub02_2.html">KSA 공급망 ESG 진단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub03_1.html">ESG 전략수집</a></li>
+                        <li>
+                            <a href="./sub04_1.html" class="subMenuBtn">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub04_1.html">ESG 정보공시 자문</a></li>
+                                <li><a href="./sub04_2.html">ESG 정보공시 제3자 검증</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub05_1.html">ESG 인증</a></li>
+                        <li>
+                            <a href="#" target="_blank" class="linkBtn">온실가스 검인증 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                        </li>
+                        <li>
+                            <a href="./sub07_1.html" class="subMenuBtn">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="#" target="_blank" class="linkBtn">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                                <li><a href="#" class="linkBtn" target="_blank">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub08_1.html">ESG 표준</a></li>
+                        <li>
+                            <a href="./sub09_1.html" class="subMenuBtn">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub09_1.html">대회 개요</a></li>
+                                <li><a href="./sub09_2.html">보고서 DB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menuBtn">
+                        <img src="./img/header/sideMenuBtn.png" alt="햄버거메뉴" class="icon"/>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightMenuSection">
+            <div class="btnWrap">
+                <button type="button" class="closeBtn">
+                    <img src="./img/header/menuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <ul class="menuList">
+                <li><a href="./sub01_1.html" class="item">Why KSA ESG ?</a></li>
+                <li>
+                    <a href="./sub02_1.html" class="subMenuBtn item">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub02_1.html" class="item">동반위 협력사 ESG 진단</a></li>
+                        <li><a href="./sub02_2.html" class="item">KSA 공급망 ESG 진단</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03_1.html" class="item">ESG 전략수집</a></li>
+                <li>
+                    <a href="./sub04_1.htm" class="subMenuBtn item">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub04_1.html" class="item">ESG 정보공시 자문</a></li>
+                        <li><a href="./sub04_2.html" class="item">ESG 정보공시 제3자 검증</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" class="item">온실가스 검인증</a></li>
+                <li>
+                    <a href="./sub06_1.html" class="item" class="linkBtn">ESG 정보공시 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                </li>
+                <li>
+                    <a href="./sub07_1.html" class="subMenuBtn item">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="#" class="linkBtn item" target="_blank">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                        <li><a href="#" class="linkBtn item">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub08_1.html" class="item">ESG 표준</a></li>
+                <li>
+                    <a href="./sub09_1.html" class="subMenuBtn item">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub09_1.html" class="item">대회 개요</a></li>
+                        <li><a href="./sub09_2.html" class="item">보고서 DB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <main class="sub sec_top mypage mypageBoard winwinGrouth">
+            <article class="mypageBoardArti">
+                <div class="inner">
+                    <div class="mypageTopBtnDiv">
+                        <a href="./mypageBoardView.html" class="backBtn">
+                            <img src="./img/signupCategory/back_icon.png" alt="뒤로가기">
+                            <div class="text">뒤로가기</div>
+                        </a>
+                        <div></div>
+                    </div>
+
+                    <div class="controllerDiv">
+                        <div class="title">사업 지표 컨트롤</div>
+                        <ul class="btnList">
+                            <li><a href="#" class="item item1">완료보고서 제작</a></li>
+                            <li><a href="#" class="item item2">기업/위원 노출</a></li>
+                            <li><a href="#" class="item item3">지표 전체 삭제</a></li>
+                            <li><a href="#" class="item item4">신규 지표 생성</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="topSearchDiv mt">
+                        <div class="searchDiv">
+                            <div class="searchTitle">실사 진단 단계 기본값 설정</div>
+                            <div class="searchWrap">
+                                <select class="ipt">
+                                    <option value="1차">1차</option>
+                                    <option value="2차">2차</option>
+                                    <option value="3차">3차</option>
+                                </select>
+                                <button type="button" class="searchBtn">설정</button>
+                            </div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="pageBgTitle">협력사 ESG 진단 / 동반위 협력사 ESG 진단</div>
+
+                    
+
+                    
+                    <section class="boardArti boardViewArti">
+                        <article class="infoBoxWrap">
+
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 categoryBtn" colspan="9"> <button type="button" class="popupBtn">ESG 진단</button></th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1">중분류</th>
+                                            <th class="bg1 box2">소분류</th>
+                                            <th class="bg1 box3">코드</th>
+                                            <th class="bg1 box4">지표명칭</th>
+                                            <th class="bg1 box5 btnTh">지표설명</th>
+                                            <th class="bg1 box6">답변유형/배점</th>
+                                            <th class="bg1 box7">진단단계 설정 <span class="small">(설정/생략)</span></th>
+                                            <th class="bg1 box8">연계지표 <span class="small">(설정/생략)</span></th>
+                                            <th class="bg1 box9 btnTh">관리</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn" rowspan="4"> <button type="button" class="popupBtn">ESG 공통</button></td>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="./business_management_view.html" class="greenBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="./business_management_view.html" class="greenBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="greenBtn clickBtn chosePopup3ViewBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn" rowspan="6"><button type="button" class="popupBtn">E(환경)</button></td>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn" rowspan="4"> <button type="button" class="popupBtn">ESG 공통</button></td>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="greenBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="./business_management_view.html" class="greenBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="greenBtn clickBtn chosePopup3ViewBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn" rowspan="6"><button type="button" class="popupBtn">E(환경)</button></td>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 categoryBtn"><button type="button" class="popupBtn">사회적 책임</button></td>
+                                            <td class="grayText">E1-01</td>
+                                            <td class="grayText">환경방침</td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn characteristicBtn">확인하기</a></td>
+                                            <td class="grayText"><a href="#" class="grayBtn clickBtn typeBtn ">확인하기</a></td>
+                                            <td class="grayText">1차</td>
+                                            <td class="grayText">GRI 2-11</td>
+                                            <td class=""><a href="#" class="blackBtn clickBtn">내용보기</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="saveBtnDiv">
+                                <div class="btnWrap">
+                                    <button type="button" class="submitBtn">저장하기</button>
+                                </div>
+                                
+                            </div>
+
+                        </article>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <!--지표 수정하기 팝업 -->
+        <section class="loadPopupSection" id="characteristicModifyPopup">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">지표 수정하기</div>
+
+                    <div class="grayMap">중분류 > 소분류</div>
+                    
+                    <ul class="modifyList">
+                        <li>
+                            <div class="item">
+                                <div class="title">신규 분류 생성</div>
+                                <button type="button" class="createBtn createClick">생성하기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="title">분류 수정</div>
+                                <button type="button" class="createBtn modifyClick">수정하기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="title red">분류 삭제</div>
+                                <button type="button" class="createBtn red delClick">삭제하기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <style>
+            .categoryBtn{ cursor: pointer; }
+        </style>
+        <script>
+            $('.categoryBtn').click(function(){
+                $('#characteristicModifyPopup').addClass('show');
+            })
+        </script>
+
+        <!-- 분류 생성 팝업 -->
+        <section class="loadPopupSection " id="categoryCreatePopup">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">분류생성</div>
+
+                    <ul class="formList">
+                        <li class="full">
+                            <div class="label">생성 기준 <span class="red">*</span></div>
+                            <div class="iptBox radioIpt">
+                                <label>
+                                    <input type="radio" value="아래로 생성" name="r1" checked/>
+                                    <div class="text">아래로 생성</div>
+                                </label>
+                                <label>
+                                    <input type="radio" value="위로 생성" name="r1"/>
+                                    <div class="text">위로 생성</div>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">대분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">중분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">검증인 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="half empty"></li>
+                        <li class="full">
+                            <div class="label">질의내용 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">문항종류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="주관식 항목">주관식 항목</option>
+                                    <option value="객관식 항목">객관식 항목</option>
+                                    <option value="선형배율 항목">선형배율 항목</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mt"></div>
+                    <div class="popupTitle">주관식 항목생성</div>
+                    <ul class="formList">
+                        <li>
+                            <div class="text">문항명 (질문명)<span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" />
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">생성하기</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.createClick').click(function(){
+                $('#categoryCreatePopup').addClass('show');
+            })
+        </script>
+
+        <!-- 분류 삭제 팝업 -->
+        <section class="loadPopupSection" id="categoryDeletePopup">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="halfTitleBox">
+                        <div class="popupTitle">CE019</div>
+                        <div class="grayMap">대분류 > 중분류 > 소분류</div>
+                    </div>
+                     <div class="noticeBox">
+                            <img src="./img/common/exclamation_mark_icon.png" alt="!" class="icon" />
+                            <div class="text">내용을 삭제하시겠습니까?</div>
+                        </div>
+
+                    
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn whiteBtn popupCloseBtn">취소</button>
+                        <button type="button" class="closeBtn">생성하기</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.delClick').click(function(){
+                $('#categoryDeletePopup').addClass('show');
+            })
+        </script>
+
+        <!-- 지표 설명 클릭 시 -->
+        <section class="loadPopupSection" id="characteristicPopup">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">지표 수정하기</div>
+
+                     
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">지표설명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">중분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">소분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">코드</div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">요약 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt" style="height:100px;"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">문항 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt" style="height:100px;"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">지표설명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt" style="height:100px;"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">작성완료</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.characteristicBtn').click(function(e){
+                e.preventDefault();
+                $('#characteristicPopup').addClass('show');
+            })
+        </script>
+
+        <!-- 답변 유형/배점 클릭 시 -->
+        <section class="loadPopupSection" id="typePopup">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">답변유형/배점 설정하기</div>
+                    <ul class="modifyList">
+                        <li>
+                            <div class="item">
+                                <div class="title">주관식 항목 생성</div>
+                                <button type="button" class="createBtn typeCreateClick1">생성하기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="title">객관식 항목 생성</div>
+                                <button type="button" class="createBtn typeCreateClick2">생성하기</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="title">선형배율 항목 생성</div>
+                                <button type="button" class="createBtn typeCreateClick3">생성하기</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.typeBtn').click(function(e){
+                e.preventDefault();
+                $('#typePopup').addClass('show');
+            })
+        </script>
+
+        <!-- 지표 설명 클릭 시 -->
+        <section class="loadPopupSection" id="typePopup1">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="halfTitleBox">
+                        <div class="popupTitle">주관식 항목생성</div>
+                        <div class="grayMap">중분류 &gt; 소분류</div>
+                    </div>
+
+                    <ul class="formList">
+                        <li class="full">
+                            <div class="label">문항명 (질문명) <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" placeholder="" class="ipt" />
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">작성완료</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.typeCreateClick1').click(function(e){
+                e.preventDefault();
+                $('#typePopup1').addClass('show');
+            })
+            $('#typePopup1 .resetBtn').click(function(){     
+                if (confirm("기존에 입력한 값이 있다면 초기화됩니다. 초기화하시겠습니까?")) { //질문 어떤걸로 해야할지 몰라서 임의로 넣어두었어요 🥲
+                    console.log( $('#typePopup1').find('.ipt'))
+                    $('#typePopup1').find('.ipt').val('');
+                }
+            })
+        </script>
+
+        <!-- 지표 설명 클릭 시 -->
+        <section class="loadPopupSection" id="typePopup2">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">객관식 항목생성</div>
+
+                     
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">문항 개수 설정 <span class="red">*</span></div>
+                            <div class="iptBox btnIpt">
+                                <select class="ipt">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <button type="button" class="grayBtn multipleBtn">생성</button>
+                            </div>
+                        </li>                        
+                    </ul>
+                    <ul class="formList formAddDel">
+                        <!-- <li class="half">
+                            <div class="label">1번 항목명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">2번 항목명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">3번 항목명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li> -->
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">작성완료</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.typeCreateClick2').click(function(e){
+                e.preventDefault();
+                $('#typePopup2').addClass('show');
+            })
+
+            //문항 개수 설정 
+            $('#typePopup2 .multipleBtn').click(function(){
+                if (confirm("기존에 입력한 값이 있다면 초기화됩니다. 추가하시겠습니까?")) { //질문 어떤걸로 해야할지 몰라서 임의로 넣어두었어요 🥲
+                    const createCount = $(this).siblings('.ipt').val();
+                    let dhtml = ""; // 문자열 초기화
+                    for (let i = 1; i <= createCount; i++) { // 1부터 createCount까지 반복
+                        dhtml += `<li class="half">
+                                    <div class="label">${i}번 항목명 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="" />
+                                    </div>
+                                </li>`;
+                    }
+                    console.log(dhtml); // 최종 HTML 출력
+                    // 특정 요소에 추가 (예: ul 태그 안에 삽입)
+                    $('#typePopup2 .formAddDel').html(dhtml);
+                } 
+                else { return false; }
+            })
+
+            
+        </script>
+
+
+        <!-- 선형배율 항목 생성 -->
+        <section class="loadPopupSection" id="typePopup3">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="popupTitle">선형배율 항목생성</div>
+                    
+                    <ul class="formList">
+                        <!-- 
+                            @@@ 끝점수가 시작점수보다 같거나 작지 않게 선택되도록 해주세요!!! @@@
+                            일단 제가 스크립트 문 넣었는데 이상하면 꼭 말씀해주세요오
+                         -->
+                        <li class="half">
+                            <div class="label">시작점수 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt startScore" >
+                                    <option value="">시작 점수를 선택해주세요</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">끝 점수 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt endScore" >
+                                    <option value="">끝 점수를 선택해주세요</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">시작 질문 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">끝 질문 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">작성완료</button>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.typeCreateClick3').click(function(e){
+                e.preventDefault();
+                $('#typePopup3').addClass('show');
+            })
+
+
+            //시작점수 값이 변경될 경우 (시작점수 값 변경 안되게 alert)
+            $('#typePopup3 .startScore').change(function() {
+                let selectedValue = parseInt($(this).val()); // 선택된 값 가져오기
+                let endScore = parseInt($('#typePopup3 .endScore').val());
+                console.log(selectedValue, endScore);
+                if(endScore !== '' && selectedValue >= endScore){
+                    alert('시작점수가 끝 점수보다 작은값이여야합니다.')
+                    $(this).val('')
+                    return false;
+                }
+            });
+
+            //끝 점수가 변경될 경우 (끝 점수의 값이 변경 안되게 alert)
+            $('#typePopup3 .endScore').change(function() {
+                let selectedValue = parseInt($(this).val()); // 선택된 값 가져오기
+                let endScore = parseInt($('#typePopup3 .startScore').val());
+                console.log(selectedValue, endScore);
+                if(endScore !== '' && selectedValue <= endScore){
+                    alert('끝 점수가 시작 점수보다 큰값이여야합니다.')
+                    $(this).val('')
+                    return false;
+                }
+            });
+
+        </script>
+
+
+        <!--지표전체보기 - 주관식 .chosePopupViewBtn 클래스 클릭시 -->
+        <section class="loadPopupSection" id="chosePopupView">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="halfTitleBox">
+                        <div class="popupTitle">생성된 지표 확인</div>
+                        <div class="grayMap">대분류 > 중분류 > 소분류</div>
+                    </div>
+
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">대분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">중분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">소분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">코드 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">요약 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표명칭 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked1" value="1" checked/>
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표설명 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked1" value="2" />
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                dhtml위치입니다.
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">진단단계 설정 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">연계지표 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">문항종류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt2"></div>
+                    <div class="popupTitle">주관식 항목생성</div>
+
+                    <ul class="formList">
+                        <li class="full">
+                            <div class="label">문항명 (질문명) <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" />
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">생성하기</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.chosePopupViewBtn').click(function(){
+                $('#chosePopupView').addClass('show');
+            })
+        </script>
+
+
+        <!--지표전체보기 - 객관식 .chosePopup2ViewBtn 클래스 클릭시 -->
+        <section class="loadPopupSection" id="chosePopupView2">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="halfTitleBox">
+                        <div class="popupTitle">생성된 지표 확인</div>
+                        <div class="grayMap">대분류 > 중분류 > 소분류</div>
+                    </div>
+
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">대분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">중분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">소분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">코드 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">요약 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표명칭 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked2" value="1" checked/>
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표설명 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked2" value="2" />
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                dhtml위치입니다.
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">진단단계 설정 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">연계지표 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">문항종류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt2"></div>
+                    <div class="popupTitle">주관식 항목생성</div>
+
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">문항 개수 설정 <span class="red">*</span></div>
+                            <div class="iptBox btnIpt">
+                                <select class="ipt">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                                <button type="button" class="grayBtn multipleBtn">생성</button>
+                            </div>
+                        </li>                        
+                    </ul>
+                    <ul class="formList formAddDel">
+                        <li class="half">
+                            <div class="label">1번 항목명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="">
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">2번 항목명 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">생성하기</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <script>
+            $('.chosePopup2ViewBtn').click(function(e){
+                e.preventDefault();
+                $('#chosePopupView2').addClass('show');
+            })
+            //문항 개수 설정 
+            $('#chosePopupView2 .multipleBtn').click(function(){
+                if (confirm("기존에 입력한 값이 있다면 초기화됩니다. 추가하시겠습니까?")) { //질문 어떤걸로 해야할지 몰라서 임의로 넣어두었어요 🥲
+                    const createCount = $(this).siblings('.ipt').val();
+                    let dhtml = ""; // 문자열 초기화
+                    for (let i = 1; i <= createCount; i++) { // 1부터 createCount까지 반복
+                        dhtml += `<li class="half">
+                                    <div class="label">${i}번 항목명 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" placeholder="" />
+                                    </div>
+                                </li>`;
+                    }
+                    console.log(dhtml); // 최종 HTML 출력
+                    // 특정 요소에 추가 (예: ul 태그 안에 삽입)
+                    $('#chosePopupView2 .formAddDel').html(dhtml);
+                } 
+                else { return false; }
+            })
+        </script>
+
+        <!--지표전체보기 - 선형배율 .chosePopup3ViewBtn 클래스 클릭시 -->
+        <section class="loadPopupSection" id="chosePopupView3">
+            <article class="popupContent">
+                <div class="btnDiv">
+                    <button type="button" class="closeBtn"><img src="./img/common/white-close-btn.png" alt="X" class="icon"></button>
+                </div>
+                <div class="contentWrapDiv scroll_custom">
+                    <div class="halfTitleBox">
+                        <div class="popupTitle">생성된 지표 확인</div>
+                        <div class="grayMap">대분류 > 중분류 > 소분류</div>
+                    </div>
+
+                    <ul class="formList">
+                        <li class="half">
+                            <div class="label">대분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">중분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">소분류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                    <option value="설정된 분류 1">설정된 분류 1</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">코드 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="" />
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label">요약 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표명칭 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked2" value="1" checked/>
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                <textarea class="ipt samllHeight"></textarea>
+                            </div>
+                        </li>
+                        <li class="full">
+                            <div class="label radioBox">
+                                <div class="text">지표설명 <span class="red">*</span></div>
+                                <label class="radioDiv">
+                                    <input type="radio" name="checked2" value="2" />
+                                    <div class="text">사용</div>
+                                </label>
+                            </div>
+                            <div class="iptBox">
+                                dhtml위치입니다.
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">진단단계 설정 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">연계지표 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">문항종류 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt">
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt2"></div>
+                    <div class="popupTitle">주관식 항목생성</div>
+
+                    <ul class="formList">
+                        <!-- 
+                            @@@ 끝점수가 시작점수보다 같거나 작지 않게 선택되도록 해주세요!!! @@@
+                            일단 제가 스크립트 문 넣었는데 이상하면 꼭 말씀해주세요오
+                         -->
+                        <li class="half">
+                            <div class="label">시작점수 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt startScore">
+                                    <option value="">시작 점수를 선택해주세요</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">끝 점수 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <select class="ipt endScore">
+                                    <option value="">끝 점수를 선택해주세요</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">시작 질문 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="">
+                            </div>
+                        </li>
+                        <li class="half">
+                            <div class="label">끝 질문 <span class="red">*</span></div>
+                            <div class="iptBox">
+                                <input type="text" class="ipt" placeholder="">
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bottomBtnDiv">
+                        <button type="button" class="closeBtn">생성하기</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <script>
+            $('.chosePopup3ViewBtn').click(function(e){
+                e.preventDefault();
+                $('#chosePopupView3').addClass('show');
+            })
+            //시작점수 값이 변경될 경우 (시작점수 값 변경 안되게 alert)
+            $('#chosePopupView3 .startScore').change(function() {
+                let selectedValue = parseInt($(this).val()); // 선택된 값 가져오기
+                let endScore = parseInt($('#chosePopupView3 .endScore').val());
+                if(endScore !== '' && selectedValue >= endScore){
+                    alert('시작점수가 끝 점수보다 작은값이여야합니다.')
+                    $(this).val('')
+                    return false;
+                }
+            });
+
+            //끝 점수가 변경될 경우 (끝 점수의 값이 변경 안되게 alert)
+            $('#chosePopupView3 .endScore').change(function() {
+                let selectedValue = parseInt($(this).val()); // 선택된 값 가져오기
+                let endScore = parseInt($('#chosePopupView3 .startScore').val());
+                if(endScore !== '' && selectedValue <= endScore){
+                    alert('끝 점수가 시작 점수보다 큰값이여야합니다.')
+                    $(this).val('')
+                    return false;
+                }
+            });
+        </script>
+
+
+        <!-- 개인정보 처리방침 -->
+        <section class="f_popup_bg">
+            <div class="popup_box">
+                <div class="btn_wrap">
+                    <p class="btn">
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <div class="content_wrap">
+                    <p class="title"> 개인정보처리방침 </p>
+                    <p class="content"> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="menuSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li><a href="#">로그인</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#" class="privacy_view">개인정보 처리방침</a></li>
+                    </ul>
+
+                    <ul class="siteList">
+                        <li><a href="#" class="grayBg" target="_blank">한국 표준협회 공식 홈페이지</a></li>
+                        <li><a href="#" class="grayBg" target="_blank">KSA EDU</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <div class="halfBox">
+                        <img src="./img/footer/logo.png" alt="KSA 한국표준협회 ESG 경영추진단" class="logo" />
+                        <div class="infoText">
+                            한국표준협회 ESG경영추진단 본부 06160 서울시 강남구 테헤란로 69길 5 (삼성동, DT센터)<br/>
+                            대표전화 : 1670-6009
+                        </div>
+                    </div>
+                    <div class="copy_right">© KOREAN STANDARDS ASSOCIATION. All rights reserved.</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
