@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="memberSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./login.html" class="item">
+                                <img src="./img/header/icon1.png" alt="로그인" class="icon" />
+                                <div class="text">로그인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup_category.html" class="item">
+                                <img src="./img/header/icon2.png" alt="회원가입" class="icon" />
+                                <div class="text">회원가입</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./notice.html" class="item">
+                                <img src="./img/header/icon3.png" alt="공지사항" class="icon" />
+                                <div class="text">공지사항</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <a href="./index.html"><img src="./img/header/logo.png" alt="한국표준협회 KSA" class="logo"/></a>
+                    <ul class="menuList">
+                        <li><a href="./sub01_1.html">Why KSA ESG ?</a></li>
+                        <li>
+                            <a href="./sub02_1.html" class="subMenuBtn">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub02_1.html">동반위 협력사 ESG 진단</a></li>
+                                <li><a href="./sub02_2.html">KSA 공급망 ESG 진단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub03_1.html">ESG 전략수집</a></li>
+                        <li>
+                            <a href="./sub04_1.html" class="subMenuBtn">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub04_1.html">ESG 정보공시 자문</a></li>
+                                <li><a href="./sub04_2.html">ESG 정보공시 제3자 검증</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub05_1.html">ESG 인증</a></li>
+                        <li>
+                            <a href="#" target="_blank" class="linkBtn">온실가스 검인증 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                        </li>
+                        <li>
+                            <a href="./sub07_1.html" class="subMenuBtn">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="#" target="_blank" class="linkBtn">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                                <li><a href="#" class="linkBtn" target="_blank">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub08_1.html">ESG 표준</a></li>
+                        <li>
+                            <a href="./sub09_1.html" class="subMenuBtn">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub09_1.html">대회 개요</a></li>
+                                <li><a href="./sub09_2.html">보고서 DB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menuBtn">
+                        <img src="./img/header/sideMenuBtn.png" alt="햄버거메뉴" class="icon"/>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightMenuSection">
+            <div class="btnWrap">
+                <button type="button" class="closeBtn">
+                    <img src="./img/header/menuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <ul class="menuList">
+                <li><a href="./sub01_1.html" class="item">Why KSA ESG ?</a></li>
+                <li>
+                    <a href="./sub02_1.html" class="subMenuBtn item">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub02_1.html" class="item">동반위 협력사 ESG 진단</a></li>
+                        <li><a href="./sub02_2.html" class="item">KSA 공급망 ESG 진단</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03_1.html" class="item">ESG 전략수집</a></li>
+                <li>
+                    <a href="./sub04_1.htm" class="subMenuBtn item">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub04_1.html" class="item">ESG 정보공시 자문</a></li>
+                        <li><a href="./sub04_2.html" class="item">ESG 정보공시 제3자 검증</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" class="item">온실가스 검인증</a></li>
+                <li>
+                    <a href="./sub06_1.html" class="item" class="linkBtn">ESG 정보공시 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                </li>
+                <li>
+                    <a href="./sub07_1.html" class="subMenuBtn item">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="#" class="linkBtn item" target="_blank">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                        <li><a href="#" class="linkBtn item">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub08_1.html" class="item">ESG 표준</a></li>
+                <li>
+                    <a href="./sub09_1.html" class="subMenuBtn item">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub09_1.html" class="item">대회 개요</a></li>
+                        <li><a href="./sub09_2.html" class="item">보고서 DB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <main class="sub sec_top mypage mypageBoard">
+            <article class="mypageBoardArti">
+                <div class="inner">
+                    <div class="mypageTopBtnDiv">
+                        <a href="./mypageBoardView.html" class="backBtn">
+                            <img src="./img/signupCategory/back_icon.png" alt="뒤로가기">
+                            <div class="text">뒤로가기</div>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="pageBgTitle">협력사 ESG 진단 / 동반위 협력사 ESG 진단</div>
+
+
+                    
+                    <section class="boardArti boardViewArti">
+                        <article class="infoBoxWrap">
+
+                            <div class="greenBigTitle">1. 기업현황</div>
+                            <div class="subQTitle">1-1, 일반현황</div>
+
+                            <ul class="infoBoxList">
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">선택항목</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                잡오브브라더스
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">설립일자</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                2024.01.01
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">업종</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                컴퓨터프로그래밍업
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">대표이사</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                홍길동
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">주 생산품 / 서비스</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                웹사이트 제작
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">사업자번호(법인번호)</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                852-14-02099
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">매출액</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                10,000,000,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">종업원수</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                230
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="full">
+                                    <div class="infoBox">
+                                        <div class="label">주소</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                서울특별시 송파구 송파대로 111
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="infoBoxList">
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">기업개요<br/>(설립목적 등)</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                기업 개요
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="infoBox">
+                                        <div class="label">경영방침<br/>(비전, 전략 등)</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                경영방침
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="infoBoxList">
+                                <li class="full">
+                                    <div class="infoBox">
+                                        <div class="label">기업 연혁</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :<br/>
+                                                0000년 00월 :
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="infoBoxList">
+                                <li class="full">
+                                    <div class="infoBox">
+                                        <div class="label">인증취득 현황<br/>(환경, 안전, 품질 등)</div>
+                                        <div class="txtBox viewBox">
+                                            <div class="txt">
+                                                -<br/>
+                                                -<br/>
+                                                -<br/>
+                                                -<br/>
+                                                -<br/>
+                                                -
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">1-2. 주요 제품(서비스) 및 공정 (업무) 프로세스</div>
+
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">주요 제품 서비스 사진 01</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">주요/제품 서비스 사진 02</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">주요 제품 서비스 사진 01</div>
+                                    <div class="imgBox">
+                                        공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용
+                                        공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용  
+                                        공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용
+                                        공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용   공정/업무 프로세스 내용
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">1-3. ESG DATA BOOK</div>
+                            <div class="greenBgTitle">환경 (Environment)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1" colspan="9">대분류명</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1">구분</th>
+                                            <th class="bg1 box2">지표명</th>
+                                            <th class="bg1 box3">단위</th>
+                                            <th class="bg1 box4">2023</th>
+                                            <th class="bg1 box5 btnTh">2024</th>
+                                            <th class="bg1 box6">2025</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">온실가스</td>
+                                            <td class="bg1">SCOPE1 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">SCOPE2 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">에너지</td>
+                                            <td class="bg1">총 에너지 사용량(TJ)</td>
+                                            <td class="bg1 grayText">TJ</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">전력 사용량(kWh)</td>
+                                            <td class="bg1 grayText">kWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">천연가스(도시가스)사용량 (Nm3)</td>
+                                            <td class="bg1 grayText">Nm3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">연료, 사용량(kl)<br/>(LPG,경유,등유,가솔린)</td>
+                                            <td class="bg1 grayText">kl/kg</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">재생에너지 사용량</td>
+                                            <td class="bg1 grayText">KWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">수자원</td>
+                                            <td class="bg1">용수 사용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">용수 재활용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">폐기물</td>
+                                            <td class="bg1">총 폐기물 발생량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">지정 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">건설 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">폐기물 재활용량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="3">대기</td>
+                                            <td class="bg1">질소화합물질(NOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">황산화물질(SOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">먼지</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="4">친환경 투자</td>
+                                            <td class="bg1">탄소중립 R&D<br/>투자 비용</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">녹색제품 구매내역</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">저공해 차량<br/>(EV, HEV, FCEV 등)</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반차량</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">법규위반</td>
+                                            <td class="bg1">환경법규위반 횟수</td>
+                                            <td class="bg1 grayText">회</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">환경법규위반 벌금</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">사회 (Social)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1" colspan="9">대분류명</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1">구분</th>
+                                            <th class="bg1 box2">지표명</th>
+                                            <th class="bg1 box3">단위</th>
+                                            <th class="bg1 box4">2023</th>
+                                            <th class="bg1 box5 btnTh">2024</th>
+                                            <th class="bg1 box6">2025</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">온실가스</td>
+                                            <td class="bg1">SCOPE1 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">SCOPE2 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">에너지</td>
+                                            <td class="bg1">총 에너지 사용량(TJ)</td>
+                                            <td class="bg1 grayText">TJ</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">전력 사용량(kWh)</td>
+                                            <td class="bg1 grayText">kWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">천연가스(도시가스)사용량 (Nm3)</td>
+                                            <td class="bg1 grayText">Nm3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">연료, 사용량(kl)<br/>(LPG,경유,등유,가솔린)</td>
+                                            <td class="bg1 grayText">kl/kg</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">재생에너지 사용량</td>
+                                            <td class="bg1 grayText">KWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">수자원</td>
+                                            <td class="bg1">용수 사용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">용수 재활용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">폐기물</td>
+                                            <td class="bg1">총 폐기물 발생량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">지정 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">건설 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">폐기물 재활용량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="3">대기</td>
+                                            <td class="bg1">질소화합물질(NOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">황산화물질(SOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">먼지</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="4">친환경 투자</td>
+                                            <td class="bg1">탄소중립 R&D<br/>투자 비용</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">녹색제품 구매내역</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">저공해 차량<br/>(EV, HEV, FCEV 등)</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반차량</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">법규위반</td>
+                                            <td class="bg1">환경법규위반 횟수</td>
+                                            <td class="bg1 grayText">회</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">환경법규위반 벌금</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">거버넌스 (Govenrnance)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1" colspan="9">대분류명</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1">구분</th>
+                                            <th class="bg1 box2">지표명</th>
+                                            <th class="bg1 box3">단위</th>
+                                            <th class="bg1 box4">2023</th>
+                                            <th class="bg1 box5 btnTh">2024</th>
+                                            <th class="bg1 box6">2025</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">온실가스</td>
+                                            <td class="bg1">SCOPE1 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">SCOPE2 (직접배출)</td>
+                                            <td class="bg1 grayText">tCO2-eq</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">에너지</td>
+                                            <td class="bg1">총 에너지 사용량(TJ)</td>
+                                            <td class="bg1 grayText">TJ</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">전력 사용량(kWh)</td>
+                                            <td class="bg1 grayText">kWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">천연가스(도시가스)사용량 (Nm3)</td>
+                                            <td class="bg1 grayText">Nm3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">연료, 사용량(kl)<br/>(LPG,경유,등유,가솔린)</td>
+                                            <td class="bg1 grayText">kl/kg</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">재생에너지 사용량</td>
+                                            <td class="bg1 grayText">KWh</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">수자원</td>
+                                            <td class="bg1">용수 사용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">용수 재활용량</td>
+                                            <td class="bg1 grayText">m3</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="5">폐기물</td>
+                                            <td class="bg1">총 폐기물 발생량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">지정 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">건설 폐기물</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">폐기물 재활용량</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="3">대기</td>
+                                            <td class="bg1">질소화합물질(NOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">황산화물질(SOx)</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">먼지</td>
+                                            <td class="bg1 grayText">ton</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="4">친환경 투자</td>
+                                            <td class="bg1">탄소중립 R&D<br/>투자 비용</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">녹색제품 구매내역</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">저공해 차량<br/>(EV, HEV, FCEV 등)</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">일반차량</td>
+                                            <td class="bg1 grayText">대</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1" rowspan="2">법규위반</td>
+                                            <td class="bg1">환경법규위반 횟수</td>
+                                            <td class="bg1 grayText">회</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1">환경법규위반 벌금</td>
+                                            <td class="bg1 grayText">만원</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                            <td class="">1,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="greenBigTitle">2.ESG 진단결과</div>
+                            <div class="subQTitle">2-1. ESG 평가 및 등급</div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">ESG 평가</div>
+                                    <div class="imgBox">
+                                        <div class="graphWrap">
+                                            <div class="countDiv"><span class="big">60.5</span> / 100%</div>
+                                            <div class="graphDiv">
+                                                <div class="barDiv">
+                                                    <div class="title">환경(E)</div>
+                                                    <div class="barBox">
+                                                        <div class="bar" style="width: 30%"></div>
+                                                        <div class="text">30.0%</div>
+                                                    </div>
+                                                </div>
+                                                <div class="barDiv">
+                                                    <div class="title green">환경(E)</div>
+                                                    <div class="barBox">
+                                                        <div class="bar green" style="width: 20%"></div>
+                                                        <div class="text">20.0%</div>
+                                                    </div>
+                                                </div>
+                                                <div class="barDiv">
+                                                    <div class="title yello">거버넌스 (G)</div>
+                                                    <div class="barBox">
+                                                        <div class="bar yello" style="width: 50%"></div>
+                                                        <div class="text">50.0%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">ESG 등급</div>
+                                    <div class="imgBox">
+                                        <div class="gradeDiv">
+                                            <div class="circle">
+                                                보통
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tableHalfDiv">
+                                <div class="box">
+                                    <ul class="infoBoxList">
+                                        <li class="full">
+                                            <div class="infoBox">
+                                                <div class="label">자가진단</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        00.0% / 100% (00/00)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="full">
+                                            <div class="infoBox">
+                                                <div class="label">1차 연장실사</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        00.0% / 100% (00/00)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="full">
+                                            <div class="infoBox">
+                                                <div class="label">2차 현장실사</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        00.0% / 100% (00/00)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box">
+                                    <ul class="infoBoxList column">
+                                        <li class="">
+                                            <div class="infoBox">
+                                                <div class="label">90%<br/>이상</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        최우수
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="infoBox">
+                                                <div class="label">80%<br/>이상</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        우수
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="infoBox">
+                                                <div class="label">70%<br/>이상</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        양호
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="infoBox">
+                                                <div class="label">60%<br/>이상</div>
+                                                <div class="txtBox viewBox">
+                                                    <div class="txt">
+                                                        보통
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">2-2. ESG 평가 총평</div>
+                            <div class="subAConent">
+                                E (환경) 기후변화 대응을 위한  탄소배출량 저감 방안을 수립 및 활동 계획 수립 필요 / 제품 또는 서비스 전 과정에서 친환경적인 활동 계획을 수립하여 실행 필요 <br/>
+                                S (사회) 채용,승진,급여 등에 대한 차별 금지를 위한 규정 보완 및 사회 공헌활동 참여 필요 / 비상사태 발생 시 인명 및 재산 피해를 최소화하기 위한 비상대응 매뉴얼 작성이 필요<br/>
+                                G (거버넌스) 이사회는 독립적으로 회사의 주요 의사 결정에 대한 심의와 기록 필요 / 주주총회에 중요 안건을 보고하고 소액 주주의 권리 보장하는 시스템 운영 필요
+                            </div>
+
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">2-3. ESG 영역별 진단결과</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1" colspan="4">ESG 진단결과</th>
+                                            <th class="bg1 box1" colspan="2">준수율</th>
+                                            <th class="bg1 box1" rowspan="2">해당없음</th>
+                                            <th class="bg1 box1" rowspan="2">준수율<br/>(해당없음 제외)</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1">대항목</th>
+                                            <th class="bg1 box1">세부항목</th>
+                                            <th class="bg1 box1">맞춤지표</th>
+                                            <th class="bg1 box1">진단지표</th>
+                                            <th class="bg1 box1">예</th>
+                                            <th class="bg1 box1">아니요</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1" rowspan="3">E_환경</td>
+                                            <td class="bg1 box1">이해관계자</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">지역사회</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">해당없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">고객</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1" colspan="2">소계</td>
+                                            <td class="bg2 box1">5</td>
+                                            <td class="bg2 box1">4</td>
+                                            <td class="bg2 box1">3</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1" rowspan="4">S_사회</td>
+                                            <td class="bg1 box1">근로자1</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">근로자2</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">협력사</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">해당없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">이해관계자</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1" colspan="2">소계</td>
+                                            <td class="bg2 box1">5</td>
+                                            <td class="bg2 box1">4</td>
+                                            <td class="bg2 box1">3</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1" rowspan="3">G-거버넌스</td>
+                                            <td class="bg1 box1">주주</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">해당없음</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">협력사</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg1 box1">이해관계자</td>
+                                            <td class="box1">5</td>
+                                            <td class="box1">4</td>
+                                            <td class="box1">3</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">1</td>
+                                            <td class="box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1" colspan="2">소계</td>
+                                            <td class="bg2 box1">5</td>
+                                            <td class="bg2 box1">4</td>
+                                            <td class="bg2 box1">3</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">75.0%</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1" colspan="2">합계</td>
+                                            <td class="bg2 box1">5</td>
+                                            <td class="bg2 box1">4</td>
+                                            <td class="bg2 box1">3</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">1</td>
+                                            <td class="bg2 box1">75.0%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">2-4. ESG 영역별 평가의견</div>
+                            <div class="greenBgTitle">환경 (Environment) 평가의견</div>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">평가의견</div>
+                                    <div class="imgBox">
+                                        환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment)<br/>
+                                        환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견  <br/>
+                                        환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가<br/>
+                                        환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment) 평가의견   환경 (Environment)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">사회 (Social) 평가의견</div>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">평가의견</div>
+                                    <div class="imgBox">
+                                        사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견
+                                        사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견   
+                                        사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견
+                                        사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견    사회 (Social) 평가의견
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">거버넌스 (Govenrnance) 평가의견</div>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">평가의견</div>
+                                    <div class="imgBox">
+                                        거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견
+                                        거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버
+                                        거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견 
+                                        거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견   거버넌스 (Govenrnance) 평가의견
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBigTitle">2.ESG 진단결과</div>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="greenBgTitle">3-1. 환경(E) 가이드라인</div>
+                            <div class="emptyDiv mt2"></div>
+                            <ul class="reportDotList">
+                                <li>환경경영방침과 환경경영 전략을 수립하고 추진계획에 따라 실행하고 주기적으로 평가하고 있습니까?</li>
+                            </ul>
+
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <th class="bg1 box1" colspan="5">이해관계자 일반</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >1차 실사</th>
+                                            <th class="box1" colspan="5"  style="border-top:none;" >
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br/>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br/>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br/>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <ul class="reportDotList">
+                                <li>에너지를 체계적⸱효율적으로 사용하는 방안을 수립하여 실행하고 있습니까?</li>
+                            </ul>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <th class="bg1 box1" colspan="5">이해관계자 일반</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >1차 실사</th>
+                                            <th class="box1" colspan="5"  style="border-top:none;" >
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br/>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br/>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br/>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">3-2. S (사회) 가이드라인</div>
+                            <div class="emptyDiv mt2"></div>
+                            <ul class="reportDotList">
+                                <li>인권 증진 및 인권침해 구제를 위한 인권경영헌장(인권경영규정)을 보유하고 있습니까?</li>
+                            </ul>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <th class="bg1 box1" colspan="5">이해관계자 일반</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >1차 실사</th>
+                                            <th class="box1" colspan="5"  style="border-top:none;" >
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br/>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br/>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br/>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">3-3. G (거버넌스) 가이드라인</div>
+                            <div class="emptyDiv mt2"></div>
+                            <ul class="reportDotList">
+                                <li>합리적인 의사 결정을 지원하는 시스템이 갖추어져 있습니까?</li>
+                            </ul>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <th class="bg1 box1" colspan="5">이해관계자 일반</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >1차 실사</th>
+                                            <th class="box1" colspan="5"  style="border-top:none;" >
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br/>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br/>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br/>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">E 1-02 환경관리체계 (공통) 첨부자료</div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 01</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 02</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reoprtImgDiv" style="margin-top: 0; border-top: none;">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 03</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 04</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reoprtImgDiv"" style="margin-top: 0; border-top: none;">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 05</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 06</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBigTitle">4. 결론 및 제안</div>
+                            <div class="greenBgBIgTitle">ESG 추진 전략과 개선과제 Alignment</div>
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">환경 (Environment)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">사회 (Social)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</th>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">거버넌스 (Govenrnance) </div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1">고객사 요구사항에 적합한 에너지 효율관리 시스템 S/W 개발계획 수립</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">4-2. ESG 단계별 로드맵</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">추진영역</th>
+                                            <th class="bg1 box1">단기 (1~2년)</th>
+                                            <th class="bg1 box1">중기 (3~4년)</th>
+                                            <th class="bg1 box1">장기 (5년~)</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">로드맵</td>
+                                            <td class="bg2 box1" style="text-align: left;">[하] ESG 기반 조성<br/>-시급성, 중요성 우선 추진</td>
+                                            <td class="bg2 box1" style="text-align: left;">[중] ESG 수준향상</td>
+                                            <td class="bg2 box1" style="text-align: left;">[중] ESG 수준향상</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">환경방안</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">사회분야</td>
+                                            <td class="box1" style="text-align: left;">
+                                                <ul class="reportDotList">
+                                                    <li>위험성 평가 내재화 프로세스구축</li>
+                                                    <li>지식재산 관리체계 수립</li>
+                                                </ul>
+                                            </td>
+                                            <td class="box1" style="text-align: left;">
+                                                <ul class="reportDotList">
+                                                    <li>파견근로자 아차사고 유형 분석과 예방체계</li>
+                                                    <li>개인정보 관리프로세스 구축</li>
+                                                </ul>
+                                            </td>
+                                            <td class="box1" style="text-align: left;">
+                                                <ul class="reportDotList">
+                                                    <li>파견근로자 아차사고 유형 분석과 예방체계</li>
+                                                    <li>개인정보 관리프로세스 구축</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">지배구조 분야</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                            <td class="bg2 box1" style="text-align: left;">에너지 효율관리시스템 S/W 개발</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">4-3. 활동사진</div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">1차 현장실사-평가</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">1차 현장실사-시스템 구축 현장</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reoprtImgDiv" style="margin-top: 0; border-top: none;">
+                                <div class="box">
+                                    <div class="titleBox">2차 현장실사-평가</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">2차 현장실사-ESG 환경 컨텐츠, D/S 개발</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="saveBtnDiv">
+                                <a href="#" class="submitBtn grayBtn">목록으로</a>
+                                <a href="#" class="submitBtn">수정하기</a>
+                            </div>
+
+                        </article>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+
+        <!-- 개인정보 처리방침 -->
+        <section class="f_popup_bg">
+            <div class="popup_box">
+                <div class="btn_wrap">
+                    <p class="btn">
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <div class="content_wrap">
+                    <p class="title"> 개인정보처리방침 </p>
+                    <p class="content"> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="menuSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li><a href="#">로그인</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#" class="privacy_view">개인정보 처리방침</a></li>
+                    </ul>
+
+                    <ul class="siteList">
+                        <li><a href="#" class="grayBg" target="_blank">한국 표준협회 공식 홈페이지</a></li>
+                        <li><a href="#" class="grayBg" target="_blank">KSA EDU</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <div class="halfBox">
+                        <img src="./img/footer/logo.png" alt="KSA 한국표준협회 ESG 경영추진단" class="logo" />
+                        <div class="infoText">
+                            한국표준협회 ESG경영추진단 본부 06160 서울시 강남구 테헤란로 69길 5 (삼성동, DT센터)<br/>
+                            대표전화 : 1670-6009
+                        </div>
+                    </div>
+                    <div class="copy_right">© KOREAN STANDARDS ASSOCIATION. All rights reserved.</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

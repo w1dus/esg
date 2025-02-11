@@ -1850,10 +1850,15 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox{ flex-direction: column; }
     .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox .label{ width: 100% !important; }
     .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox .label br{ display: none; }
-    
+
 }
 
-
+.sub.mypage.adm .mypageTable > li .box6{ width: 10%; }
+@media screen and (max-width: 900px) {
+    .sub.mypage.adm .mypageTable > li .box6{ width: 100%; }
+    .sub.mypage.adm .mypageTable > li .box6::before{ content:'- 사업관리 :'; color: #7f7f7f; }
+    
+}
 
 
 
