@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--스타일-->
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="stylesheet" href="./style/font.css">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/swiper.min.css">
+        <link rel="stylesheet" href="./style/animation.css">
+        <link rel="stylesheet" href="./style/customBoard.css">
+        <!--스크립트-->
+        <script type="text/javascript" src="./script/script.js"></script>
+        <script type="text/javascript" src="./script/swiper.min.js"></script>
+        <script type="text/javascript" src="./script/customBoard.js"></script>
+        <script type="text/javascript" src="./script/common_jp.js"></script>
+        <!--폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <section class="memberSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li>
+                            <a href="./login.html" class="item">
+                                <img src="./img/header/icon1.png" alt="로그인" class="icon" />
+                                <div class="text">로그인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./signup_category.html" class="item">
+                                <img src="./img/header/icon2.png" alt="회원가입" class="icon" />
+                                <div class="text">회원가입</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./notice.html" class="item">
+                                <img src="./img/header/icon3.png" alt="공지사항" class="icon" />
+                                <div class="text">공지사항</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <a href="./index.html"><img src="./img/header/logo.png" alt="한국표준협회 KSA" class="logo"/></a>
+                    <ul class="menuList">
+                        <li><a href="./sub01_1.html">Why KSA ESG ?</a></li>
+                        <li>
+                            <a href="./sub02_1.html" class="subMenuBtn">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub02_1.html">동반위 협력사 ESG 진단</a></li>
+                                <li><a href="./sub02_2.html">KSA 공급망 ESG 진단</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub03_1.html">ESG 전략수집</a></li>
+                        <li>
+                            <a href="./sub04_1.html" class="subMenuBtn">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub04_1.html">ESG 정보공시 자문</a></li>
+                                <li><a href="./sub04_2.html">ESG 정보공시 제3자 검증</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub05_1.html">ESG 인증</a></li>
+                        <li>
+                            <a href="#" target="_blank" class="linkBtn">온실가스 검인증 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                        </li>
+                        <li>
+                            <a href="./sub07_1.html" class="subMenuBtn">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="#" target="_blank" class="linkBtn">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                                <li><a href="#" class="linkBtn" target="_blank">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sub08_1.html">ESG 표준</a></li>
+                        <li>
+                            <a href="./sub09_1.html" class="subMenuBtn">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                            <ul class="subMenuList">
+                                <li><a href="./sub09_1.html">대회 개요</a></li>
+                                <li><a href="./sub09_2.html">보고서 DB</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button class="menuBtn">
+                        <img src="./img/header/sideMenuBtn.png" alt="햄버거메뉴" class="icon"/>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <section class="menuCloseBg"></section>
+        <section class="rightMenuSection">
+            <div class="btnWrap">
+                <button type="button" class="closeBtn">
+                    <img src="./img/header/menuCloseBtn.png" alt="X" class="icon" />
+                </button>
+            </div>
+            <ul class="menuList">
+                <li><a href="./sub01_1.html" class="item">Why KSA ESG ?</a></li>
+                <li>
+                    <a href="./sub02_1.html" class="subMenuBtn item">공급망 ESG 진단 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub02_1.html" class="item">동반위 협력사 ESG 진단</a></li>
+                        <li><a href="./sub02_2.html" class="item">KSA 공급망 ESG 진단</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub03_1.html" class="item">ESG 전략수집</a></li>
+                <li>
+                    <a href="./sub04_1.htm" class="subMenuBtn item">ESG 정보공시 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub04_1.html" class="item">ESG 정보공시 자문</a></li>
+                        <li><a href="./sub04_2.html" class="item">ESG 정보공시 제3자 검증</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" target="_blank" class="item">온실가스 검인증</a></li>
+                <li>
+                    <a href="./sub06_1.html" class="item" class="linkBtn">ESG 정보공시 <img src="./img/header/link.png" alt=">" class="link"/></a>
+                </li>
+                <li>
+                    <a href="./sub07_1.html" class="subMenuBtn item">ESG 교육 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="#" class="linkBtn item" target="_blank">공개교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                        <li><a href="#" class="linkBtn item">동반위 가이드라인 교육 <img src="./img/header/link.png" alt=">" class="arrow"/></a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub08_1.html" class="item">ESG 표준</a></li>
+                <li>
+                    <a href="./sub09_1.html" class="subMenuBtn item">지속가능성 대회 <img src="./img/header/arrow.png" alt=">" class="arrow"/></a>
+                    <ul class="subMenuList">
+                        <li><a href="./sub09_1.html" class="item">대회 개요</a></li>
+                        <li><a href="./sub09_2.html" class="item">보고서 DB</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <main class="sub sec_top mypage mypageBoard">
+            <article class="mypageBoardArti">
+                <div class="inner">
+                    <div class="mypageTopBtnDiv">
+                        <a href="./mypageBoardView.html" class="backBtn">
+                            <img src="./img/signupCategory/back_icon.png" alt="뒤로가기">
+                            <div class="text">뒤로가기</div>
+                        </a>
+                        <div></div>
+                    </div>
+                    <div class="pageBgTitle spaceBtween">
+                        <div class="title">완료보고서 작성하기</div>
+                        <div class="pnBtnDiv">
+                            <a href="./complete_report2.html" class="pnBtn">
+                                <img src="./img/common/prevArrow.png" alt="화살표" class="icon"/>
+                                이전단계
+                            </a>
+                        </div>
+                    </div>
+
+
+                    
+                    <section class="boardArti boardViewArti">
+                        <article class="infoBoxWrap">
+                            
+                            <div class="greenBigTitle">부문별 평가결과</div>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="greenBgTitle">3-1. 환경(E) 가이드라인</div>
+                            <div class="emptyDiv mt2"></div>
+
+                            <div class="subQTitle">E 1-01 환경관리체계 (공통)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <td class="bg1 box2" colspan="6">이해관계자 일반</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >E 1-01</th>
+                                            <td class="box1 left" colspan="6"  style="border-top:none; " >
+                                                환경경영방침과 환경경영 전략을 수립하고 추진계획에 따라 실행하고 주기적으로 평가 하고 있습니까 ?
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">지표설명</th>
+                                            <td class="box1 left" colspan="6">
+                                                환경경영 실천의지를 담은 환경경영방침을 수립 및 공개하고 이에 따른 전략 및 목표를 설정하여 목표를 달성하기 위한 체계적인 추직계획을 수립하여
+                                                실행하고 실적 및 성과를 정기적으로 평가 및 관리해야합니다.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2" rowspan="2">글로벌 지표</th>
+                                            <td class="box1">ISO 26000</td>
+                                            <td class="box1">GRI</td>
+                                            <td class="box1">ESTS</td>
+                                            <td class="box1">RBA</td>
+                                            <td class="box1">SMETA</td>
+                                            <td class="box1">K-ESG</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">6.51</td>
+                                            <td class="box1">308</td>
+                                            <td class="box1">E2-1-3</td>
+                                            <td class="box1">CM</td>
+                                            <td class="box1">10B4.7</td>
+                                            <td class="box1">E-1-1, E-1-2</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">국내법</th>
+                                            <td class="box1 left" colspan="6">
+                                                자연환경보전법 제4조 환경정책기본법 제 5조, 제 8조, 제 10조, 환경보건법 제 5조, 기후위기 대응을 위한 탄소중립 / 녹생성장 기본법 제 5조
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2" rowspan="2">점검사항</th>
+                                            <td class="box1" colspan="1">
+                                                점검
+                                            </td>
+                                            <td class="box1 left" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침 수립 및 공개 여부</li>
+                                                    <li>환경경영 전략 및 연도별 추진 계획</li>
+                                                    <li>환경경영 목표 설정 및 성과측정 지표 수립 내용</li>
+                                                    <li>주기적 평가 및 성과 관리 (환경성과 평가보고서 등) 사항</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1" colspan="1">
+                                                보조
+                                            </td>
+                                            <td class="box1 left" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영시스템 국제규격 (ISO 140001 또는 EMAS) 인증 여부</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1" style="border-top:none;">1차 실사</th>
+                                            <th class="box1" colspan="5" style="border-top:none;">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">3-3. G (거버넌스) 가이드라인</div>
+                            <div class="emptyDiv mt2"></div>
+                            <ul class="reportDotList">
+                                <li>합리적인 의사 결정을 지원하는 시스템이 갖추어져 있습니까?</li>
+                            </ul>
+                            <div class="emptyDiv mt2"></div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">공통</th>
+                                            <th class="bg1 box1" colspan="5">이해관계자 일반</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="infoBoxList" style="border-top:none;  min-width: 800px;">
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">자가진단</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">1차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="half3">
+                                        <div class="infoBox">
+                                            <div class="label">2차 현장실사</div>
+                                            <div class="txtBox viewBox">
+                                                <div class="txt">해당 없음</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1"  style="border-top:none;" >1차 실사</th>
+                                            <th class="box1" colspan="5"  style="border-top:none;" >
+                                                <ul class="reportDotList">
+                                                    <li>환경경영 의지를 포함한 환경경영방침을 수립 게시하여 종업과의 방침을 통한 소통을 권고함</li>
+                                                    <li>환경방침에 환경목표를 설정하고 그 추진을 위한 계획을 수립하여 전사적 활동으로 전개할 것을 권고함</li>
+                                                    <li>
+                                                        환경목표 추진계획에 따른 부서 및 역할별 세부실천 사항을 주기적으로 평가하여야 함을 권고함 <br/>
+                                                        [지원사항] 환경경영방침 사례, 환경경영목표 및 세부추진계획서 자료 제공
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">2차 실사</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음<br/>
+                                                        [관련문서 : 환경경영방침, 환경목표/세부목표, 환경경영추진계획서, 환경세부목표 결과보고서]
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="bg1 box2">개선<br/>Comment</th>
+                                            <th class="box1" colspan="5">
+                                                <ul class="reportDotList">
+                                                    <li>환경경영방침을 수립하여 고객만족을 위한 작업환경개선 컨텐츠 개발에 주력하는 모토를 전 사원이 공유하고 있음</li>
+                                                    <li>에너지 사용량 확보를 추진 목표로 설정하여 단꼐별 과제 실천을 위한 계획을 수립하여 진행하고 있음</li>
+                                                    <li>
+                                                        절전 및 소등 주변에서 실천가능한 성과를 실행하면서 환경경영활동을 내재화 하는 노력을 하고 있음
+                                                    </li>
+                                                </ul>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">E 1-02 환경관리체계 (공통) 첨부자료</div>
+                            <div class="reoprtImgDiv">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 01</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 02</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reoprtImgDiv" style="margin-top: 0; border-top: none;">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 03</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 04</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reoprtImgDiv"" style="margin-top: 0; border-top: none;">
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 05</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                        <!--div는 예시로 넣어두었습니다. img태그로 넣어주세요. -->
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="titleBox">첨부자료 06</div>
+                                    <div class="imgBox">
+                                        <div class="imgContent example"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBigTitle">4. 결론 및 제안</div>
+                            <div class="greenBgBIgTitle">ESG 추진 전략과 개선과제 Alignment</div>
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">환경 (Environment)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">사회 (Social)</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="greenBgTitle">거버넌스 (Govenrnance) </div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">ESG 부문별 추진전략</th>
+                                            <th class="bg1 box1">개선과제</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                            <td class="box1"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">4-2. ESG 단계별 로드맵</div>
+                            <div class="reportTableBox">
+                                <table class="boardList">
+                                    <tbody>
+                                        <tr>
+                                            <th class="bg1 box1">추진영역</th>
+                                            <th class="bg1 box1">단기 (1~2년)</th>
+                                            <th class="bg1 box1">중기 (3~4년)</th>
+                                            <th class="bg1 box1">장기 (5년~)</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">로드맵</td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">환경방안</td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">사회분야</td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="box1">지배구조 분야</td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg2 box1">실천과제</td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                            <td class="bg2 box1" style="text-align: left;"><input type="text" class="ipt" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="emptyDiv"></div>
+                            <div class="subQTitle">4-3. 활동사진</div>
+                            <ul class="formList">
+                                <li>
+                                    <div class="label">제목 <span class="red">*</span></div>
+                                    <div class="iptBox">
+                                        <input type="text" class="ipt" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="iptBox">
+                                        <input type="file" class="ipt" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="plusBtnDiv">
+                                +
+                            </button>
+
+
+
+                            <div class="saveBtnDiv">
+                                <a href="./complete_report2.html" class="submitBtn grayBtn prevBtn"><img src="./img/common/prevArrow.png" alt="이전" class="icon"/> 이전단계</a>
+                                <a href="./complete_report4.html" class="submitBtn">작성완료</a>
+                            </div>
+
+
+                        </article>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+
+        <!-- 개인정보 처리방침 -->
+        <section class="f_popup_bg">
+            <div class="popup_box">
+                <div class="btn_wrap">
+                    <p class="btn">
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+                <div class="content_wrap">
+                    <p class="title"> 개인정보처리방침 </p>
+                    <p class="content"> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                        개인정보 처리방침 내용입니다. <br/> 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="menuSection">
+                <div class="inner">
+                    <ul class="menuList">
+                        <li><a href="#">로그인</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li class="bar"></li>
+                        <li><a href="#" class="privacy_view">개인정보 처리방침</a></li>
+                    </ul>
+
+                    <ul class="siteList">
+                        <li><a href="#" class="grayBg" target="_blank">한국 표준협회 공식 홈페이지</a></li>
+                        <li><a href="#" class="grayBg" target="_blank">KSA EDU</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="mainSection">
+                <div class="inner">
+                    <div class="halfBox">
+                        <img src="./img/footer/logo.png" alt="KSA 한국표준협회 ESG 경영추진단" class="logo" />
+                        <div class="infoText">
+                            한국표준협회 ESG경영추진단 본부 06160 서울시 강남구 테헤란로 69길 5 (삼성동, DT센터)<br/>
+                            대표전화 : 1670-6009
+                        </div>
+                    </div>
+                    <div class="copy_right">© KOREAN STANDARDS ASSOCIATION. All rights reserved.</div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -961,16 +961,21 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub.mypage .mypageSection .whiteBox .tabBtnList .item{ display: flex; display: block; padding: 10px; text-align: center; font-size: 20px; color: #7F7F7F; }
 .sub.mypage .mypageSection .whiteBox .tabBtnList .item.active{ font-weight: 700; color: #004B55; border-bottom: 2px solid #004B55; }
 
+.sub.mypage .whiteBox .tabBtnList.type2{ margin-top: 50px; display: flex; border-bottom: 1px solid #D9D9D9; }
+.sub.mypage .whiteBox .tabBtnList.type2 > li{ width: calc(100% / 2); }
+.sub.mypage .whiteBox .tabBtnList.type2 .item{ display: flex; display: block; padding: 10px; text-align: center; font-size: 20px; color: #7F7F7F; }
+.sub.mypage .whiteBox .tabBtnList.type2 .item.active{ font-weight: 700; color: #004B55; border-bottom: 2px solid #004B55; }
+
 .sub .mypageTable{ margin-top: 50px; border-top: 1px solid #E4E4E4; }
 .sub .mypageTable > li{ border-bottom: 1px solid #e4e4e4; }
-.sub .mypageTable > li .item{ display: flex;  } 
+.sub .mypageTable > li .item{ display: flex; align-items: center; } 
 .sub .mypageTable > li .box .ellipsis{ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sub .mypageTable > li .box{ padding: 10px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sub .mypageTable > li .box1{  width: 15%; text-align: left;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sub .mypageTable > li .box2{ width: 55%; text-align: left; }
-.sub .mypageTable > li .box3{ width: 10%;  }
-.sub .mypageTable > li .box4{ width: 10%;  }
-.sub .mypageTable > li .box5{ width: 15%;  }
+.sub .mypageTable > li .box{  padding: 10px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub .mypageTable > li .box1{flex-shrink: 0;  width: 15%; text-align: left;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sub .mypageTable > li .box2{ flex-grow: 1; width: 55%; text-align: left; }
+.sub .mypageTable > li .box3{ flex-shrink: 0; width: 10%;  }
+.sub .mypageTable > li .box4{ flex-shrink: 0; width: 10%;  }
+.sub .mypageTable > li .box5{ flex-shrink: 0; width: 15%;  }
 .sub .mypageTable > li .titleBg{ text-align: center; background-color: #F5F5F5; }
 .sub .mypageTable > li .labelBtn{ font-size: 14px; display: inline-block; padding: 5px 10px; color: #fff; border-radius: 4px; background-color: #004B55; }
 
@@ -979,6 +984,9 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 @media screen and (max-width: 1250px) {
     .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 18px; }
     .sub.mypage .mypageSection .whiteBox .tabBtnList .item{ font-size: 18px; }
+
+    .sub.mypage .whiteBox .tabBtnList.type2 .item{ font-size: 18px; }
+
     .sub .mypageTable > li .box2{ width: 35%; }
     .sub .mypageTable > li .box3{ width: 20%;  }
     .sub .mypageTable > li .box4{ width: 20%;  }
@@ -1008,6 +1016,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 @media screen and (max-width: 650px) {
     .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 16px; }
     .sub.mypage .mypageSection .whiteBox .tabBtnList .item{ font-size: 16px; }
+    .sub.mypage .whiteBox .tabBtnList.type2 .item{ font-size: 16px; }
 
 
 }
@@ -1059,8 +1068,12 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub .mypageTopBtnDiv .borderBtn{ color: #004B55; font-weight: 500; padding: 10px 20px; border: 2px solid #004B55; border-radius: 4px; }
 
 .sub .pageBgTitle{ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); margin: 20px 0; font-weight: 600; padding: 18px 35px; border-radius: 4px; background-color: #004B55; color: #fff; font-size: 18px; }
+.sub .pageBgTitle.spaceBtween{ display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+
+.sub .pageBgTitle .pnBtnDiv{ display: flex; align-items: center; gap: 20px; }
 
 .sub .reportTableBox .boardList{ word-break: keep-all; width: 100%; border-collapse:collapse; text-align: center; }
+.sub .reportTableBox .boardList .left{ text-align: left; }
 .sub .reportTableBox .boardList .bg1{ background-color: #F9FBFC; }
 .sub .reportTableBox .boardList .bg2{ background-color: rgba(217,217,217,0.2); }
 .sub .reportTableBox .boardList tr th{ border-top: 2px solid #E9EBEC; }
@@ -1101,6 +1114,9 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub.mypageBoard .mypageBoardArti{ padding: 50px 0; }
     .sub.mypageBoard .saveBtnDiv .submitBtn{ max-width: unset; }
     .sub .mypageTopBtnDiv .borderBtn{ font-size: 14px; padding: 5px 10px; }
+
+    .sub .pageBgTitle .pnBtnDiv{ font-size: 14px; }
+    .sub .pageBgTitle .pnBtnDiv .icon{ width: 20px; }
 }
 
 
@@ -1701,3 +1717,120 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub.managementView .fileDownloadBtn{ padding: 10px; padding-left: 45px; font-size: 14px; background-position: left 10px center; }
     .sub.managementView .fileDownloadBtn .fileDownInfo{ font-size: 13px; }
 }
+
+.sub.mypageBoard .plusBtnDiv{ background: #fff; margin-top: 10px; width: 46px; height: 46px; border: 2px solid #7f7f7f; width: 46px; height: 46px; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 500; line-height: 1em; padding-top: .5%; color: #7f7f7f; }
+
+.signupCategorySection.tab3 .adminSearchDiv{ margin-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #E4E4E4; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.signupCategorySection.tab3 .adminSearchDiv .searchBox{ display: flex; gap: 10px; max-width: 100%; width: 447px; }
+.signupCategorySection.tab3 .adminSearchDiv .searchBox input[type="text"]{ flex-grow: 1; width: 200%; }
+.signupCategorySection.tab3 .adminSearchDiv .searchBox .searchBtn{ border: 1px solid #222; flex-shrink: 0; padding: 10px; color: #fff; padding: 10px 20px; color: #fff; background-color: #222; border-radius: 4px; }
+.signupCategorySection.tab3 .adminSearchDiv .createDiv{ display: flex; gap: 10px; }
+.signupCategorySection.tab3 .adminSearchDiv .createDiv .ipt{ min-width: 250px; }
+.signupCategorySection.tab3 .adminSearchDiv .createDiv .createBtn{ border: 1px solid #004B55; flex-shrink: 0; padding: 10px 20px; border-radius: 4px; color: #fff; background-color: #004B55; border-radius: 4px; }
+.signupCategorySection.tab3 .adminSearchDiv .greenTitle{ font-weight: 700; font-size: 20px; color: #004B55; font-weight: 700; }
+
+
+@media screen and (max-width: 650px) {
+    .signupCategorySection.tab3 .adminSearchDiv{ font-size: 14px; }
+    .signupCategorySection.tab3 .adminSearchDiv .searchBox .searchBtn{ padding: 5px 10px; }
+    .signupCategorySection.tab3 .adminSearchDiv .createDiv .createBtn{ padding: 5px 10px; }
+    .signupCategorySection.tab3 .adminSearchDiv .createDiv .ipt{ min-width: unset; padding-right: 20px; }
+
+    .signupCategorySection.tab3 .adminSearchDiv .greenTitle{ font-size: 18px; }
+}
+
+.sub.signupCategorySection.tab5 .mypageTable{ text-align: center; }
+.sub.signupCategorySection.tab5 .mypageTable > li .box1{ text-align: center; width: 15%; flex-shrink: 0; }
+.sub.signupCategorySection.tab5 .mypageTable > li .box2{ text-align: center; flex-grow: unset; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5 .mypageTable > li .box3{ text-align: center; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5 .mypageTable > li .box4{ text-align: center; width: 15%;}
+.sub.signupCategorySection.tab5 .mypageTable > li .box5{ text-align: center; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5 .mypageTable > li .box6{ text-align: center; width: 12.5%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5 .mypageTable > li .box7{ text-align: center; width: 12.5%; flex-shrink: 0;}
+
+@media screen and (max-width: 900px) {
+    .sub.signupCategorySection.tab5 .mypageTable > li .box1{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box2{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box3{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box4{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box5{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box6{ width: 100%; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box7{ width: 100%; }
+    
+    .sub.signupCategorySection.tab5 .mypageTable > li .box1::before{ content:'- 권한 : '; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box2::before{ content:'- 기업명 : '; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box3::before{ content:'- 담당자명 : '; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box4::before{ content:'- 이메일 : '; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box5::before{ content:'- 기업 담당자 수 : '; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box6::before{ content:'- 가입승인 : '; color: #7f7f7f; }
+    .sub.signupCategorySection.tab5 .mypageTable > li .box7::before{ content:'- 접근권한 : '; color: #7f7f7f; }
+}
+
+.sub .formList .downloadBtn{ background-image: url('../img/boardImg/folder.png'); background-repeat: no-repeat; background-position: left 15px center; margin-top: 10px; width: 100%; padding: 15px; padding-left: 50px;  background-color: #fff; border: 1px solid #e6e6e6; border-radius: 8px; display: block; }
+.sub .formList .downloadBtn .info{ color: #999; font-size: 14px; line-height: 1em; }
+
+.sub.signupCategorySection.tab5 .adminSearchDiv{ margin-top: 20px; }
+.sub.signupCategorySection.tab5 .adminSearchDiv .searchBox{ display: flex; gap: 5px; max-width: 447px; }
+.sub.signupCategorySection.tab5 .adminSearchDiv .searchBox input[type="text"]{ width: 200%; }
+.sub.signupCategorySection.tab5 .adminSearchDiv .searchBox .searchBtn{ flex-shrink: 0; padding: 10px 20px; border-radius: 4px; background-color: #222; color: #fff; }
+
+@media screen and (max-width: 650px) {
+    .sub.signupCategorySection.tab5 .adminSearchDiv{ font-size: 14px; }
+    .sub.signupCategorySection.tab5 .adminSearchDiv .searchBox .searchBtn{ padding: 10px; }
+}
+
+
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box1{ text-align: center; width: 10%; flex-shrink: 0; }
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box2{ text-align: center; flex-grow: unset; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box3{ text-align: center; width: 10%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box4{ text-align: center; width: 10%;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box5{ text-align: center; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box6{ text-align: center; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box7{ text-align: center; width: 15%; flex-shrink: 0;}
+.sub.signupCategorySection.tab5_2 .mypageTable > li .box8{ text-align: center; width: 10%; flex-shrink: 0;}
+
+@media screen and (max-width: 900px) {
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box1{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box2{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box3{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box4{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box5{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box6{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box7{ width: 100%; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box8{ width: 100%; }
+    
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box1::before{ content:'- 권한 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box2::before{ content:'- 기업명 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box3::before{ content:'- 담당자명 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box4::before{ content:'- 소속부서 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box5::before{ content:'- 직위 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box6::before{ content:'- 전화번호 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box7::before{ content:'- 가입승인 : '; }
+    .sub.signupCategorySection.tab5_2 .mypageTable > li .box8::before{ content:'- 접근권한 : '; color: #7f7f7f; }
+}
+
+.loadPopupSection.company .popupContent .searchShowTable .box.box6{ width: 50%; }
+.loadPopupSection.company .popupContent .searchShowTable .box.box7{ width: 30%; }
+.loadPopupSection.company .popupContent .searchShowTable .box.box8{ width: 20%; }
+
+@media screen and (max-width: 650px) {
+    .loadPopupSection.company .popupContent .searchShowTable .box.box6{ width: 100%; }
+    .loadPopupSection.company .popupContent .searchShowTable .box.box7{ width: 100%; }
+    .loadPopupSection.company .popupContent .searchShowTable .box.box8{ width: 100%; }
+
+    .loadPopupSection.company .popupContent .searchShowTable .box.box6::before{ content:'- 사업명 : '; } 
+    .loadPopupSection.company .popupContent .searchShowTable .box.box7::before{ content:'- 생성날짜 : '; } 
+    .loadPopupSection.company .popupContent .searchShowTable .box.box8::before{ content:'- 권한설정 : '; } 
+}
+
+
+@media screen and (max-width: 900px) {
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box1::before{ content:'- 성함 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box2::before{ content:'- 성별 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box3::before{ content:'- 생년월일 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box4::before{ content:'- 이메일 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box5::before{ content:'- 전화번호 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box6::before{ content:'- 가입승인 : '; }
+    .sub.signupCategorySection.tab5_3 .mypageTable > li .box7::before{ content:'- 접근권한 : '; }
+}
+

@@ -141,126 +141,189 @@
         </section>
 
 
-        <main class="sub sec_top mypage">
-            <section class="mypageSection">
+        <main class="sub sec_top mypage signupCategorySection tab5">
+
+            <section class="signupCategorySection">
                 <div class="inner">
                     <div class="whiteBox">
-                        <div class="bottomBarTitle">
-                            <div class="title"><span class="green"><b>[기업명]</b></span>기업 <span class="green"><b>[성함]</b></span>님의 방문을 환영합니다.</div>
-                            <a href="./company_modify.html" class="modifyBtn">회원정보 수정</a>
+                        
+                        <div class="bottomBarTitle spaceBetween">
+                            <div class="text">
+                                <span class="blue">KSA 관리자</span>님의 방문을 환영합니다.
+                            </div>
+                            <ul class="tabBtnList">
+                                <li>
+                                    <a href="./admin_create_company.html" class="item ">사업 생성</a>
+                                </li>
+                                <li>
+                                    <a href="./admin_create_compnay_tab2.html" class="item">사업 관리</a>
+                                </li>
+                                <li>
+                                    <a href="./admin_create_compnay_tab3.html" class="item">템플릿 관리</a>
+                                </li>
+                                <li>
+                                    <a href="./admin_create_compnay_tab4.html" class="item">보고서 관리</a>
+                                </li>
+                                <li>
+                                    <a href="./admin_create_compnay_tab5.html" class="item active">회원 관리</a>
+                                </li>
+                                <li>
+                                    <a href="./admin_create_compnay_tab6.html" class="item">게시판 관리</a>
+                                </li>
+                            </ul>
                         </div>
-
-                        <ul class="tabBtnList">
-                            <li><a href="./company_mypage.html" class="item active">진행중인 사업 지표</a></li>
-                            <li><a href="./company_report.html" class="item">완료보고서</a></li>
+                 
+                        <ul class="tabBtnList type2">
+                            <li><a href="./admin_create_compnay_tab5.html" class="item active">기업회원 관리</a></li>
+                            <li><a href="./admin_create_compnay_tab5_2.html" class="item">기업 담당자 관리</a></li>
+                            <li><a href="./admin_create_compnay_tab5_3.html" class="item">전문위원 관리</a></li>
                         </ul>
-
+                        <div class="adminSearchDiv">
+                            <div class="searchBox">
+                                <select class="ipt">
+                                    <option value="">기업명</option>
+                                    <option value="">담당자명</option>
+                                    <option value="">이메일</option>
+                                    <option value="">기업 담당자 수</option>
+                                    <option value="">가입 승인</option>
+                                </select>
+                                <input type="text" class="ipt" placeholder="" />
+                                <button type="button" class="searchBtn">검색하기</button>
+                            </div>
+                        </div>
+                            
                         <ul class="mypageTable mo_title1">
                             <li>
                                 <div class="item">
-                                    <div class="box box1 titleBg">유형</div>
-                                    <div class="box box2 titleBg">진단 평가명</div>
-                                    <div class="box box3 titleBg">생성일</div>
-                                    <div class="box box4 titleBg">마감기간</div>
-                                    <div class="box box5 titleBg">비고</div>
+                                    <div class="box box1 titleBg">권한</div>
+                                    <div class="box box2 titleBg">기업명</div>
+                                    <div class="box box3 titleBg">담당자명</div>
+                                    <div class="box box4 titleBg">이메일</div>
+                                    <div class="box box5 titleBg">기업 담당자 수</div>
+                                    <div class="box box6 titleBg">가입승인</div>
+                                    <div class="box box7 titleBg">접근권한</div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view1.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view1.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view1.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view1.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정 대표계정 대표계정 대표계정 대표계정 대표계정 대표계정 대표계정 대표계정 대표계정</div>
+                                    <div class="box box2">000기업 000기업 000기업 000기업 000기업 000기업 000기업</div>
+                                    <div class="box box3">홍길동 홍길동 홍길동 홍길동 홍길동 홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com rhqjq123@naver.com rhqjq123@naver.com rhqjq123@naver.com</div>
+                                    <div class="box box5">5명 5명 5명 5명 5명 5명 5명</div>
+                                    <div class="box box6">승인대기 승인대기 승인대기 승인대기 승인대기 승인대기 승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                             <li>
                                 <div class="item">
-                                    <div class="box box1"><div class="ellipsis">동반위 협력사 ESG진단 동반위 협력사 ESG진단 동반위 협력사 ESG진단</div></div>
-                                    <div class="box box2"><div class="ellipsis">환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 환경경영시스템 평가 </div></div>
-                                    <div class="box box3">2024.01.01</div>
-                                    <div class="box box4">2024.01.01</div>
-                                    <div class="box box5"><a href="./mypageBoardView.html" class="labelBtn">작성하기</a></div>
+                                    <div class="box box1">대표계정</div>
+                                    <div class="box box2">000기업</div>
+                                    <div class="box box3">홍길동</div>
+                                    <div class="box box4">rhqjq123@naver.com</div>
+                                    <div class="box box5">5명</div>
+                                    <div class="box box6">승인대기</div>
+                                    <div class="box box7"><a href="./admin_create_company_tab5_view2.html" class="labelBtn">확인하기</a></div>
                                 </div>
                             </li>
                         </ul>
 
                         <div class="paging_box">페이징위치입니다</div>
+
                     </div>
                 </div>
             </section>
+
+
+           
         </main>
 
        

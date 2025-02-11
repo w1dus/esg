@@ -209,6 +209,7 @@ input[type="file"].ipt{ border-radius: 8px; padding: 15px 15px 15px 45px; backgr
 textarea.ipt{ resize: none; height: 170px; }
 .formList .iptBox.btnIpt{ display: flex; gap: 4px; }
 .formList .iptBox .grayBtn{ flex-shrink: 0; padding: 10px 20px; background: #222; border: none; border-radius: 0; color: #fff; }
+.formList .iptBox .grayBtn.color2{ background-color: #7f7f7f; }
 .formList .iptBox.radioIpt{ margin-top: 10px; display: flex; flex-wrap: wrap; gap: 5px; }
 .formList .iptBox.radioIpt label{ cursor: pointer; display: flex; align-items: center; padding-right: 10px; }
 .formList .iptBox.radioIpt label input{ display: none; }
@@ -217,6 +218,10 @@ textarea.ipt{ resize: none; height: 170px; }
 .formList .iptBox.radioIpt label input[type="radio"] + .text::before{ border-radius: 50%; }
 .formList .iptBox.radioIpt label input:checked + .text::before{ background-image: url('../img/common/checkbox_icon.png'); background-size: 60%; background-repeat: no-repeat; background-position: center; }
 .formList .iptBox.radioIpt label input[type="radio"]:checked + .text::before{ background-image: url('../img/common/radio_check.png'); background-size: 50%; }
+.formList .rightBtnWrap{ height: 100%; display: flex; align-items: flex-end; justify-content: flex-end; }
+.formList .rightBtnWrap .createBtn{ padding: 10px 20px; border-radius: 4px; background-color: #004B55; color: #fff; border: none; }
+
+
 .agreeCheckDiv{ margin-top: 10px; display: flex; justify-content: flex-start; color: #7F7F7F; }
 .agreeCheckDiv label input[type="checkbox"]{ display: none; }
 .agreeCheckDiv label input[type="checkbox"] + .textBox{ display: flex; align-items: flex-start; gap: 4px; }
@@ -250,4 +255,6 @@ input[type="file"].ipt label input[type="checkbox"]{ display: none;  }
     .checkIpt input[type="checkbox"] + .text{ padding-left: 20px; }
     .checkIpt input[type="checkbox"] + .text::before{ width: 16px; height: 16px; }
     .checkIpt{ margin-top: 5px; }
+
+    .formList .rightBtnWrap .createBtn{ font-size: 14px; }
 }
