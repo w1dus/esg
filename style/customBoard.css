@@ -88,7 +88,7 @@
 .boardArti .infoBoxWrap .infoBoxList > li.full{ width: 100%; }
 .boardArti .infoBoxWrap .infoBoxList > li.half{ width: calc(100% / 2); }
 .boardArti .infoBoxWrap .infoBoxList > li .infoBox{display: flex; height: 100%; }
-.boardArti .infoBoxWrap .infoBoxList > li .infoBox .label{ display: flex; align-items: center; justify-content: center; height: auto; background-color: #F7F7F7; padding: 16px; font-size: 13px; width: 160px; flex-shrink: 0; }
+.boardArti .infoBoxWrap .infoBoxList > li .infoBox .label{ display: flex; align-items: center; justify-content: center; height: auto; background-color: #F7F7F7; padding: 16px 10px; font-size: 13px; width: 160px; flex-shrink: 0; }
 .boardArti .infoBoxWrap .infoBoxList > li .infoBox .txtBox{ padding: 5px 16px; flex-grow: 1; font-size: 14px; display: flex; align-items: center; }
 .boardArti .infoBoxWrap .infoBoxList > li .infoBox .txtBox .ipt{ width: 100%; padding: 10px 10px; border: 1px solid #E6E6E6; border-radius: 4px; }
 .boardArti .infoBoxWrap .infoBoxList > li .infoBox .txtBox select.ipt{ max-width: 280px; }
@@ -192,6 +192,7 @@
 
 
 .formList{ display: flex; flex-wrap: wrap; width: calc(100% + 10px); margin-left: -5px; }
+.formList b{ font-weight: 600; }
 .formList > li{ padding: 10px 5px; width: 100%; }
 .formList > li.half{ width: calc(100% / 2); }
 .formList.three > li.half{ width: calc(100% / 3); }

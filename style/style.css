@@ -955,6 +955,7 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
 .sub.mypage .mypageSection .whiteBox .bottomBarTitle{ padding-bottom: 10px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #D9D9D9; }
 .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title{ font-size: 20px;  }
 .sub.mypage .mypageSection .whiteBox .bottomBarTitle .title b{ font-weight: 700; }
+.sub.mypage .mypageSection .whiteBox .bottomBarTitle .title .green{ color: #004B55; }
 .sub.mypage .mypageSection .whiteBox .bottomBarTitle .modifyBtn{ font-size: 12px; padding: 10px 17px; color: #fff; background-color: #7f7f7f; border-radius: 4px; }
 .sub.mypage .mypageSection .whiteBox .tabBtnList{ margin-top: 50px; display: flex; border-bottom: 1px solid #D9D9D9; }
 .sub.mypage .mypageSection .whiteBox .tabBtnList > li{ width: calc(100% / 2); }
@@ -1833,4 +1834,41 @@ footer .mainSection .copy_right{ margin-top: 20px; color: rgba(255,255,255,0.2);
     .sub.signupCategorySection.tab5_3 .mypageTable > li .box6::before{ content:'- 가입승인 : '; }
     .sub.signupCategorySection.tab5_3 .mypageTable > li .box7::before{ content:'- 접근권한 : '; }
 }
+
+.sub.mypageBoard.expert .bottomBar_title{ font-size: 20px; font-weight: 700; color: #004B55; margin-top: 20px; padding-bottom: 10px; border-bottom: 2px solid #D9D9D9; margin-bottom: 10px; }
+.sub.mypageBoard.expert .startBtnDiv{ display: flex; margin-top: 20px;  }
+.sub.mypageBoard.expert .startBtnDiv .selectWrapDiv{ width: 100%; max-width: 440px; display: flex; gap: 5px; }
+.sub.mypageBoard.expert .startBtnDiv .selectWrapDiv .startBtn{ border: 1px solid #004B55; padding: 10px 20px; border-radius: 4px; flex-shrink: 0; color: #fff; background-color: #004B55; }
+
+@media screen and (max-width: 650px) {
+    .sub.mypageBoard.expert .bottomBar_title{ font-size: 18px; }
+    .sub.mypageBoard.expert .startBtnDiv{ font-size: 14px; }
+    .sub.mypageBoard.expert .startBtnDiv .selectWrapDiv .startBtn{ padding: 10px; }
+}
+
+@media screen and (max-width: 900px) {
+    .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox{ flex-direction: column; }
+    .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox .label{ width: 100% !important; }
+    .boardArti .infoBoxWrap .infoBoxList > li.type2 .infoBox .label br{ display: none; }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
